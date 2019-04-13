@@ -10,16 +10,20 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Navigation from 'components/Navigation';
+import HeaderBar from 'components/HeaderBar';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <>
+        <Navigation />
+        <HeaderBar
+          header="Contact Me"
+          subMessage="Feel free to send me a message and i will get back to you"
+        />
+      </>
     );
   }
 }
