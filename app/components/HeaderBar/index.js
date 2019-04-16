@@ -17,8 +17,6 @@ function HeaderBar(props) {
     </div>
   );
 }
-// Ehren Davis
-// Sr. Developer at Hyland .Inc
 
 HeaderBar.propTypes = {
   header: PropTypes.string.isRequired,

@@ -12,6 +12,7 @@
 import React from 'react';
 import Navigation from 'components/Navigation';
 import HeaderBar from 'components/HeaderBar';
+import ContactBody from 'components/ContactBody';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -23,6 +24,7 @@ export default class HomePage extends React.PureComponent {
           header="Contact Me"
           subMessage="Feel free to send me a message and i will get back to you"
         />
+        <ContactBody />
       </>
     );
   }
