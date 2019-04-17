@@ -12,13 +12,7 @@ import './index.css';
 function MessageInput(props) {
   return (
     <div>
-      <input
-        {...props}
-        className="btn btn-primary"
-        type="submit"
-        value={props.textValue}
-        id={props.id}
-      />
+      <input {...props} className="btn btn-primary" type="submit" />
     </div>
   );
 }
@@ -26,6 +20,7 @@ function MessageInput(props) {
 MessageInput.propTypes = {
   textValue: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default MessageInput;

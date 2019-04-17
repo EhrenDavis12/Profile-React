@@ -5,13 +5,14 @@
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import TextInputSingleLine from '../SharedKernel/InputBoxes/TextInputSingleLine';
 import MessageInput from '../SharedKernel/InputBoxes/MessageInput';
-import SubmitButton from '../SharedKernel/Buttons/SubmitButton';
+// import SubmitButton from '../SharedKernel/Buttons/SubmitButton';
+// import Button from '../SharedKernel/Buttons/Button';
 
-function ContactBody() {
+function ContactBody(props) {
   return (
     <div className="container">
       <div className="row col-lg-12">
@@ -23,7 +24,8 @@ function ContactBody() {
         <div className="row">
           <div className="col-md-6">
             <TextInputSingleLine
-              label="Your name"
+              label={`Your name ${props.message}`}
+              // "Your name"
               placeholder="John Wick"
               id="fullName"
             />
@@ -44,13 +46,17 @@ function ContactBody() {
           />
         </div>
         <div className="row col-12">
-          <SubmitButton textValue="Submit" />
+          {/* <Button href='/results' onEnter={this.props.onEnter} handleRoute={onClickButton}>{button.defaultMessage}</Button> */}
+          {/* <SubmitButton textValue="Submit" onClick={props.postMessage} /> */}
         </div>
       </div>
     </div>
   );
 }
 
-ContactBody.propTypes = {};
+ContactBody.propTypes = {
+  // postMessage: PropTypes.func.isRequired
+  message: PropTypes.string.isRequired,
+};
 
 export default ContactBody;
