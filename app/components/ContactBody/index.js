@@ -24,7 +24,7 @@ function ContactBody(props) {
         <div className="row">
           <div className="col-md-6">
             <TextInputSingleLine
-              label={`Your name ${props.message}`}
+              label={`Your name ${props.response.data.auth0Id}`}
               // "Your name"
               placeholder="John Wick"
               id="fullName"
@@ -55,8 +55,12 @@ function ContactBody(props) {
 }
 
 ContactBody.propTypes = {
-  // postMessage: PropTypes.func.isRequired
-  message: PropTypes.string.isRequired,
+  responseTest: PropTypes.arrayOf(PropTypes.shape({})),
+  response: PropTypes.shape({
+    data: PropTypes.shape({
+      auth0Id: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default ContactBody;
