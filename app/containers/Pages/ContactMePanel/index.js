@@ -24,13 +24,15 @@ import { requestUser } from './actions';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ContactMePanel extends React.Component {
-  passProps = { ...this.props.contactMePanel.response };
-
   componentWillMount() {
     this.props.requestUser();
   }
 
   render() {
+    let ContactBodyElement;
+    if (this.props.contactMePanel.response.data) {
+      ContactBodyElement = <ContactBody {...this.props.contactMePanel} />;
+    }
     return (
       <>
         <Navigation />
@@ -38,7 +40,7 @@ export class ContactMePanel extends React.Component {
           header="Contact Me"
           subMessage="Feel free to send me a message and i will get back to you"
         />
-        <ContactBody {...this.passProps} />
+        {ContactBodyElement}
       </>
     );
   }
