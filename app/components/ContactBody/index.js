@@ -55,7 +55,7 @@ function ContactBody(props) {
 }
 
 ContactBody.propTypes = {
-  responseTest: PropTypes.arrayOf(PropTypes.shape({})),
+  // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
   response: PropTypes.shape({
     data: PropTypes.shape({
       auth0Id: PropTypes.string.isRequired,

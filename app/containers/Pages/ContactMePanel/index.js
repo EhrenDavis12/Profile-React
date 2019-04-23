@@ -7,10 +7,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+// import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import ContactBody from 'components/ContactBody';
+// import ContactBody from 'components/ContactBody';
+import PannelTest from 'components/PannelTest';
 import HeaderBar from 'components/HeaderBar';
 import Navigation from 'components/Navigation';
 
@@ -30,8 +31,14 @@ export class ContactMePanel extends React.Component {
 
   render() {
     let ContactBodyElement;
-    if (this.props.contactMePanel.response.data) {
-      ContactBodyElement = <ContactBody {...this.props.contactMePanel} />;
+    if (this.props.response.data) {
+      ContactBodyElement = (
+        <PannelTest
+          // {...this.props.contactMePanel}
+          // selectUser={user => console.log('selectUser: ', user)}
+          {...this.props}
+        />
+      );
     }
     return (
       <>
@@ -50,13 +57,16 @@ ContactMePanel.propTypes = {
   requestUser: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = createStructuredSelector({
+/* const mapStateToProps = createStructuredSelector({
   contactMePanel: makeSelectContactMePanel(),
-});
+}); */
+
+const mapStateToProps = makeSelectContactMePanel();
 
 function mapDispatchToProps(dispatch) {
   return {
     requestUser: () => dispatch(requestUser()),
+    selectUser: user => console.log('selectUser: ', user),
   };
 }
 
