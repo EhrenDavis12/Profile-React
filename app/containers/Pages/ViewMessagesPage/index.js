@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-// import ContactBody from 'components/ContactBody';
 import UserMessageBody from 'components/UserMessagesBody';
 import HeaderBar from 'components/HeaderBar';
 import Navigation from 'components/Navigation';
@@ -31,9 +30,11 @@ export class ViewMessagesPage extends React.Component {
   }
 
   render() {
-    let ContactBodyElement;
+    let userMessageBodyElement;
+    debugger;
     if (this.props.response.data) {
-      ContactBodyElement = (
+      debugger;
+      userMessageBodyElement = (
         <UserMessageBody
           // {...this.props.ViewMessagesPage}
           // selectUser={user => console.log('selectUser: ', user)}
@@ -48,7 +49,7 @@ export class ViewMessagesPage extends React.Component {
           header="Your messages are here"
           subMessage="Take a look at your recent messages"
         />
-        {ContactBodyElement}
+        {userMessageBodyElement}
       </>
     );
   }
@@ -56,6 +57,7 @@ export class ViewMessagesPage extends React.Component {
 
 ViewMessagesPage.propTypes = {
   requestUser: PropTypes.func.isRequired,
+  requestUserMessages: PropTypes.func.isRequired,
 };
 
 /* const mapStateToProps = createStructuredSelector({

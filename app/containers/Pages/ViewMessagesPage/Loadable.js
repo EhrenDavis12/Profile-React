@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for ContactMePanel
+ * Asynchronously loads the component for ViewMessagesPage
  *
  */
 

@@ -1,8 +1,8 @@
 import { fromJS } from 'immutable';
-import contactMePanelReducer from '../reducer';
+import viewMessagesPageReducer from '../reducer';
 
-describe('contactMePanelReducer', () => {
+describe('viewMessagesPageReducer', () => {
   it('returns the initial state', () => {
-    expect(contactMePanelReducer(undefined, {})).toEqual(fromJS({}));
+    expect(viewMessagesPageReducer(undefined, {})).toEqual(fromJS({}));
   });
 });

@@ -1,6 +1,6 @@
 /*
  *
- * ContactMePanel reducer
+ * ViewMessagesPage reducer
  *
  */
 
@@ -33,15 +33,17 @@ export const initialState = fromJS({
   userMessages: [],
 });
 
-function contactMePanelReducer(state = initialState, action) {
+function viewMessagesPageReducer(state = initialState, action) {
   switch (action.type) {
     case REQUEST_USER_SUCCEEDED:
+      debugger;
       return state.set('response', action.user);
     case REQUEST_USER_MESSAGES_SUCCEEDED:
+      debugger;
       return state.set('userMessages', action.userMessages.data);
     default:
       return state;
   }
 }
 
-export default contactMePanelReducer;
+export default viewMessagesPageReducer;

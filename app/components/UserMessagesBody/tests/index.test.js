@@ -2,9 +2,9 @@
 // import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 
-// import ContactBody from '../index';
+// import UserMessagesBody from '../index';
 
-describe('<ContactBody />', () => {
+describe('<UserMessagesBody />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });

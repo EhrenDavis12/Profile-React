@@ -2,9 +2,9 @@
 // import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 
-// import { ContactMePanel } from '../index';
+// import { ViewMessagesPage } from '../index';
 
-describe('<ContactMePanel />', () => {
+describe('<ViewMessagesPage />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });

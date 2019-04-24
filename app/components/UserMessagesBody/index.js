@@ -1,6 +1,6 @@
 /**
  *
- * ContactBody
+ * UserMessagesBody
  *
  */
 
@@ -9,14 +9,14 @@ import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import BasicButton from 'components/SharedKernel/Buttons/BasicButton';
 
-function ContactBody({
+function UserMessagesBody({
   // responseTest,
   response,
   userMessages,
   selectUserMessage,
 }) {
   // const { responseTest, response, selectUser } = props;
-
+  debugger;
   const dataList = userMessages.map(x => (
     <BasicButton key={x.uuid} func={selectUserMessage} obj={x}>
       subject: {x.subject}
@@ -30,7 +30,7 @@ function ContactBody({
   );
 }
 
-ContactBody.propTypes = {
+UserMessagesBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
   userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   response: PropTypes.shape({
@@ -42,4 +42,4 @@ ContactBody.propTypes = {
   selectUserMessage: PropTypes.func.isRequired,
 };
 
-export default ContactBody;
+export default UserMessagesBody;

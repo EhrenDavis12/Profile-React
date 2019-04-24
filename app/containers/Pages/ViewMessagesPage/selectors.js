@@ -2,22 +2,22 @@ import { createSelector } from 'reselect';
 import { initialState } from './reducer';
 
 /**
- * Direct selector to the contactMePanel state domain
+ * Direct selector to the ViewMessagesPage state domain
  */
 
-const selectContactMePanelDomain = state =>
-  state.get('contactMePanel', initialState);
+const selectViewMessagesPageDomain = state =>
+  state.get('ViewMessagesPage', initialState);
 
 /**
  * Other specific selectors
  */
 
 /**
- * Default selector used by ContactMePanel
+ * Default selector used by ViewMessagesPage
  */
 
-const makeSelectContactMePanel = () =>
-  createSelector(selectContactMePanelDomain, substate => substate.toJS());
+const makeSelectViewMessagesPage = () =>
+  createSelector(selectViewMessagesPageDomain, substate => substate.toJS());
 
-export default makeSelectContactMePanel;
-export { selectContactMePanelDomain };
+export default makeSelectViewMessagesPage;
+export { selectViewMessagesPageDomain };

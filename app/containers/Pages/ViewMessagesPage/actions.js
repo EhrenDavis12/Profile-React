@@ -1,6 +1,6 @@
 /*
  *
- * ContactMePanel actions
+ * ViewMessagesPage actions
  *
  */
 
