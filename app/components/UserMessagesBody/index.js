@@ -16,7 +16,6 @@ function UserMessagesBody({
   selectUserMessage,
 }) {
   // const { responseTest, response, selectUser } = props;
-  debugger;
   const dataList = userMessages.map(x => (
     <BasicButton key={x.uuid} func={selectUserMessage} obj={x}>
       subject: {x.subject}

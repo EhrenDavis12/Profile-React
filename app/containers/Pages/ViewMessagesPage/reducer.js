@@ -36,10 +36,8 @@ export const initialState = fromJS({
 function viewMessagesPageReducer(state = initialState, action) {
   switch (action.type) {
     case REQUEST_USER_SUCCEEDED:
-      debugger;
       return state.set('response', action.user);
     case REQUEST_USER_MESSAGES_SUCCEEDED:
-      debugger;
       return state.set('userMessages', action.userMessages.data);
     default:
       return state;
