@@ -31,9 +31,7 @@ export class ViewMessagesPage extends React.Component {
 
   render() {
     let userMessageBodyElement;
-    debugger;
     if (this.props.response.data) {
-      debugger;
       userMessageBodyElement = (
         <UserMessageBody
           // {...this.props.ViewMessagesPage}
