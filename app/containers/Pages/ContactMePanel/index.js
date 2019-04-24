@@ -21,12 +21,13 @@ import makeSelectContactMePanel from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import { requestUser } from './actions';
+import { requestUser, requestUserMessages } from './actions';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ContactMePanel extends React.Component {
   componentWillMount() {
     this.props.requestUser();
+    this.props.requestUserMessages();
   }
 
   render() {
@@ -66,7 +67,9 @@ const mapStateToProps = makeSelectContactMePanel();
 function mapDispatchToProps(dispatch) {
   return {
     requestUser: () => dispatch(requestUser()),
-    selectUser: user => console.log('selectUser: ', user),
+    requestUserMessages: () => dispatch(requestUserMessages()),
+    selectUserMessage: userMessage =>
+      console.log('selectUserMessage: ', userMessage),
   };
 }
 

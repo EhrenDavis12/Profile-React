@@ -7,21 +7,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
+import BasicButton from 'components/SharedKernel/Buttons/BasicButton';
 
-function ContactBody({ responseTest, response, selectUser }) {
+function ContactBody({
+  // responseTest,
+  response,
+  userMessages,
+  selectUserMessage,
+}) {
   // const { responseTest, response, selectUser } = props;
 
-  const dataList = responseTest.map(x => (
-    <div
-      key={x.uuid}
-      // onClick={() => selectUser(x)}
-      onClick={() => selectUser(x)}
-      onKeyDown={event => handleKeyPress(event, x, selectUser)}
-      role="button"
-      tabIndex={0}
-    >
-      {x.auth0Id}
-    </div>
+  const dataList = userMessages.map(x => (
+    <BasicButton key={x.uuid} func={selectUserMessage} obj={x}>
+      subject: {x.subject}
+    </BasicButton>
   ));
   return (
     <div className="container">
@@ -31,22 +30,16 @@ function ContactBody({ responseTest, response, selectUser }) {
   );
 }
 
-const handleKeyPress = (event, obj, func) => {
-  if (event.key === 'Enter') {
-    func(obj);
-  }
-};
-
 ContactBody.propTypes = {
-  responseTest: PropTypes.arrayOf(PropTypes.shape({})),
-
+  // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
+  userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   response: PropTypes.shape({
     data: PropTypes.shape({
       auth0Id: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired,
 
-  selectUser: PropTypes.func.isRequired,
+  selectUserMessage: PropTypes.func.isRequired,
 };
 
 export default ContactBody;

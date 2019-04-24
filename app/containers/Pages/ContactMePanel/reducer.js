@@ -5,7 +5,10 @@
  */
 
 import { fromJS } from 'immutable';
-import { REQUEST_USER_SUCCEEDED } from './constants';
+import {
+  REQUEST_USER_SUCCEEDED,
+  REQUEST_USER_MESSAGES_SUCCEEDED,
+} from './constants';
 
 export const initialState = fromJS({
   responseTest: [
@@ -27,12 +30,15 @@ export const initialState = fromJS({
     },
   ],
   response: {},
+  userMessages: [],
 });
 
 function contactMePanelReducer(state = initialState, action) {
   switch (action.type) {
     case REQUEST_USER_SUCCEEDED:
       return state.set('response', action.user);
+    case REQUEST_USER_MESSAGES_SUCCEEDED:
+      return state.set('userMessages', action.userMessages.data);
     default:
       return state;
   }
