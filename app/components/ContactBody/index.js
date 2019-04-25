@@ -5,14 +5,14 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import TextInputSingleLine from '../SharedKernel/InputBoxes/TextInputSingleLine';
 import MessageInput from '../SharedKernel/InputBoxes/MessageInput';
 // import SubmitButton from '../SharedKernel/Buttons/SubmitButton';
 // import Button from '../SharedKernel/Buttons/Button';
 
-function ContactBody(props) {
+function ContactBody() {
   return (
     <div className="container">
       <div className="row col-lg-12">
@@ -24,8 +24,9 @@ function ContactBody(props) {
         <div className="row">
           <div className="col-md-6">
             <TextInputSingleLine
-              label={`Your name ${props.response.data.auth0Id}`}
+              label="Your name"
               // "Your name"
+              // ${props.response.data.auth0Id}
               placeholder="John Wick"
               id="fullName"
             />
@@ -56,11 +57,11 @@ function ContactBody(props) {
 
 ContactBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
-  response: PropTypes.shape({
+  /* responseTest: PropTypes.shape({
     data: PropTypes.shape({
       auth0Id: PropTypes.string.isRequired,
     }).isRequired,
-  }).isRequired,
+  }).isRequired, */
 };
 
 export default ContactBody;

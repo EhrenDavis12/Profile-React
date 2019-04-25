@@ -1,11 +1,15 @@
 /*
  *
- * ContactMePanel reducer
+ * ViewMessagesPage reducer
  *
  */
 
 import { fromJS } from 'immutable';
-import { REQUEST_USER_SUCCEEDED } from './constants';
+import {
+  REQUEST_USER_SUCCEEDED,
+  REQUEST_USER_MESSAGES_SUCCEEDED,
+  SELECT_USER_MESSAGE,
+} from './constants';
 
 export const initialState = fromJS({
   responseTest: [
@@ -26,16 +30,22 @@ export const initialState = fromJS({
       updatedAt: '2019-04-17T02:01:41.000Z',
     },
   ],
-  response: {},
+  userData: {},
+  userMessages: [],
+  selectedUserMessage: {},
 });
 
-function contactMePanelReducer(state = initialState, action) {
+function viewMessagesPageReducer(state = initialState, action) {
   switch (action.type) {
     case REQUEST_USER_SUCCEEDED:
-      return state.set('response', action.user);
+      return state.set('userData', action.user.data);
+    case REQUEST_USER_MESSAGES_SUCCEEDED:
+      return state.set('userMessages', action.userMessages.data);
+    case SELECT_USER_MESSAGE:
+      return state.set('selectedUserMessage', action.selectedUserMessage);
     default:
       return state;
   }
 }
 
-export default contactMePanelReducer;
+export default viewMessagesPageReducer;

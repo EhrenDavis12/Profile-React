@@ -1,6 +1,6 @@
 /**
  *
- * ContactMePanel
+ * ViewMessagesPage
  *
  */
 
@@ -10,31 +10,31 @@ import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-// import ContactBody from 'components/ContactBody';
-import PannelTest from 'components/PannelTest';
+import UserMessageBody from 'components/UserMessagesBody';
 import HeaderBar from 'components/HeaderBar';
 import Navigation from 'components/Navigation';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
-import makeSelectContactMePanel from './selectors';
+import makeSelectViewMessagesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import { requestUser } from './actions';
+import { requestUser, requestUserMessages, selectUserMessage } from './actions';
 
 /* eslint-disable react/prefer-stateless-function */
-export class ContactMePanel extends React.Component {
+export class ViewMessagesPage extends React.Component {
   componentWillMount() {
     this.props.requestUser();
+    this.props.requestUserMessages();
   }
 
   render() {
-    let ContactBodyElement;
-    if (this.props.response.data) {
-      ContactBodyElement = (
-        <PannelTest
-          // {...this.props.contactMePanel}
+    let userMessageBodyElement;
+    if (this.props.userData.uuid) {
+      userMessageBodyElement = (
+        <UserMessageBody
+          // {...this.props.ViewMessagesPage}
           // selectUser={user => console.log('selectUser: ', user)}
           {...this.props}
         />
@@ -44,29 +44,31 @@ export class ContactMePanel extends React.Component {
       <>
         <Navigation />
         <HeaderBar
-          header="Contact Me"
-          subMessage="Feel free to send me a message and i will get back to you"
+          header="Your messages are here"
+          subMessage="Take a look at your recent messages"
         />
-        {ContactBodyElement}
+        {userMessageBodyElement}
       </>
     );
   }
 }
 
-ContactMePanel.propTypes = {
+ViewMessagesPage.propTypes = {
   requestUser: PropTypes.func.isRequired,
+  requestUserMessages: PropTypes.func.isRequired,
 };
 
 /* const mapStateToProps = createStructuredSelector({
-  contactMePanel: makeSelectContactMePanel(),
+  ViewMessagesPage: makeSelectViewMessagesPage(),
 }); */
 
-const mapStateToProps = makeSelectContactMePanel();
+const mapStateToProps = makeSelectViewMessagesPage();
 
 function mapDispatchToProps(dispatch) {
   return {
     requestUser: () => dispatch(requestUser()),
-    selectUser: user => console.log('selectUser: ', user),
+    requestUserMessages: () => dispatch(requestUserMessages()),
+    selectUserMessage: userMessage => dispatch(selectUserMessage(userMessage)),
   };
 }
 
@@ -75,11 +77,11 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'contactMePanel', reducer });
-const withSaga = injectSaga({ key: 'contactMePanel', saga });
+const withReducer = injectReducer({ key: 'ViewMessagesPage', reducer });
+const withSaga = injectSaga({ key: 'ViewMessagesPage', saga });
 
 export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(ContactMePanel);
+)(ViewMessagesPage);
