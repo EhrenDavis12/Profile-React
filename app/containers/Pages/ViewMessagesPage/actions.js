@@ -11,6 +11,7 @@ import {
   REQUEST_USER_MESSAGES,
   REQUEST_USER_MESSAGES_SUCCEEDED,
   REQUEST_USER_MESSAGES_FAILED,
+  SELECT_USER_MESSAGE,
 } from './constants';
 
 export function requestUser() {
@@ -50,5 +51,12 @@ export function requestUserMessagesFailed(message) {
   return {
     type: REQUEST_USER_MESSAGES_FAILED,
     message,
+  };
+}
+
+export function selectUserMessage(selectedUserMessage) {
+  return {
+    type: SELECT_USER_MESSAGE,
+    selectedUserMessage,
   };
 }

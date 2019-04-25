@@ -11,11 +11,11 @@ import BasicButton from 'components/SharedKernel/Buttons/BasicButton';
 
 function UserMessagesBody({
   // responseTest,
-  response,
+  userData,
   userMessages,
   selectUserMessage,
 }) {
-  // const { responseTest, response, selectUser } = props;
+  // const { responseTest, userData, selectUser } = props;
   const dataList = userMessages.map(x => (
     <BasicButton key={x.uuid} func={selectUserMessage} obj={x}>
       subject: {x.subject}
@@ -23,7 +23,7 @@ function UserMessagesBody({
   ));
   return (
     <div className="container">
-      <div>Your google ID is: {response.data.auth0Id}</div>
+      <div>Your google ID is: {userData.auth0Id}</div>
       {dataList}
     </div>
   );
@@ -32,10 +32,8 @@ function UserMessagesBody({
 UserMessagesBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
   userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  response: PropTypes.shape({
-    data: PropTypes.shape({
-      auth0Id: PropTypes.string.isRequired,
-    }).isRequired,
+  userData: PropTypes.shape({
+    auth0Id: PropTypes.string.isRequired,
   }).isRequired,
 
   selectUserMessage: PropTypes.func.isRequired,

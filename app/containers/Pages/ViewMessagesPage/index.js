@@ -20,7 +20,7 @@ import makeSelectViewMessagesPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
-import { requestUser, requestUserMessages } from './actions';
+import { requestUser, requestUserMessages, selectUserMessage } from './actions';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ViewMessagesPage extends React.Component {
@@ -31,7 +31,7 @@ export class ViewMessagesPage extends React.Component {
 
   render() {
     let userMessageBodyElement;
-    if (this.props.response.data) {
+    if (this.props.userData.uuid) {
       userMessageBodyElement = (
         <UserMessageBody
           // {...this.props.ViewMessagesPage}
@@ -68,8 +68,7 @@ function mapDispatchToProps(dispatch) {
   return {
     requestUser: () => dispatch(requestUser()),
     requestUserMessages: () => dispatch(requestUserMessages()),
-    selectUserMessage: userMessage =>
-      console.log('selectUserMessage: ', userMessage),
+    selectUserMessage: userMessage => dispatch(selectUserMessage(userMessage)),
   };
 }
 
