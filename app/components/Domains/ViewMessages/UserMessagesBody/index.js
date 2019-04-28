@@ -30,7 +30,7 @@ function UserMessagesBody({
   );
 
   return (
-    <div className="container">
+    <div>
       <div>Your google ID is: {userData.auth0Id}</div>
       {dataList}
     </div>

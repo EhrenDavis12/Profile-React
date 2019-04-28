@@ -12,7 +12,8 @@ import { compose } from 'redux';
 
 import UserMessageBody from 'components/Domains/ViewMessages/UserMessagesBody';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
-import Navigation from 'components/Domains/SharedKernel/Navigation';
+// import Navigation from 'components/Domains/SharedKernel/Navigation';
+import Navigation from 'containers/Domains/SharedKernel/Navigation';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
@@ -61,7 +62,6 @@ ViewMessagesPage.propTypes = {
 /* const mapStateToProps = createStructuredSelector({
   ViewMessagesPage: makeSelectViewMessagesPage(),
 }); */
-
 const mapStateToProps = makeSelectViewMessagesPage();
 
 function mapDispatchToProps(dispatch) {

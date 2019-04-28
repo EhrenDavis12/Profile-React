@@ -17,10 +17,11 @@ import ContactMePage from 'containers/Domains/ContactMe/ContactMePage/Loadable';
 import ViewMessagesPage from 'containers/Domains/ViewMessages/ViewMessagesPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
+import './styles.css';
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Switch>
         <Route exact path="/" component={AboutMePage} />
         <Route exact path="/portfolio" component={PortfolioPage} />

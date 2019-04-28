@@ -10,7 +10,8 @@
  */
 
 import React from 'react';
-import Navigation from 'components/Domains/SharedKernel/Navigation';
+// import Navigation from 'components/Domains/SharedKernel/Navigation';
+import Navigation from 'containers/Domains/SharedKernel/Navigation';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
 
 /* eslint-disable react/prefer-stateless-function */

@@ -14,7 +14,7 @@ import MessageInput from 'components/Domains/SharedKernel/InputBoxes/MessageInpu
 
 function ContactBody() {
   return (
-    <div className="container">
+    <div>
       <div className="row col-lg-12">
         <a href="https://www.linkedin.com/in/ehren-davis-ba078a2a/">
           To Indeed Profile
