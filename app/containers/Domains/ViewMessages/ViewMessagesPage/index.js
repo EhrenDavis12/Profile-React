@@ -10,9 +10,9 @@ import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import UserMessageBody from 'components/UserMessagesBody';
-import HeaderBar from 'components/HeaderBar';
-import Navigation from 'components/Navigation';
+import UserMessageBody from 'components/Domains/ViewMessages/UserMessagesBody';
+import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
+import Navigation from 'components/Domains/SharedKernel/Navigation';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';

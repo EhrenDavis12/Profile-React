@@ -10,11 +10,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import NotFoundPage from 'containers/Pages/NotFoundPage/Loadable';
-import AboutMePage from 'containers/Pages/AboutMePage/Loadable';
-import PortfolioPage from 'containers/Pages/PortfolioPage/Loadable';
-import ContactMePage from 'containers/Pages/ContactMePage/Loadable';
-import ViewMessagesPage from 'containers/Pages/ViewMessagesPage/Loadable';
+import NotFoundPage from 'containers/Domains/NotFound/NotFoundPage/Loadable';
+import AboutMePage from 'containers/Domains/AboutMe/AboutMePage/Loadable';
+import PortfolioPage from 'containers/Domains/Portfolio/PortfolioPage/Loadable';
+import ContactMePage from 'containers/Domains/ContactMe/ContactMePage/Loadable';
+import ViewMessagesPage from 'containers/Domains/ViewMessages/ViewMessagesPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
 

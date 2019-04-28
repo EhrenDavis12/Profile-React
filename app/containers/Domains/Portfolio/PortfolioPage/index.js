@@ -10,20 +10,11 @@
  */
 
 import React from 'react';
-import Navigation from 'components/Navigation';
-import HeaderBar from 'components/HeaderBar';
+import Navigation from 'components/Domains/SharedKernel/Navigation';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
-    return (
-      <>
-        <Navigation />
-        <HeaderBar
-          header="Ehren Davis"
-          subMessage="Sr. Developer at Hyland .Inc"
-        />
-      </>
-    );
+    return <Navigation />;
   }
 }

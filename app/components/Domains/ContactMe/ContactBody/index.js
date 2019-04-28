@@ -7,10 +7,10 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import TextInputSingleLine from '../SharedKernel/InputBoxes/TextInputSingleLine';
-import MessageInput from '../SharedKernel/InputBoxes/MessageInput';
-// import SubmitButton from '../SharedKernel/Buttons/SubmitButton';
-// import Button from '../SharedKernel/Buttons/Button';
+import TextInputSingleLine from 'components/Domains/SharedKernel/InputBoxes/TextInputSingleLine';
+import MessageInput from 'components/Domains/SharedKernel/InputBoxes/MessageInput';
+// import SubmitButton from 'components/Domains/SharedKernel/Buttons/SubmitButton';
+// import Button from 'components/Domains/SharedKernel/Buttons/Button';
 
 function ContactBody() {
   return (

@@ -10,9 +10,9 @@
  */
 
 import React from 'react';
-import Navigation from 'components/Navigation';
-import HeaderBar from 'components/HeaderBar';
-import ContactBody from 'components/ContactBody';
+import Navigation from 'components/Domains/SharedKernel/Navigation';
+import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
+import ContactBody from 'components/Domains/ContactMe/ContactBody';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
