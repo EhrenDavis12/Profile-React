@@ -7,7 +7,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import BasicButton from 'components/SharedKernel/Buttons/BasicButton';
+import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
 
 function UserMessagesBody({
   // responseTest,
