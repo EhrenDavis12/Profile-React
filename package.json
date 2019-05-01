@@ -61,6 +61,7 @@
   "dependencies": {
     "@babel/polyfill": "7.0.0",
     "chalk": "^2.4.1",
+    "classnames": "^2.2.6",
     "compression": "1.7.3",
     "connected-react-router": "4.5.0",
     "cross-env": "5.2.0",
@@ -83,6 +84,7 @@
     "react-intl": "2.7.2",
     "react-redux": "5.0.7",
     "react-router-dom": "4.3.1",
+    "react-router-redux": "^4.0.8",
     "redux": "4.0.1",
     "redux-immutable": "4.0.0",
     "redux-saga": "0.16.2",

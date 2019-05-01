@@ -7,14 +7,14 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import TextInputSingleLine from 'components/Domains/SharedKernel/InputBoxes/TextInputSingleLine';
-import MessageInput from 'components/Domains/SharedKernel/InputBoxes/MessageInput';
+import TextInputSingleLine from 'components/Domains/SharedKernel/Inputs/InputBoxes/TextInputSingleLine';
+import MessageInput from 'components/Domains/SharedKernel/Inputs/InputBoxes/MessageInput';
 // import SubmitButton from 'components/Domains/SharedKernel/Buttons/SubmitButton';
 // import Button from 'components/Domains/SharedKernel/Buttons/Button';
 
 function ContactBody() {
   return (
-    <div className="container">
+    <div>
       <div className="row col-lg-12">
         <a href="https://www.linkedin.com/in/ehren-davis-ba078a2a/">
           To Indeed Profile

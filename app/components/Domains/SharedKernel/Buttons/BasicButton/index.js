@@ -22,6 +22,7 @@ function button(props) {
       onKeyDown={event => handleKeyPress(event, props.obj || null, props.func)}
       role="button"
       tabIndex={0}
+      className={props.className}
     >
       {Children.toArray(props.children)}
     </div>
@@ -32,6 +33,7 @@ button.propTypes = {
   func: PropTypes.func.isRequired,
   obj: PropTypes.shape(),
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };
 
 export default button;

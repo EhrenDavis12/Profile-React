@@ -13,7 +13,10 @@ function MessageDetails({ selectedUserMessage }) {
   return (
     <div className="MD-Box">
       <div className="subject">subject: {subject}</div>
-      <div className="createdAt">Sent At: {createdAt}</div>
+      <div className="date">Date: {createdAt.replace(/T.*/, '')}</div>
+      <div className="time">
+        Time: {createdAt.replace(/.*T/, '').replace(/\.\d*Z/, '')}
+      </div>
       <div className="Message">Message: {message}</div>
     </div>
   );
