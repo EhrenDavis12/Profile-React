@@ -11,7 +11,7 @@
 
 import React from 'react';
 // import Navigation from 'components/Domains/SharedKernel/Navigation';
-import Navigation from 'containers/Domains/SharedKernel/Navigation';
+import Navigation from 'containers/Domains/Navigations/Navigation';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
 import ContactBody from 'components/Domains/ContactMe/ContactBody';
 

@@ -18,9 +18,6 @@ function AppBar({ toggleDrawer }) {
       <BasicButton className="iconButton" func={toggleDrawer}>
         <FontAwesome className="icon" name="bars" />
       </BasicButton>
-      {/* <div className="iconButton">
-        <FontAwesome className="icon" name="bars" />
-      </div> */}
       <div className="heading">Coder Daily</div>
       <div className="linkContainer">Log In</div>
     </div>

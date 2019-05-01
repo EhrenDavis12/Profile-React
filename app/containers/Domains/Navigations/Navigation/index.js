@@ -7,25 +7,25 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+// import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-// import NavigationComponents from 'components/Domains/SharedKernel/Navigation';
-import AppBar from 'components/Domains/SharedKernel/AppBar';
+import NavigationBody from 'components/Domains/Navigation/NavigationBody';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 import makeSelectNavigation from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import { toggleDrawer } from './actions';
+import { toggleDrawer, selectLink } from './actions';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <AppBar {...this.props} />
+        hello
+        <NavigationBody {...this.props} />
       </div>
     );
   }
@@ -35,14 +35,15 @@ Navigation.propTypes = {
   // dispatch: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = createStructuredSelector({
-  navigation: makeSelectNavigation(),
-});
-// const mapStateToProps = createStructuredSelector();
+/* const mapStateToProps = createStructuredSelector({
+  Navigation: makeSelectNavigation(),
+}); */
+const mapStateToProps = makeSelectNavigation();
 
 function mapDispatchToProps(dispatch) {
   return {
     toggleDrawer: () => dispatch(toggleDrawer()),
+    selectItem: linkSelected => dispatch(selectLink(linkSelected)),
   };
 }
 
@@ -51,8 +52,8 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'navigation', reducer });
-const withSaga = injectSaga({ key: 'navigation', saga });
+const withReducer = injectReducer({ key: 'Navigation', reducer });
+const withSaga = injectSaga({ key: 'Navigation', saga });
 
 export default compose(
   withReducer,
