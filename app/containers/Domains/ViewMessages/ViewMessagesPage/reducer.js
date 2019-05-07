@@ -8,7 +8,6 @@ import { fromJS } from 'immutable';
 import {
   REQUEST_USER_SUCCEEDED,
   REQUEST_USER_MESSAGES_SUCCEEDED,
-  SELECT_USER_MESSAGE,
 } from './constants';
 
 export const initialState = fromJS({
@@ -32,7 +31,6 @@ export const initialState = fromJS({
   ],
   userData: {},
   userMessages: [],
-  selectedUserMessage: {},
 });
 
 function viewMessagesPageReducer(state = initialState, action) {
@@ -41,8 +39,6 @@ function viewMessagesPageReducer(state = initialState, action) {
       return state.set('userData', action.user.data);
     case REQUEST_USER_MESSAGES_SUCCEEDED:
       return state.set('userMessages', action.userMessages.data);
-    case SELECT_USER_MESSAGE:
-      return state.set('selectedUserMessage', action.selectedUserMessage);
     default:
       return state;
   }

@@ -6,8 +6,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 // import styled from 'styled-components';
-import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
+// import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
 import MessageDetails from 'components/Domains/ViewMessages/MessageDetails';
 
 function UserMessagesBody({
@@ -15,10 +16,10 @@ function UserMessagesBody({
   userData,
   userMessages,
   selectUserMessage,
-  selectedUserMessage,
+  // selectedUserMessage,
 }) {
   // const { responseTest, userData, selectUser } = props;
-  const dataList = userMessages.map(
+  /* const dataList = userMessages.map(
     x =>
       selectedUserMessage && x.uuid === selectedUserMessage.uuid ? (
         <MessageDetails key={x.uuid} selectedUserMessage={x} />
@@ -27,7 +28,17 @@ function UserMessagesBody({
           subject: {x.subject}
         </BasicButton>
       ),
-  );
+  ); */
+  let dataList;
+  if (userMessages) {
+    dataList = userMessages.map(x => (
+      <MessageDetails
+        key={x.uuid}
+        userMessage={x}
+        selectUserMessage={selectUserMessage}
+      />
+    ));
+  }
 
   return (
     <div>
@@ -40,7 +51,7 @@ function UserMessagesBody({
 UserMessagesBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
   userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  selectedUserMessage: PropTypes.shape({}),
+  // selectedUserMessage: PropTypes.shape({}),
   userData: PropTypes.shape({
     auth0Id: PropTypes.string.isRequired,
   }).isRequired,

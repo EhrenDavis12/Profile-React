@@ -20,3 +20,21 @@ export function* fetchApi(path, successAction, failureAction) {
     yield put(failureAction(...e.message));
   }
 }
+
+export function* fetchApiMiddleMan(
+  path,
+  middleWareFunction,
+  successAction,
+  failureAction,
+) {
+  try {
+    // eslint-disable-next-line prefer-const
+    let { data, err } = yield call(fetchJson, `//${path}`);
+    if (middleWareFunction) data = yield call(middleWareFunction, data);
+    if (data) {
+      yield put(successAction(data));
+    } else yield put(failureAction(...err.message));
+  } catch (e) {
+    yield put(failureAction(...e.message));
+  }
+}
