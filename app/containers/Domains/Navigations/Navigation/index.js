@@ -24,7 +24,6 @@ export class Navigation extends React.Component {
   render() {
     return (
       <div>
-        hello
         <NavigationBody {...this.props} />
       </div>
     );
