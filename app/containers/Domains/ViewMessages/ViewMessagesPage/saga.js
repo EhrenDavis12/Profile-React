@@ -1,19 +1,19 @@
 // import { take, call, put, select } from 'redux-saga/effects';
-import { takeLatest, call, all } from 'redux-saga/effects';
+import { takeLatest, call, all, select, put } from 'redux-saga/effects';
 import { fetchApi, fetchApiMiddleMan } from 'utils/sagaUtiles';
+import { makeSelectUserMessages } from './selectors';
 import {
   REQUEST_USER,
   REQUEST_USER_MESSAGES,
-  // SELECT_USER_MESSAGE,
-  // REQUEST_USER_MESSAGES_SUCCEEDED,
+  SELECT_USER_MESSAGE,
 } from './constants';
 import {
   requestUserSucceeded,
   requestUserFailed,
   requestUserMessagesSucceeded,
   requestUserMessagesFailed,
-  // selectUserMessageSucceeded,
-  // selectUserMessageFailed,
+  selectUserMessageSucceeded,
+  selectUserMessageFailed,
 } from './actions';
 
 function* fetchUserStart() {
@@ -61,14 +61,13 @@ async function formatUserMessageStart(response) {
   return response;
 }
 
-/* 
-function* selectedUserMessagesStart(selectedUserMessage) {
+function* selectedUserMessagesStart(action) {
   try {
-    const newUserMessages = yield select('userMessages').map(
-      x =>
-        selectedUserMessage && x.uuid === selectedUserMessage.uuid
-          ? { ...x, show: !x.show }
-          : { ...x, show: x.show },
+    const userMessages = yield select(makeSelectUserMessages());
+    const newUserMessages = yield call(
+      flipMessageDisplay,
+      userMessages,
+      action.selectedUserMessage.uuid,
     );
     if (newUserMessages) yield put(selectUserMessageSucceeded(newUserMessages));
   } catch (e) {
@@ -76,16 +75,21 @@ function* selectedUserMessagesStart(selectedUserMessage) {
   }
 }
 
+async function flipMessageDisplay(dataArray, uuid) {
+  const data = await dataArray.map(
+    x => (x.uuid === uuid ? { ...x, show: !x.show } : { ...x, show: x.show }),
+  );
+  return data;
+}
+
 function* selectedUserMessagesSaga() {
   yield takeLatest(SELECT_USER_MESSAGE, selectedUserMessagesStart);
-} */
-
-// export default { fetchUserSaga, fetchUserMessagesSaga };
+}
 
 export default function* rootSaga() {
   yield all([
     fetchUserSaga(),
     fetchUserMessagesSaga(),
-    // selectedUserMessagesSaga(),
+    selectedUserMessagesSaga(),
   ]);
 }

@@ -11,13 +11,29 @@ const selectViewMessagesPageDomain = state =>
 /**
  * Other specific selectors
  */
+// const selectUserMessages = state => state.get('userMessages', initialState);
+// export const getUserMessages = state => state.userMessages;
 
 /**
  * Default selector used by ViewMessagesPage
  */
 
 const makeSelectViewMessagesPage = () =>
-  createSelector(selectViewMessagesPageDomain, substate => substate.toJS());
+  createSelector(selectViewMessagesPageDomain, subState => subState.toJS());
+
+const makeSelectUserMessages = () =>
+  createSelector(selectViewMessagesPageDomain, subState =>
+    subState.get('userMessages'),
+  );
+
+/*   const getUserMessages = () => state => state.userMessages;
+const makeSelectViewMessagesPage = () =>
+  createSelector(
+    selectViewMessagesPageDomain,
+    getUserMessages(),
+    (substate, userMessages) =>
+      Object.assign(substate.toJS(), { userMessages }),
+  ); */
 
 export default makeSelectViewMessagesPage;
-export { selectViewMessagesPageDomain };
+export { selectViewMessagesPageDomain, makeSelectUserMessages };

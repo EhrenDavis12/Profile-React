@@ -63,10 +63,10 @@ export function selectUserMessage(selectedUserMessage) {
   };
 }
 
-export function selectUserMessageSucceeded(messageList) {
+export function selectUserMessageSucceeded(userMessages) {
   return {
     type: SELECT_USER_MESSAGE_SUCCEEDED,
-    messageList,
+    userMessages,
   };
 }
 

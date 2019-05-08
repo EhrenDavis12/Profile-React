@@ -8,11 +8,7 @@
  */
 
 .Message {
-  position: fixed;
-  top: 0;
-  left: -300px;
-  height: 100%;
-  width: 300px;
+  display: none;
   background: #fff;
   padding: 0px;
   transition: 0.25s ease-in-out;
@@ -21,7 +17,7 @@
 }
 
 .MessageShow {
-  left: 0;
+  display: block;
 }
 
 .MD-Box {
@@ -32,4 +28,8 @@
     rgba(0, 0, 0, 0.117647) 0px 1px 4px;
   padding: 10px;
   margin-top: 20px;
+}
+
+.MD-Box:hover {
+  background-color: #f6f6f6;
 }
