@@ -1,6 +1,10 @@
 // import { take, call, put, select } from 'redux-saga/effects';
-import { takeLatest, call, all, select, put } from 'redux-saga/effects';
-import { fetchApi, fetchApiMiddleMan } from 'utils/sagaUtiles';
+import { takeLatest, call, all } from 'redux-saga/effects';
+import {
+  fetchApi,
+  fetchApiMiddleMan,
+  fetchStateWithMethodSave,
+} from 'utils/sagaUtiles';
 import { makeSelectUserMessages } from './selectors';
 import {
   REQUEST_USER,
@@ -62,24 +66,26 @@ async function formatUserMessageStart(response) {
 }
 
 function* selectedUserMessagesStart(action) {
-  try {
-    const userMessages = yield select(makeSelectUserMessages());
-    const newUserMessages = yield call(
-      flipMessageDisplay,
-      userMessages,
-      action.selectedUserMessage.uuid,
-    );
-    if (newUserMessages) yield put(selectUserMessageSucceeded(newUserMessages));
-  } catch (e) {
-    yield put(selectUserMessageFailed(...e.message));
-  }
+  yield call(
+    fetchStateWithMethodSave,
+    makeSelectUserMessages,
+    flipMessageDisplay,
+    {
+      uuid: action.selectedUserMessage.uuid,
+    },
+    selectUserMessageSucceeded,
+    selectUserMessageFailed,
+  );
 }
 
-async function flipMessageDisplay(dataArray, uuid) {
-  const data = await dataArray.map(
-    x => (x.uuid === uuid ? { ...x, show: !x.show } : { ...x, show: x.show }),
+async function flipMessageDisplay(data, paramObject) {
+  const result = await data.map(
+    x =>
+      x.uuid === paramObject.uuid
+        ? { ...x, show: !x.show }
+        : { ...x, show: x.show },
   );
-  return data;
+  return result;
 }
 
 function* selectedUserMessagesSaga() {

@@ -1,4 +1,4 @@
-import { call, put } from 'redux-saga/effects';
+import { call, put, select } from 'redux-saga/effects';
 
 export async function fetchJson(url) {
   let resp;
@@ -34,6 +34,28 @@ export function* fetchApiMiddleMan(
     if (data) {
       yield put(successAction(data));
     } else yield put(failureAction(...err.message));
+  } catch (e) {
+    yield put(failureAction(...e.message));
+  }
+}
+
+export function* fetchStateWithMethodSave(
+  makeSelectPropFromState,
+  middleWareFunction,
+  additionalPrams,
+  successAction,
+  failureAction,
+) {
+  try {
+    const selectedProp = yield select(makeSelectPropFromState());
+    const storedProp = yield call(
+      middleWareFunction,
+      selectedProp,
+      additionalPrams,
+    );
+    if (storedProp) {
+      yield put(successAction(storedProp));
+    }
   } catch (e) {
     yield put(failureAction(...e.message));
   }
