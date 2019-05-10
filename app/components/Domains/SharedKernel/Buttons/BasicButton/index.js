@@ -7,7 +7,7 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import './index.css';
+import './styles.css';
 
 function button(props) {
   const handleKeyPress = (event, obj, func) => {

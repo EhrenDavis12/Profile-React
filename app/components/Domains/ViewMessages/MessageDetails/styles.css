@@ -1,17 +1,8 @@
-/* .Message {
-  visibility: hidden;
-}
-
-.MessageShow {
-  visibility: show;
-}
- */
-
 .Message {
   display: none;
   background: #fff;
   padding: 0px;
-  transition: 0.25s ease-in-out;
+  /* transition: 0.25s ease-in-out; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px, rgba(0, 0, 0, 0.22) 0px 3px 10px;
   z-index: 1000;
 }
@@ -22,14 +13,19 @@
 
 .MD-Box {
   background-color: #fff;
-  display: flex;
+  /* display: flex; */
   margin-bottom: 10px;
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
-    rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px rgba(0, 0, 0, 0.117647) 0px
+    1px 4px;
   padding: 10px;
   margin-top: 20px;
 }
 
 .MD-Box:hover {
   background-color: #f6f6f6;
+}
+
+.date,
+.time {
+  text-align: right;
 }
