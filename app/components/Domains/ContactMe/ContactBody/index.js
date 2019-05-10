@@ -25,7 +25,12 @@ class ContactBody extends React.Component {
     }
     this.setState({ errorText: null });
 
-    this.props.submitMessageForm(email);
+    this.props.submitMessageForm({
+      contactInfo: email,
+      userUuid: '2f67b460-6469-11e9-b132-2b223266dc25',
+      subject: this.subjectField.value,
+      message: this.messageField.value,
+    });
   };
 
   clear = () => {
@@ -40,7 +45,6 @@ class ContactBody extends React.Component {
     ) : null;
     return (
       <div className="messageForm">
-        <div className="heading">ContactForm</div>
         <input
           className={classNames('input', {
             inputError: this.state.errorText,
@@ -57,6 +61,14 @@ class ContactBody extends React.Component {
           placeholder="Subject"
           ref={f => {
             this.subjectField = f;
+          }}
+          type="text"
+        />
+        <textarea
+          className="inputLargeText"
+          placeholder="Your Message"
+          ref={f => {
+            this.messageField = f;
           }}
           type="text"
         />

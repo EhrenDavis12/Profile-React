@@ -11,7 +11,10 @@ const selectContactMePageDomain = state =>
 /**
  * Other specific selectors
  */
-
+const makeSelectMessageForm = () =>
+  createSelector(selectContactMePageDomain, subState =>
+    subState.get('messageForm'),
+  );
 /**
  * Default selector used by ContactMePage
  */
@@ -20,4 +23,4 @@ const makeSelectContactMePage = () =>
   createSelector(selectContactMePageDomain, substate => substate.toJS());
 
 export default makeSelectContactMePage;
-export { selectContactMePageDomain };
+export { selectContactMePageDomain, makeSelectMessageForm };

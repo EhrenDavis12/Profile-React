@@ -48,7 +48,7 @@ const mapStateToProps = makeSelectContactMePage();
 
 function mapDispatchToProps(dispatch) {
   return {
-    submitMessageForm: email => dispatch(submitMessageForm(email)),
+    submitMessageForm: messageForm => dispatch(submitMessageForm(messageForm)),
   };
 }
 

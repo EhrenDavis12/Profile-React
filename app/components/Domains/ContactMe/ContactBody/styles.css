@@ -5,7 +5,7 @@
   width: 320px;
   padding: 25px;
   border-radius: 2px;
-  margin: 100px auto;
+  margin: 10px auto;
 }
 
 .heading {
@@ -24,6 +24,17 @@
   border-left: 0;
   width: 100%;
   font-size: 18px;
+}
+
+.inputLargeText {
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  width: 100%;
+  font-size: 11px;
+  height: 300px;
+  vertical-align: text-top;
 }
 
 .actionContainer {
