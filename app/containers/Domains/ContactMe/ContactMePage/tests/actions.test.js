@@ -1,4 +1,4 @@
-import { defaultAction } from '../actions';
+/* import { defaultAction } from '../actions';
 import { DEFAULT_ACTION } from '../constants';
 
 describe('ContactMePage actions', () => {
@@ -10,4 +10,4 @@ describe('ContactMePage actions', () => {
       expect(defaultAction()).toEqual(expected);
     });
   });
-});
+}); */
