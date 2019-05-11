@@ -23,7 +23,9 @@ function MessageDetails({ userMessage, selectUserMessage }) {
           Time: {createdAt.replace(/.*T/, '').replace(/\.\d*Z/, '')}
         </div>
         <div
-          className={classNames('Message', { MessageShow: userMessage.show })}
+          className={classNames('Message wordWrap', {
+            MessageShow: userMessage.show,
+          })}
         >
           Message: {message}
         </div>

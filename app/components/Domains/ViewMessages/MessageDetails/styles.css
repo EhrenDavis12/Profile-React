@@ -5,6 +5,7 @@
   /* transition: 0.25s ease-in-out; */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px, rgba(0, 0, 0, 0.22) 0px 3px 10px;
   z-index: 1000;
+  font-size: 12px;
 }
 
 .MessageShow {
@@ -29,10 +30,10 @@
 .date,
 .time {
   text-align: right;
+  font-size: 14px;
 }
 
-.wordWrap,
-.MessageShow {
+.wordWrap {
   white-space: pre-wrap; /* CSS3 */
   white-space: -moz-pre-wrap; /* Firefox */
   white-space: -pre-wrap; /* Opera <7 */
