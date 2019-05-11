@@ -2,9 +2,9 @@
 // import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 
-// import { ContactMePage } from '../index';
+// import Expire from '../index';
 
-describe('<ContactMePage />', () => {
+describe('<Expire />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });

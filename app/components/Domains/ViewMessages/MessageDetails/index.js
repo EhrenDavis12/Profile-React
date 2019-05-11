@@ -10,19 +10,22 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import classNames from 'classnames';
 import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
+import { timeClass, dateClass, subjectClass } from './Wrapper';
 
 function MessageDetails({ userMessage, selectUserMessage }) {
   const { subject, createdAt, message } = userMessage;
   return (
     <div className="MD-Box">
       <BasicButton func={selectUserMessage} obj={userMessage}>
-        <div className="subject">subject: {subject}</div>
-        <div className="date">Date: {createdAt.replace(/T.*/, '')}</div>
-        <div className="time">
+        <div className={subjectClass}>subject: {subject}</div>
+        <div className={dateClass}>Date: {createdAt.replace(/T.*/, '')}</div>
+        <div className={timeClass}>
           Time: {createdAt.replace(/.*T/, '').replace(/\.\d*Z/, '')}
         </div>
         <div
-          className={classNames('Message', { MessageShow: userMessage.show })}
+          className={classNames('Message wordWrap', {
+            MessageShow: userMessage.show,
+          })}
         >
           Message: {message}
         </div>

@@ -5,54 +5,84 @@
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
-import TextInputSingleLine from 'components/Domains/SharedKernel/Inputs/InputBoxes/TextInputSingleLine';
-import MessageInput from 'components/Domains/SharedKernel/Inputs/InputBoxes/MessageInput';
-// import SubmitButton from 'components/Domains/SharedKernel/Buttons/SubmitButton';
-// import Button from 'components/Domains/SharedKernel/Buttons/Button';
 
-function ContactBody() {
-  return (
-    <div>
-      <div className="row col-lg-12">
-        <a href="https://www.linkedin.com/in/ehren-davis-ba078a2a/">
-          To Indeed Profile
-        </a>
+import PropTypes from 'prop-types';
+import './styles.css';
+// import styled from 'styled-components';
+import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
+import validator from 'email-validator';
+import classNames from 'classnames';
+
+// function ContactBody() {
+class ContactBody extends React.Component {
+  state = {};
+
+  submit = () => {
+    const email = this.clientEmailField.value;
+    if (!validator.validate(email)) {
+      this.setState({ errorText: 'Please provide a valid email' });
+      return;
+    }
+    this.setState({ errorText: null });
+
+    this.props.submitMessageForm({
+      contactInfo: email,
+      userUuid: '2f67b460-6469-11e9-b132-2b223266dc25',
+      subject: this.subjectField.value,
+      message: this.messageField.value,
+    });
+  };
+
+  clear = () => {
+    this.setState({ errorText: '' });
+    this.clientEmailField.value = '';
+    this.subjectField.value = '';
+  };
+
+  render() {
+    const fieldError = this.state.errorText ? (
+      <div className="errorMessage">{this.state.errorText}</div>
+    ) : null;
+    return (
+      <div className="messageForm">
+        <input
+          className={classNames('input', {
+            inputError: this.state.errorText,
+          })}
+          placeholder="Your Email"
+          ref={f => {
+            this.clientEmailField = f;
+          }}
+          type="text"
+        />
+        {fieldError}
+        <input
+          className="input"
+          placeholder="Subject"
+          ref={f => {
+            this.subjectField = f;
+          }}
+          type="text"
+        />
+        <textarea
+          className="inputLargeText"
+          placeholder="Your Message"
+          ref={f => {
+            this.messageField = f;
+          }}
+          type="text"
+        />
+        <div className="actionContainer">
+          <BasicButton className="button" func={this.clear}>
+            Clear
+          </BasicButton>
+          <BasicButton className="button" func={this.submit}>
+            Submit
+          </BasicButton>
+        </div>
       </div>
-      <div className="email_form">
-        <div className="row">
-          <div className="col-md-6">
-            <TextInputSingleLine
-              label="Your name"
-              // "Your name"
-              // ${props.response.data.auth0Id}
-              placeholder="John Wick"
-              id="fullName"
-            />
-          </div>
-        </div>
-        <div className="row col-12">
-          <TextInputSingleLine
-            label="Email address"
-            placeholder="example@Gmail.com"
-            id="emailAddress"
-          />
-        </div>
-        <div className="row col-12">
-          <MessageInput
-            label="Please leave a message"
-            id="email_message"
-            rows="4"
-          />
-        </div>
-        <div className="row col-12">
-          {/* <Button href='/results' onEnter={this.props.onEnter} handleRoute={onClickButton}>{button.defaultMessage}</Button> */}
-          {/* <SubmitButton textValue="Submit" onClick={props.postMessage} /> */}
-        </div>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 ContactBody.propTypes = {
@@ -62,6 +92,7 @@ ContactBody.propTypes = {
       auth0Id: PropTypes.string.isRequired,
     }).isRequired,
   }).isRequired, */
+  submitMessageForm: PropTypes.func.isRequired,
 };
 
 export default ContactBody;
