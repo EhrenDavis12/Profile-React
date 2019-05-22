@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppBar /> renders as expected 1`] = `
+<div
+  className="appBar"
+>
+  <div
+    className="iconButton"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-bars icon"
+    />
+  </div>
+  <div
+    className="heading"
+  >
+    Coder Daily
+  </div>
+  <div
+    className="linkContainer"
+  >
+    Log In
+  </div>
+</div>
+`;

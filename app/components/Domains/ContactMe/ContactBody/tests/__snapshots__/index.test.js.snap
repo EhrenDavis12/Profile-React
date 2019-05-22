@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactBody /> renders as expected 1`] = `
+<div
+  className="messageForm"
+>
+  <input
+    className="input"
+    placeholder="Your Email"
+    type="text"
+  />
+  <input
+    className="input"
+    placeholder="Subject"
+    type="text"
+  />
+  <textarea
+    className="inputLargeText"
+    placeholder="Your Message"
+    type="text"
+  />
+  <div
+    className="actionContainer"
+  >
+    <div
+      className="button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Clear
+    </div>
+    <div
+      className="button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Submit
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ContactBody renders as expected 1`] = `
+<div
+  className="messageForm"
+>
+  <input
+    className="input"
+    placeholder="Your Email"
+    type="text"
+  />
+  <input
+    className="input"
+    placeholder="Subject"
+    type="text"
+  />
+  <textarea
+    className="inputLargeText"
+    placeholder="Your Message"
+    type="text"
+  />
+  <div
+    className="actionContainer"
+  >
+    <div
+      className="button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Clear
+    </div>
+    <div
+      className="button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Submit
+    </div>
+  </div>
+</div>
+`;

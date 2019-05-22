@@ -15,7 +15,7 @@ function AppBar({ toggleDrawer }) {
   // return <div className={styles.appBar}>coder daily</div>;
   return (
     <div className="appBar">
-      <BasicButton className="iconButton" func={toggleDrawer}>
+      <BasicButton className="iconButton" onClick={toggleDrawer}>
         <FontAwesome className="icon" name="bars" />
       </BasicButton>
       <div className="heading">Coder Daily</div>

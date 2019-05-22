@@ -73,10 +73,10 @@ class ContactBody extends React.Component {
           type="text"
         />
         <div className="actionContainer">
-          <BasicButton className="button" func={this.clear}>
+          <BasicButton className="button" onClick={this.clear}>
             Clear
           </BasicButton>
-          <BasicButton className="button" func={this.submit}>
+          <BasicButton className="button" onClick={this.submit}>
             Submit
           </BasicButton>
         </div>
