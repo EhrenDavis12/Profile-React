@@ -3,46 +3,67 @@ import React from 'react';
 // import { enzymeFind } from 'styled-components/test-utils';
 
 import { shallow } from 'enzyme';
+
+import renderer from 'react-test-renderer';
 import Drawer from '../index';
 
-const testProps = {
-  items: [1, 2, 3], // array.isRequired
-  selectItem: x => x, // func.isRequired
-  itemLabelAttr: 'itemLabelAttr', // string.isRequired
-  itemKeyAttr: 'itemKeyAttr', // string.isRequired
-  isDrawerOpen: true, // bool.isRequired
+const testData = {
+  items: [
+    {
+      key: 'AboutMe',
+      LinkTo: '/',
+      DisplayName: 'About Me',
+    },
+    {
+      key: 'Portfolio',
+      LinkTo: '/portfolio',
+      DisplayName: 'Portfolio',
+    },
+  ],
+  selectItem: () => true,
+  itemLabelAttr: 'DisplayName',
+  itemKeyAttr: 'key',
+  isDrawerOpen: false,
 };
-const renderComponent = (props = testProps) => shallow(<Drawer {...props} />);
+const renderComponent = mockData => shallow(<Drawer {...mockData} />);
 
 describe('<Drawer />', () => {
-  it('should have items attribute', () => {
-    const renderedComponent = renderComponent();
-    expect(renderedComponent.prop('items')).toEqual(testProps.items);
+  it('should have className for closed drawer', () => {
+    const renderedComponent = renderComponent(testData);
+    expect(renderedComponent.prop('className')).toEqual('drawer');
   });
 
-  it('should have selectItem attribute', () => {
-    const renderedComponent = renderComponent();
-    expect(renderedComponent.prop('selectItem')).toEqual(testProps.selectItem);
+  it('should have className for open drawer', () => {
+    const renderedComponent = renderComponent({
+      ...testData,
+      isDrawerOpen: true,
+    });
+    expect(renderedComponent.prop('className')).toEqual('drawer drawerOpen');
   });
 
-  it('should have itemLabelAttr attribute', () => {
-    const renderedComponent = renderComponent();
-    expect(renderedComponent.prop('itemLabelAttr')).toEqual(
-      testProps.itemLabelAttr,
-    );
+  it('should have children', () => {
+    const renderedComponent = renderComponent(testData);
+    expect(renderedComponent.prop('children').length).toEqual(2);
   });
 
-  it('should have itemKeyAttr attribute', () => {
-    const renderedComponent = renderComponent();
-    expect(renderedComponent.prop('itemKeyAttr')).toEqual(
-      testProps.itemKeyAttr,
-    );
-  });
-
-  it('should have isDrawerOpen attribute', () => {
-    const renderedComponent = renderComponent();
-    expect(renderedComponent.prop('isDrawerOpen')).toEqual(
-      testProps.isDrawerOpen,
-    );
+  it('Children should handle click events', () => {
+    const mockCallBack = jest.fn(() => true);
+    const propsData = {
+      ...testData,
+      selectItem: mockCallBack,
+      isDrawerOpen: true,
+    };
+    // const renderedComponent = renderComponent({ ...propsData });
+    const tree = renderer.create(<Drawer {...propsData} />);
+    /* console.log(JSON.stringify(tree));
+    console.log(
+      tree.root.findByProps({ className: 'drawer drawerOpen' }).children[0]
+        .props,
+    ); */
+    tree.root
+      .findByProps({ className: 'drawer drawerOpen' })
+      .children[0].props.onClick();
+    expect(mockCallBack.mock.calls.length).toEqual(1);
+    // console.log(mockCallBack.mock.calls.length);
   });
 });
