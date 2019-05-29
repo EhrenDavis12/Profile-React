@@ -1,11 +1,30 @@
-// import React from 'react';
-// import { mount } from 'enzyme';
+import React from 'react';
+// import { shallow } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
+import renderer from 'react-test-renderer';
 
-// import Result from '../index';
+import ResultBanner from '../index';
 
-describe('<Result />', () => {
-  it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(false);
+const testData = {
+  resultClass: 'testClass',
+  message: 'test message here',
+};
+
+const renderComponent = mockData =>
+  renderer.create(<ResultBanner {...mockData} />);
+
+describe('<ResultBanner />', () => {
+  it('should have children with message', () => {
+    const instance = renderComponent(testData).root;
+    const component = instance.findByProps({
+      className: testData.resultClass,
+    });
+    const text = component.children[0];
+    expect(text).toEqual(testData.message);
+  });
+
+  it('renders as expected', () => {
+    const tree = renderComponent(testData).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
