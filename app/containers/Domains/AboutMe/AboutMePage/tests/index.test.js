@@ -1,15 +1,22 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 import { shallow } from 'enzyme';
 
-import HomePage from '../index';
-import messages from '../messages';
+import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
+import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
+import AboutMePage from '../index';
 
-describe('<HomePage />', () => {
+describe('<AboutMePage />', () => {
   it('should render the page message', () => {
-    const renderedComponent = shallow(<HomePage />);
+    const renderedComponent = shallow(<AboutMePage />);
+    expect(renderedComponent.contains(<Navigation />)).toEqual(true);
     expect(
-      renderedComponent.contains(<FormattedMessage {...messages.header} />),
+      renderedComponent.contains(
+        <HeaderBar
+          header="Ehren Davis"
+          subMessage="Sr. Developer at Hyland .Inc"
+        />,
+      ),
     ).toEqual(true);
   });
 });
