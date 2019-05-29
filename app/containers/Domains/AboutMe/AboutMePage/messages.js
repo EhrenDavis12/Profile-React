@@ -5,11 +5,15 @@
  */
 import { defineMessages } from 'react-intl';
 
-export const scope = 'app.containers.HomePage';
+export const scope = 'app.containers.Domains.AboutMe.AboutMePage';
 
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'This is the HomePage container!',
+    defaultMessage: 'Ehren Davis',
+  },
+  subMessage: {
+    id: `${scope}.subMessage`,
+    defaultMessage: 'Sr. Developer at Hyland .Inc!',
   },
 });
