@@ -53,17 +53,10 @@ describe('<Drawer />', () => {
       selectItem: mockCallBack,
       isDrawerOpen: true,
     };
-    // const renderedComponent = renderComponent({ ...propsData });
     const tree = renderer.create(<Drawer {...propsData} />);
-    /* console.log(JSON.stringify(tree));
-    console.log(
-      tree.root.findByProps({ className: 'drawer drawerOpen' }).children[0]
-        .props,
-    ); */
     tree.root
       .findByProps({ className: 'drawer drawerOpen' })
       .children[0].props.onClick();
     expect(mockCallBack.mock.calls.length).toEqual(1);
-    // console.log(mockCallBack.mock.calls.length);
   });
 });
