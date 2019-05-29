@@ -16,12 +16,19 @@ function MessageDetails({ userMessage, selectUserMessage }) {
   const { subject, createdAt, message } = userMessage;
   return (
     <div className="MD-Box">
-      <BasicButton func={selectUserMessage} obj={userMessage}>
+      <BasicButton onClick={selectUserMessage} obj={userMessage}>
+        {/* <div className="row"> */}
+        {/* <div className="col-md-10"> */}
         <div className={subjectClass}>subject: {subject}</div>
+        {/* </div> */}
+
+        {/* <div className="col-md-2"> */}
         <div className={dateClass}>Date: {createdAt.replace(/T.*/, '')}</div>
         <div className={timeClass}>
           Time: {createdAt.replace(/.*T/, '').replace(/\.\d*Z/, '')}
         </div>
+        {/* </div> */}
+        {/* </div> */}
         <div
           className={classNames('Message wordWrap', {
             MessageShow: userMessage.show,

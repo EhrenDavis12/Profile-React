@@ -22,7 +22,7 @@ function Drawer({
     <BasicButton
       className="item"
       key={item[itemKeyAttr]}
-      func={() => selectItem(item)}
+      onClick={() => selectItem(item)}
     >
       {item[itemLabelAttr]}
     </BasicButton>

@@ -9,17 +9,19 @@ import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import './styles.css';
 
-function button(props) {
-  const handleKeyPress = (event, obj, func) => {
+function BasicButton(props) {
+  const handleKeyPress = (event, obj, onClick) => {
     if (event.key === 'Enter') {
-      func(obj);
+      onClick(obj);
     }
   };
 
   return (
     <div
-      onClick={() => props.func(props.obj || null)}
-      onKeyDown={event => handleKeyPress(event, props.obj || null, props.func)}
+      onClick={() => props.onClick(props.obj || null)}
+      onKeyDown={event =>
+        handleKeyPress(event, props.obj || null, props.onClick)
+      }
       role="button"
       tabIndex={0}
       className={props.className}
@@ -29,11 +31,11 @@ function button(props) {
   );
 }
 
-button.propTypes = {
-  func: PropTypes.func.isRequired,
+BasicButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
   obj: PropTypes.shape(),
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };
 
-export default button;
+export default BasicButton;

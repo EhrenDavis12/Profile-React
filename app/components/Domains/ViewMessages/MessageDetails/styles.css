@@ -26,11 +26,16 @@
 .MD-Box:hover {
   background-color: #f6f6f6;
 }
+.subject {
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
 .date,
 .time {
   text-align: right;
   font-size: 14px;
+  padding-right: 10px;
 }
 
 .wordWrap {
