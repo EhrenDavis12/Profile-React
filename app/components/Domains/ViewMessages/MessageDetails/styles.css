@@ -13,7 +13,7 @@
   padding: 10px;
 }
 
-.MD-Box {
+.MessageDetails-Box {
   background-color: #fff;
   /* display: flex; */
   margin-bottom: 10px;
@@ -23,7 +23,7 @@
   margin-top: 20px;
 }
 
-.MD-Box:hover {
+.MessageDetails-Box:hover {
   background-color: #f6f6f6;
 }
 .subject {
