@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<UserMessagesBody /> renders as expected with null messages 1`] = `
-<div>
+exports[`<UserMessagesBody /> snap Shots renders as expected with null messages 1`] = `
+<div
+  className="MessageDetails-Box"
+>
   <div>
     Your google ID is: 
     auth0Id
@@ -9,8 +11,10 @@ exports[`<UserMessagesBody /> renders as expected with null messages 1`] = `
 </div>
 `;
 
-exports[`<UserMessagesBody /> renders as expected with populated messages 1`] = `
-<div>
+exports[`<UserMessagesBody /> snap Shots renders as expected with populated messages 1`] = `
+<div
+  className="MessageDetails-Box"
+>
   <div>
     Your google ID is: 
     auth0Id

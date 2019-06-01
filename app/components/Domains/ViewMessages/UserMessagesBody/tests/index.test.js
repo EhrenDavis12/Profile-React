@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-// import { mount } from 'enzyme';
+import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 
 import UserMessagesBody from '../index';
@@ -16,10 +16,9 @@ const userMessages = [
 ];
 const userData = { auth0Id: 'auth0Id' };
 
-describe('<UserMessagesBody />', () => {
+describe('<UserMessagesBody /> snap Shots', () => {
   it('renders as expected with populated messages', () => {
     const mockCallBack = jest.fn(() => true);
-    console.log(JSON.stringify(userMessages[0]));
     const tree = renderer.create(
       <UserMessagesBody
         selectUserMessage={mockCallBack}
@@ -41,23 +40,30 @@ describe('<UserMessagesBody />', () => {
     );
     expect(tree.toJSON()).toMatchSnapshot();
   });
+});
 
-  it('Children should handle click events', () => {
+describe('Evaluate Children counts', () => {
+  it('Mount Should have array of children', () => {
     const mockCallBack = jest.fn(() => true);
-    const tree = renderer.create(
+    const wrapper = mount(
       <UserMessagesBody
         selectUserMessage={mockCallBack}
         userMessages={userMessages}
         userData={userData}
       />,
     );
-    console.log(
-      tree.root.findByProps({ className: 'MessageDetails-Box' }).children[1]
-        .children[0],
+    expect(wrapper.find('MessageDetails').length).toEqual(2);
+  });
+
+  it('Mount Should have array of children', () => {
+    const mockCallBack = jest.fn(() => true);
+    const wrapper = mount(
+      <UserMessagesBody
+        selectUserMessage={mockCallBack}
+        userMessages={[]}
+        userData={userData}
+      />,
     );
-    tree.root
-      .findByProps({ className: 'MessageDetails-Box' })
-      .children[1].children[0].props.onClick();
-    expect(mockCallBack.mock.calls.length).toEqual(1);
+    expect(wrapper.find('MessageDetails').length).toEqual(0);
   });
 });
