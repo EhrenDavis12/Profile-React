@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserMessagesBody /> snap Shots renders as expected with null messages 1`] = `
+<UserMessagesBody
+  selectUserMessage={[MockFunction]}
+  userData={
+    Object {
+      "auth0Id": "auth0Id",
+    }
+  }
+  userMessages={null}
+>
+  <div
+    className="MessageDetails-Box"
+  >
+    <div>
+      Your google ID is: 
+      auth0Id
+    </div>
+  </div>
+</UserMessagesBody>
+`;
+
+exports[`<UserMessagesBody /> snap Shots renders as expected with populated messages 1`] = `
+<UserMessagesBody
+  selectUserMessage={[MockFunction]}
+  userData={
+    Object {
+      "auth0Id": "auth0Id",
+    }
+  }
+  userMessages={
+    Array [
+      Object {
+        "createdAt": "01-01-2000 T 01:01:1000",
+        "message": "This is a test message",
+        "subject": "subject string",
+        "uuid": "key1",
+      },
+      Object {
+        "createdAt": "01-01-2000 T 01:01:1000",
+        "message": "This is a test message",
+        "subject": "subject string",
+        "uuid": "key2",
+      },
+    ]
+  }
+>
+  <div
+    className="MessageDetails-Box"
+  >
+    <div>
+      Your google ID is: 
+      auth0Id
+    </div>
+    <MessageDetails
+      key="key1"
+      selectUserMessage={[MockFunction]}
+      userMessage={
+        Object {
+          "createdAt": "01-01-2000 T 01:01:1000",
+          "message": "This is a test message",
+          "subject": "subject string",
+          "uuid": "key1",
+        }
+      }
+    >
+      <div
+        className="MessageDetails-Box"
+      >
+        <BasicButton
+          obj={
+            Object {
+              "createdAt": "01-01-2000 T 01:01:1000",
+              "message": "This is a test message",
+              "subject": "subject string",
+              "uuid": "key1",
+            }
+          }
+          onClick={[MockFunction]}
+        >
+          <div
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <div
+              className="subject"
+              key=".0"
+            >
+              subject: 
+              subject string
+            </div>
+            <div
+              className="date"
+              key=".1"
+            >
+              Date: 
+              01-01-2000 
+            </div>
+            <div
+              className="time"
+              key=".2"
+            >
+              Time: 
+               01:01:1000
+            </div>
+            <div
+              className="Message wordWrap"
+              key=".3"
+            >
+              Message: 
+              This is a test message
+            </div>
+          </div>
+        </BasicButton>
+      </div>
+    </MessageDetails>
+    <MessageDetails
+      key="key2"
+      selectUserMessage={[MockFunction]}
+      userMessage={
+        Object {
+          "createdAt": "01-01-2000 T 01:01:1000",
+          "message": "This is a test message",
+          "subject": "subject string",
+          "uuid": "key2",
+        }
+      }
+    >
+      <div
+        className="MessageDetails-Box"
+      >
+        <BasicButton
+          obj={
+            Object {
+              "createdAt": "01-01-2000 T 01:01:1000",
+              "message": "This is a test message",
+              "subject": "subject string",
+              "uuid": "key2",
+            }
+          }
+          onClick={[MockFunction]}
+        >
+          <div
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <div
+              className="subject"
+              key=".0"
+            >
+              subject: 
+              subject string
+            </div>
+            <div
+              className="date"
+              key=".1"
+            >
+              Date: 
+              01-01-2000 
+            </div>
+            <div
+              className="time"
+              key=".2"
+            >
+              Time: 
+               01:01:1000
+            </div>
+            <div
+              className="Message wordWrap"
+              key=".3"
+            >
+              Message: 
+              This is a test message
+            </div>
+          </div>
+        </BasicButton>
+      </div>
+    </MessageDetails>
+  </div>
+</UserMessagesBody>
+`;

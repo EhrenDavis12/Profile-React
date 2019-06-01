@@ -41,7 +41,7 @@ function UserMessagesBody({
   }
 
   return (
-    <div>
+    <div className="MessageDetails-Box">
       <div>Your google ID is: {userData.auth0Id}</div>
       {dataList}
     </div>
@@ -50,7 +50,7 @@ function UserMessagesBody({
 
 UserMessagesBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
-  userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  userMessages: PropTypes.arrayOf(PropTypes.shape({})),
   // selectedUserMessage: PropTypes.shape({}),
   userData: PropTypes.shape({
     auth0Id: PropTypes.string.isRequired,
