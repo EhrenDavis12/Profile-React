@@ -16,54 +16,40 @@ const userMessages = [
 ];
 const userData = { auth0Id: 'auth0Id' };
 
+const renderComponentMount = userMessagesProp =>
+  mount(
+    <UserMessagesBody
+      selectUserMessage={mockCallBack}
+      userMessages={userMessagesProp}
+      userData={userData}
+    />,
+  );
+
+let mockCallBack;
+beforeAll(() => {
+  mockCallBack = jest.fn(() => true);
+});
+
 describe('<UserMessagesBody /> snap Shots', () => {
   it('renders as expected with populated messages', () => {
-    const mockCallBack = jest.fn(() => true);
-    const tree = renderer.create(
-      <UserMessagesBody
-        selectUserMessage={mockCallBack}
-        userMessages={userMessages}
-        userData={userData}
-      />,
-    );
-    expect(tree.toJSON()).toMatchSnapshot();
+    const wrapper = renderComponentMount(userMessages);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('renders as expected with null messages', () => {
-    const mockCallBack = jest.fn(() => true);
-    const tree = renderer.create(
-      <UserMessagesBody
-        selectUserMessage={mockCallBack}
-        userMessages={null}
-        userData={userData}
-      />,
-    );
-    expect(tree.toJSON()).toMatchSnapshot();
+    const wrapper = renderComponentMount(null);
+    expect(wrapper).toMatchSnapshot();
   });
 });
 
-describe('Evaluate Children counts', () => {
+describe('Evaluate userMessages counts', () => {
   it('Mount Should have array of children', () => {
-    const mockCallBack = jest.fn(() => true);
-    const wrapper = mount(
-      <UserMessagesBody
-        selectUserMessage={mockCallBack}
-        userMessages={userMessages}
-        userData={userData}
-      />,
-    );
+    const wrapper = renderComponentMount(userMessages);
     expect(wrapper.find('MessageDetails').length).toEqual(2);
   });
 
   it('Mount Should have array of children', () => {
-    const mockCallBack = jest.fn(() => true);
-    const wrapper = mount(
-      <UserMessagesBody
-        selectUserMessage={mockCallBack}
-        userMessages={null}
-        userData={userData}
-      />,
-    );
+    const wrapper = renderComponentMount(null);
     expect(wrapper.find('MessageDetails').length).toEqual(0);
   });
 });

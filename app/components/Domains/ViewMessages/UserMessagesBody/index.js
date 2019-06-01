@@ -50,7 +50,7 @@ function UserMessagesBody({
 
 UserMessagesBody.propTypes = {
   // responseTest: PropTypes.arrayOf(PropTypes.shape({})),
-  userMessages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  userMessages: PropTypes.arrayOf(PropTypes.shape({})),
   // selectedUserMessage: PropTypes.shape({}),
   userData: PropTypes.shape({
     auth0Id: PropTypes.string.isRequired,
