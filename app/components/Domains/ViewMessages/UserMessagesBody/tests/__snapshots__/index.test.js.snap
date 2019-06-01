@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserMessagesBody /> renders as expected with null messages 1`] = `
+<div>
+  <div>
+    Your google ID is: 
+    auth0Id
+  </div>
+</div>
+`;
+
+exports[`<UserMessagesBody /> renders as expected with populated messages 1`] = `
+<div>
+  <div>
+    Your google ID is: 
+    auth0Id
+  </div>
+  <div
+    className="MessageDetails-Box"
+  >
+    <div
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="subject"
+      >
+        subject: 
+        subject string
+      </div>
+      <div
+        className="date"
+      >
+        Date: 
+        01-01-2000 
+      </div>
+      <div
+        className="time"
+      >
+        Time: 
+         01:01:1000
+      </div>
+      <div
+        className="Message wordWrap"
+      >
+        Message: 
+        This is a test message
+      </div>
+    </div>
+  </div>
+  <div
+    className="MessageDetails-Box"
+  >
+    <div
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="subject"
+      >
+        subject: 
+        subject string
+      </div>
+      <div
+        className="date"
+      >
+        Date: 
+        01-01-2000 
+      </div>
+      <div
+        className="time"
+      >
+        Time: 
+         01:01:1000
+      </div>
+      <div
+        className="Message wordWrap"
+      >
+        Message: 
+        This is a test message
+      </div>
+    </div>
+  </div>
+</div>
+`;

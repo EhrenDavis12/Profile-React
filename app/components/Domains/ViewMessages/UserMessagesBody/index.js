@@ -41,7 +41,7 @@ function UserMessagesBody({
   }
 
   return (
-    <div>
+    <div className="MessageDetails-Box">
       <div>Your google ID is: {userData.auth0Id}</div>
       {dataList}
     </div>
