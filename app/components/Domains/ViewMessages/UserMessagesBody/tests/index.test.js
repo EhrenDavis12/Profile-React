@@ -34,7 +34,7 @@ describe('<UserMessagesBody /> snap Shots', () => {
     const tree = renderer.create(
       <UserMessagesBody
         selectUserMessage={mockCallBack}
-        userMessages={[]}
+        userMessages={null}
         userData={userData}
       />,
     );
@@ -60,7 +60,7 @@ describe('Evaluate Children counts', () => {
     const wrapper = mount(
       <UserMessagesBody
         selectUserMessage={mockCallBack}
-        userMessages={[]}
+        userMessages={null}
         userData={userData}
       />,
     );
