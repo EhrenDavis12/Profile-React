@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 // import { enzymeFind } from 'styled-components/test-utils';
 import { browserHistory } from 'react-router-dom';
 import configureStore from '../../../../../configureStore';
+import { toggleDrawer, selectLink } from '../actions';
 
-import Navigation from '../index';
+import Navigation, { mapDispatchToProps } from '../index';
 
 describe('<Navigation />', () => {
   let store;
@@ -22,7 +23,6 @@ describe('<Navigation />', () => {
         <Navigation />
       </Provider>,
     );
-  // mount(<Navigation {...navigationLinksProps} />);
 
   describe('<Navigation /> snap Shots', () => {
     it('renders as expected with populated messages', () => {
@@ -33,6 +33,39 @@ describe('<Navigation />', () => {
   describe('<Navigation />', () => {
     it('should render its NavigationBody', () => {
       expect(wrapper.find('NavigationBody').length).toEqual(1);
+    });
+  });
+
+  describe('mapDispatchToProps', () => {
+    describe('toggleDrawer', () => {
+      it('should be injected', () => {
+        const dispatch = jest.fn();
+        const result = mapDispatchToProps(dispatch);
+        expect(result.toggleDrawer).toBeDefined();
+      });
+
+      it('should dispatch toggleDrawer when called', () => {
+        const dispatch = jest.fn();
+        const result = mapDispatchToProps(dispatch);
+        result.toggleDrawer();
+        expect(dispatch).toHaveBeenCalledWith(toggleDrawer());
+      });
+    });
+
+    describe('selectLink', () => {
+      it('should be injected', () => {
+        const dispatch = jest.fn();
+        const result = mapDispatchToProps(dispatch);
+        expect(result.selectItem).toBeDefined();
+      });
+
+      it('should dispatch selectLink when called', () => {
+        const dispatch = jest.fn();
+        const result = mapDispatchToProps(dispatch);
+        const link = 'mxstbr';
+        result.selectItem(link);
+        expect(dispatch).toHaveBeenCalledWith(selectLink(link));
+      });
     });
   });
 });

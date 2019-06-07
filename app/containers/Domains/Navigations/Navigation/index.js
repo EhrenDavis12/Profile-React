@@ -39,7 +39,7 @@ Navigation.propTypes = {
 }); */
 const mapStateToProps = makeSelectNavigation();
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     toggleDrawer: () => dispatch(toggleDrawer()),
     selectItem: linkSelected => dispatch(selectLink(linkSelected)),
