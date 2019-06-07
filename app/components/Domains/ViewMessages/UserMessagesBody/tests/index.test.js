@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+// import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
 

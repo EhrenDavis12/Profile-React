@@ -1,8 +1,14 @@
-// import { fromJS } from 'immutable';
-// import { selectNavigationDomain } from '../selectors';
+import { fromJS } from 'immutable';
+import { selectNavigationDomain } from '../selectors';
 
 describe('selectNavigationDomain', () => {
-  it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(false);
+  it('should select the global state', () => {
+    const globalState = fromJS({
+      subStateTest: true,
+    });
+    const mockedState = fromJS({
+      Navigation: globalState,
+    });
+    expect(selectNavigationDomain(mockedState)).toEqual(globalState);
   });
 });

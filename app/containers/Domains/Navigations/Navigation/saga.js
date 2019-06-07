@@ -3,11 +3,11 @@ import { takeLatest, all, put } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
 import { SELECT_LINK } from './constants';
 
-function* pushLinkSaga() {
+export function* pushLinkSaga() {
   yield takeLatest(SELECT_LINK, pushLinkStart);
 }
 
-function* pushLinkStart(action) {
+export function* pushLinkStart(action) {
   yield put(push(action.selectedLink.LinkTo));
 }
 
