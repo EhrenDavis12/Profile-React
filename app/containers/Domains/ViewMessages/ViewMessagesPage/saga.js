@@ -20,7 +20,12 @@ import {
   selectUserMessageFailed,
 } from './actions';
 
-function* fetchUserStart() {
+import {
+  formatUserMessageStart,
+  flipMessageDisplay,
+} from './messageManipulation';
+
+export function* fetchUserStart() {
   yield call(
     fetchApi,
     'localhost:3001/api/v1/users/?uuid=2f67b460-6469-11e9-b132-2b223266dc25',
@@ -29,20 +34,11 @@ function* fetchUserStart() {
   );
 }
 
-function* fetchUserSaga() {
+export function* fetchUserSaga() {
   yield takeLatest(REQUEST_USER, fetchUserStart);
 }
 
-/* function* fetchUserMessagesStart() {
-  yield call(
-    fetchApi,
-    'localhost:3001/api/v1/messagesByUser/?userUuid=2f67b460-6469-11e9-b132-2b223266dc25',
-    requestUserMessagesSucceeded,
-    requestUserMessagesFailed,
-  );
-} */
-
-function* fetchUserMessagesStart() {
+export function* fetchUserMessagesStart() {
   yield call(
     fetchApiMiddleMan,
     'localhost:3001/api/v1/messagesByUser/?userUuid=2f67b460-6469-11e9-b132-2b223266dc25',
@@ -52,20 +48,11 @@ function* fetchUserMessagesStart() {
   );
 }
 
-function* fetchUserMessagesSaga() {
+export function* fetchUserMessagesSaga() {
   yield takeLatest(REQUEST_USER_MESSAGES, fetchUserMessagesStart);
 }
 
-async function formatUserMessageStart(response) {
-  const data = await response.data.map(x => ({
-    ...x,
-    show: false,
-  }));
-  response.data = data;
-  return response;
-}
-
-function* selectedUserMessagesStart(action) {
+export function* selectedUserMessagesStart(action) {
   yield call(
     fetchStateWithMethodSave,
     makeSelectUserMessages,
@@ -78,17 +65,7 @@ function* selectedUserMessagesStart(action) {
   );
 }
 
-async function flipMessageDisplay(data, paramObject) {
-  const result = await data.map(
-    x =>
-      x.uuid === paramObject.uuid
-        ? { ...x, show: !x.show }
-        : { ...x, show: x.show },
-  );
-  return result;
-}
-
-function* selectedUserMessagesSaga() {
+export function* selectedUserMessagesSaga() {
   yield takeLatest(SELECT_USER_MESSAGE, selectedUserMessagesStart);
 }
 

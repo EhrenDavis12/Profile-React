@@ -12,7 +12,7 @@ import {
 } from './constants';
 
 export const initialState = fromJS({
-  responseTest: [
+  /* responseTest: [
     {
       uuid: 'abcd50d0-60b4-11e9-b132-2b223266dc25',
       auth0Id: 'abcd',
@@ -29,7 +29,7 @@ export const initialState = fromJS({
       createdAt: '2019-04-17T02:01:41.000Z',
       updatedAt: '2019-04-17T02:01:41.000Z',
     },
-  ],
+  ], */
   userData: {},
   userMessages: [],
 });

@@ -63,7 +63,7 @@ ViewMessagesPage.propTypes = {
 }); */
 const mapStateToProps = makeSelectViewMessagesPage();
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     requestUser: () => dispatch(requestUser()),
     requestUserMessages: () => dispatch(requestUserMessages()),

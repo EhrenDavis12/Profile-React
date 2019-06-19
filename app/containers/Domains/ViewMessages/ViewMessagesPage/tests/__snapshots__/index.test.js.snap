@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expected 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {
+        "Navigation": [Function],
+      },
+      "injectedSagas": Object {
+        "Navigation": Object {
+          "mode": "@@saga-injector/restart-on-remount",
+          "saga": [Function],
+          "task": Object {
+            "@@redux-saga/TASK": true,
+            "cancel": [Function],
+            "cont": undefined,
+            "done": Promise {},
+            "error": [Function],
+            "id": 11,
+            "isAborted": [Function],
+            "isCancelled": [Function],
+            "isRunning": [Function],
+            "joiners": Array [],
+            "name": "rootSaga",
+            "result": [Function],
+            "setContext": [Function],
+          },
+        },
+      },
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <ViewMessagesPage
+    requestUser={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    requestUserMessages={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    selectUserMessage={[MockFunction]}
+    userData={
+      Object {
+        "auth0Id": "auth0Id1",
+        "uuid": "1",
+      }
+    }
+  >
+    <withReducer(withSaga(Connect(Navigation)))>
+      <withSaga(Connect(Navigation))>
+        <Connect(Navigation)>
+          <Navigation
+            isDrawerOpen={false}
+            navigationLinks={
+              Array [
+                Object {
+                  "DisplayName": "About Me",
+                  "LinkTo": "/",
+                  "key": "AboutMe",
+                },
+                Object {
+                  "DisplayName": "Portfolio",
+                  "LinkTo": "/portfolio",
+                  "key": "Portfolio",
+                },
+                Object {
+                  "DisplayName": "Contact",
+                  "LinkTo": "/contact",
+                  "key": "Contact",
+                },
+                Object {
+                  "DisplayName": "Messages",
+                  "LinkTo": "/messages",
+                  "key": "Messages",
+                },
+              ]
+            }
+            selectItem={[Function]}
+            toggleDrawer={[Function]}
+          >
+            <div>
+              <NavigationBody
+                isDrawerOpen={false}
+                navigationLinks={
+                  Array [
+                    Object {
+                      "DisplayName": "About Me",
+                      "LinkTo": "/",
+                      "key": "AboutMe",
+                    },
+                    Object {
+                      "DisplayName": "Portfolio",
+                      "LinkTo": "/portfolio",
+                      "key": "Portfolio",
+                    },
+                    Object {
+                      "DisplayName": "Contact",
+                      "LinkTo": "/contact",
+                      "key": "Contact",
+                    },
+                    Object {
+                      "DisplayName": "Messages",
+                      "LinkTo": "/messages",
+                      "key": "Messages",
+                    },
+                  ]
+                }
+                selectItem={[Function]}
+                toggleDrawer={[Function]}
+              >
+                <AppBar
+                  toggleDrawer={[Function]}
+                >
+                  <div
+                    className="appBar"
+                  >
+                    <BasicButton
+                      className="iconButton"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="iconButton"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <FontAwesome
+                          className="icon"
+                          key=".0"
+                          name="bars"
+                        >
+                          <span
+                            aria-hidden={true}
+                            className="fa fa-bars icon"
+                          />
+                        </FontAwesome>
+                      </div>
+                    </BasicButton>
+                    <div
+                      className="heading"
+                    >
+                      Coder Daily
+                    </div>
+                    <div
+                      className="linkContainer"
+                    >
+                      Log In
+                    </div>
+                  </div>
+                </AppBar>
+                <Drawer
+                  isDrawerOpen={false}
+                  itemKeyAttr="key"
+                  itemLabelAttr="DisplayName"
+                  items={
+                    Array [
+                      Object {
+                        "DisplayName": "About Me",
+                        "LinkTo": "/",
+                        "key": "AboutMe",
+                      },
+                      Object {
+                        "DisplayName": "Portfolio",
+                        "LinkTo": "/portfolio",
+                        "key": "Portfolio",
+                      },
+                      Object {
+                        "DisplayName": "Contact",
+                        "LinkTo": "/contact",
+                        "key": "Contact",
+                      },
+                      Object {
+                        "DisplayName": "Messages",
+                        "LinkTo": "/messages",
+                        "key": "Messages",
+                      },
+                    ]
+                  }
+                  selectItem={[Function]}
+                >
+                  <div
+                    className="drawer"
+                  >
+                    <BasicButton
+                      className="item"
+                      key="AboutMe"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        About Me
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Portfolio"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Portfolio
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Contact"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Contact
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Messages"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Messages
+                      </div>
+                    </BasicButton>
+                  </div>
+                </Drawer>
+              </NavigationBody>
+            </div>
+          </Navigation>
+        </Connect(Navigation)>
+      </withSaga(Connect(Navigation))>
+    </withReducer(withSaga(Connect(Navigation)))>
+    <HeaderBar
+      header="Your messages are here"
+      subMessage="Take a look at your recent messages"
+    >
+      <div
+        className="jumbotron"
+      >
+        <h1>
+          Your messages are here
+        </h1>
+        <p>
+          Take a look at your recent messages
+        </p>
+      </div>
+    </HeaderBar>
+    <UserMessagesBody
+      requestUser={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      requestUserMessages={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      selectUserMessage={[MockFunction]}
+      userData={
+        Object {
+          "auth0Id": "auth0Id1",
+          "uuid": "1",
+        }
+      }
+    >
+      <div
+        className="MessageDetails-Box"
+      >
+        <div>
+          Your google ID is: 
+          auth0Id1
+        </div>
+      </div>
+    </UserMessagesBody>
+  </ViewMessagesPage>
+</Provider>
+`;
