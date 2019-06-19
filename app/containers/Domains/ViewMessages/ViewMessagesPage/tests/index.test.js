@@ -44,9 +44,7 @@ describe('<ViewMessagesPage />', () => {
 
   describe('<ViewMessagesPage />', () => {
     it('should render its UserMessageBody', () => {
-      debugger;
       wrapper = renderComponent(userData);
-      debugger;
       expect(wrapper.find('Navigation').length).toEqual(1);
       expect(wrapper).toBeDefined();
       expect(requestUserSpy).toHaveBeenCalled();
@@ -54,9 +52,7 @@ describe('<ViewMessagesPage />', () => {
     });
 
     it('should render its UserMessageBody no user data', () => {
-      debugger;
       wrapper = renderComponent({});
-      debugger;
       expect(wrapper).toBeDefined();
       expect(wrapper.find('UserMessageBody').length).toEqual(0);
       expect(requestUserSpy).toHaveBeenCalled();

@@ -1,6 +1,6 @@
 import { put, call, select } from 'redux-saga/effects';
 import { createSelector } from 'reselect';
-// import fetch from 'isomorphic-fetch';
+import request from 'utils/request';
 
 import {
   fetchJson,
@@ -17,40 +17,29 @@ const failureAction = data => data;
 const path = 'URL Path';
 const errorResponse = new Error('Some error');
 
-/* function mockFetch(data) {
-  return jest.fn().mockImplementation(() =>
-    Promise.resolve({
-      ok: true,
-      json: () => data,
-    }),
-  );
-} */
-
 describe('fetching methods group', () => {
   describe('fetchJson', () => {
-    /* beforeAll(() => {
-      // fetch.setValue(`{data: ${path}}`);
-      fetch.setValue({ data: path });
+    let generator;
+    beforeEach(() => {
+      generator = fetchJson(path);
     });
-    it('should execute the fetchApi', async () => {
-      debugger;
-      const gen = fetchJson({ data: path });
-      // const putDescriptor = generator.next(path).value;
-      // const results = await fetchJson(path);
-      // const { results } = await gen.next();
-      debugger;
-      const { value } = await gen.next();
-      debugger;
 
-      expect(value).toEqual(path);
-      debugger;
-    }); */
-    /* it('should execute the fetchApi', async () => {
-      fetch = mockFetch({ data: path }); // or window.fetch
-    }); */
+    it('should execute the fetchJson with success', () => {
+      const data = { data1: 'hello' };
+      let putDescriptor = generator.next().value;
+      expect(putDescriptor).toEqual(call(request, path));
+      putDescriptor = generator.next(data).value;
+      expect(putDescriptor).toEqual(data);
+    });
+
+    it('should throw error from fetchJson', () => {
+      let putDescriptor = generator.next().value;
+      putDescriptor = generator.throw(errorResponse).value;
+      expect(putDescriptor).toEqual({ err: 'Some error' });
+    });
   });
 
-  /* describe('fetchApi', () => {
+  describe('fetchApi', () => {
     let generator;
     beforeEach(() => {
       generator = fetchApi(path, successAction, failureAction);
@@ -100,7 +89,7 @@ describe('fetching methods group', () => {
       );
     });
 
-    it('should call middleWareFunction', () => {
+    it('should return from fetchApiMiddleMan with success', () => {
       const data = { data1: 'hello' };
       let putDescriptor = generator.next().value;
       putDescriptor = generator.next({
@@ -108,6 +97,19 @@ describe('fetching methods group', () => {
         err: null,
       }).value;
       expect(putDescriptor).toEqual(call(middleWareFunction, data));
+      putDescriptor = generator.next(data).value;
+      expect(putDescriptor).toEqual(put(successAction(data)));
+    });
+
+    it('should return from fetchApiMiddleMan with success but no middleWareFunction', () => {
+      const data = { data1: 'hello' };
+      generator = fetchApiMiddleMan(path, null, successAction, failureAction);
+      let putDescriptor = generator.next().value;
+      putDescriptor = generator.next({
+        data,
+        err: null,
+      }).value;
+      expect(putDescriptor).toEqual(put(successAction(data)));
     });
 
     it('should return from fetchApiMiddleMan with failure', () => {
@@ -118,17 +120,6 @@ describe('fetching methods group', () => {
       }).value;
       putDescriptor = generator.next().value;
       expect(putDescriptor).toEqual(put(failureAction('Not data found')));
-    });
-
-    it('should return from fetchApiMiddleMan with success', () => {
-      const data = { data1: 'hello' };
-      let putDescriptor = generator.next().value;
-      putDescriptor = generator.next({
-        data,
-        err: null,
-      }).value;
-      putDescriptor = generator.next(data).value;
-      expect(putDescriptor).toEqual(put(successAction(data)));
     });
 
     it('should throw error from fetchApiMiddleMan', () => {
@@ -174,15 +165,52 @@ describe('fetching methods group', () => {
       expect(putDescriptor).toEqual(put(successAction(selectedProp)));
     });
 
+    it('should call fetchStateWithMethodSave return nothing', () => {
+      let putDescriptor = generator.next().value;
+      putDescriptor = generator.next(selectedProp).value;
+      putDescriptor = generator.next(null).value;
+      expect(putDescriptor).toEqual(put(failureAction('No Data Found')));
+    });
+
     it('should throw error from fetchStateWithMethodSave', () => {
       let putDescriptor = generator.next().value;
       putDescriptor = generator.throw(errorResponse).value;
       expect(putDescriptor).toEqual(put(failureAction('Some error')));
     });
-  }); */
+  });
 });
 
-/* describe('Posting methods group', () => {
+describe('Posting methods group', () => {
+  describe('postJson', () => {
+    let generator;
+    const body = { data1: 'hello' };
+    beforeEach(() => {
+      generator = postJson(path, body);
+    });
+
+    it('should execute the postJson with success', () => {
+      let putDescriptor = generator.next().value;
+      expect(putDescriptor).toEqual(
+        call(request, path, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(body),
+        }),
+      );
+      putDescriptor = generator.next(body).value;
+      expect(putDescriptor).toEqual(body);
+    });
+
+    it('should throw error from postJson', () => {
+      let putDescriptor = generator.next().value;
+      putDescriptor = generator.throw(errorResponse).value;
+      expect(putDescriptor).toEqual({ err: 'Some error' });
+    });
+  });
+
   describe('postApi', () => {
     let generator;
     const body = { body: 'winning!' };
@@ -275,4 +303,3 @@ describe('fetching methods group', () => {
     });
   });
 });
- */

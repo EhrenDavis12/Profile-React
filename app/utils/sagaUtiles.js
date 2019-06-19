@@ -1,20 +1,22 @@
 import { call, put, select } from 'redux-saga/effects';
+import request from 'utils/request';
 
-export async function fetchJson(url) {
+export function* fetchJson(url) {
   let resp;
   try {
-    const data = await fetch(url);
-    resp = { data: await data.json() };
+    resp = yield call(request, url);
+    // resp = { data: yield call(data.json()) };
+    resp = { data: resp };
   } catch (e) {
     resp = { err: e.message };
   }
   return resp;
 }
 
-export async function postJson(url, body) {
+export function* postJson(url, body) {
   let resp;
   try {
-    const data = await fetch(url, {
+    resp = yield call(request, url, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -22,7 +24,8 @@ export async function postJson(url, body) {
       },
       body: JSON.stringify(body),
     });
-    resp = { data: await data.json() };
+    // resp = { data: await data.json() };
+    resp = { data: resp };
   } catch (e) {
     resp = { err: e.message };
   }
@@ -33,9 +36,9 @@ export function* fetchApi(path, successAction, failureAction) {
   try {
     const { data, err } = yield call(fetchJson, `//${path}`);
     if (data) yield put(successAction(data));
-    else yield put(failureAction(...err.message));
+    else yield put(failureAction(err.message));
   } catch (e) {
-    yield put(failureAction(...e.message));
+    yield put(failureAction(e.message));
   }
 }
 
@@ -43,9 +46,9 @@ export function* postApi(path, body, successAction, failureAction) {
   try {
     const { data, err } = yield call(postJson, `//${path}`, body);
     if (data) yield put(successAction(data));
-    else yield put(failureAction(...err.message));
+    else yield put(failureAction(err.message));
   } catch (e) {
-    yield put(failureAction(...e.message));
+    yield put(failureAction(e.message));
   }
 }
 
@@ -61,9 +64,9 @@ export function* fetchApiMiddleMan(
     if (middleWareFunction) data = yield call(middleWareFunction, data);
     if (data) {
       yield put(successAction(data));
-    } else yield put(failureAction(...err.message));
+    } else yield put(failureAction(err.message));
   } catch (e) {
-    yield put(failureAction(...e.message));
+    yield put(failureAction(e.message));
   }
 }
 
@@ -81,11 +84,10 @@ export function* fetchStateWithMethodSave(
       selectedProp,
       additionalPrams,
     );
-    if (storedProp) {
-      yield put(successAction(storedProp));
-    }
+    if (storedProp) yield put(successAction(storedProp));
+    else yield put(failureAction('No Data Found'));
   } catch (e) {
-    yield put(failureAction(...e.message));
+    yield put(failureAction(e.message));
   }
 }
 
@@ -99,8 +101,8 @@ export function* postStateApi(
     const body = yield select(makeSelectPropFromState());
     const { data, err } = yield call(postJson, `//${path}`, body);
     if (data) yield put(successAction(data));
-    else yield put(failureAction(...err.message));
+    else yield put(failureAction(err.message));
   } catch (e) {
-    yield put(failureAction(...e.message));
+    yield put(failureAction(e.message));
   }
 }
