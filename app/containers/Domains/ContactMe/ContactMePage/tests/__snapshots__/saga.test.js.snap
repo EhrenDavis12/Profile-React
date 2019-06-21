@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navigationSaga Saga should execute the rootSaga 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "ALL": Array [
+    GeneratorFunctionPrototype {
+      "_invoke": [Function],
+    },
+  ],
+}
+`;
+
+exports[`navigationSaga Saga should execute the submitMessageFormSaga 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "FORK": Object {
+    "args": Array [
+      "app/ContactMePage/SUBMIT_MESSAGE_FORM",
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`navigationSaga Saga should execute the submitMessageFormStart 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "localhost:3001/api/v1/messages",
+      [Function],
+      [Function],
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

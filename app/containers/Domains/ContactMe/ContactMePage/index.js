@@ -58,7 +58,7 @@ ContactMePage.propTypes = {
 }); */
 const mapStateToProps = makeSelectContactMePage();
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     submitMessageForm: messageForm => dispatch(submitMessageForm(messageForm)),
     actionAfterExpire: () => dispatch(closedSuccessMessage()),
