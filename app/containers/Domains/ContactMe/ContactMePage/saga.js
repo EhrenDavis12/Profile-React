@@ -5,7 +5,7 @@ import { makeSelectMessageForm } from './selectors';
 import { SUBMIT_MESSAGE_FORM } from './constants';
 import { submitMessageFormSucceeded, submitMessageFormFailed } from './actions';
 
-function* submitMessageFormStart() {
+export function* submitMessageFormStart() {
   yield call(
     postStateApi,
     'localhost:3001/api/v1/messages',
@@ -15,7 +15,7 @@ function* submitMessageFormStart() {
   );
 }
 
-function* submitMessageFormSaga() {
+export function* submitMessageFormSaga() {
   yield takeLatest(SUBMIT_MESSAGE_FORM, submitMessageFormStart);
 }
 

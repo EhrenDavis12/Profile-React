@@ -1,15 +1,30 @@
-/**
- * Test sagas
- */
+import { takeLatest, all } from 'redux-saga/effects';
+import { SUBMIT_MESSAGE_FORM } from '../constants';
+import rootSaga, {
+  submitMessageFormStart,
+  submitMessageFormSaga,
+} from '../saga';
 
-/* eslint-disable redux-saga/yield-effects */
-// import { take, call, put, select } from 'redux-saga/effects';
-// import contactMePageSaga from '../saga';
+describe('navigationSaga Saga', () => {
+  it('should execute the submitMessageFormSaga', () => {
+    const generator = submitMessageFormSaga();
+    const putDescriptor = generator.next(submitMessageFormStart).value;
+    expect(putDescriptor).toEqual(
+      takeLatest(SUBMIT_MESSAGE_FORM, submitMessageFormStart),
+    );
+    expect(putDescriptor).toMatchSnapshot();
+  });
 
-// const generator = contactMePageSaga();
+  it('should execute the submitMessageFormStart', () => {
+    const generator = submitMessageFormStart();
+    const putDescriptor = generator.next().value;
+    expect(putDescriptor).toMatchSnapshot();
+  });
 
-describe('contactMePageSaga Saga', () => {
-  it('Expect to have unit tests specified', () => {
-    expect(true).toEqual(false);
+  it('should execute the rootSaga', () => {
+    const generator = rootSaga();
+    const putDescriptor = generator.next().value;
+    expect(putDescriptor).toEqual(all([submitMessageFormSaga()]));
+    expect(putDescriptor).toMatchSnapshot();
   });
 });

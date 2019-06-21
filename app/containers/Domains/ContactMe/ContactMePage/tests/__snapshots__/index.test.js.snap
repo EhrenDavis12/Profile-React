@@ -1,0 +1,663 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody closed 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {
+        "Navigation": [Function],
+      },
+      "injectedSagas": Object {
+        "Navigation": Object {
+          "mode": "@@saga-injector/restart-on-remount",
+          "saga": [Function],
+          "task": Object {
+            "@@redux-saga/TASK": true,
+            "cancel": [Function],
+            "cont": undefined,
+            "done": Promise {},
+            "error": [Function],
+            "id": 6,
+            "isAborted": [Function],
+            "isCancelled": [Function],
+            "isRunning": [Function],
+            "joiners": Array [],
+            "name": "rootSaga",
+            "result": [Function],
+            "setContext": [Function],
+          },
+        },
+      },
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <ContactMePage
+    messageStatus="closed"
+    submitMessageForm={[MockFunction]}
+  >
+    <withReducer(withSaga(Connect(Navigation)))>
+      <withSaga(Connect(Navigation))>
+        <Connect(Navigation)>
+          <Navigation
+            isDrawerOpen={false}
+            navigationLinks={
+              Array [
+                Object {
+                  "DisplayName": "About Me",
+                  "LinkTo": "/",
+                  "key": "AboutMe",
+                },
+                Object {
+                  "DisplayName": "Portfolio",
+                  "LinkTo": "/portfolio",
+                  "key": "Portfolio",
+                },
+                Object {
+                  "DisplayName": "Contact",
+                  "LinkTo": "/contact",
+                  "key": "Contact",
+                },
+                Object {
+                  "DisplayName": "Messages",
+                  "LinkTo": "/messages",
+                  "key": "Messages",
+                },
+              ]
+            }
+            selectItem={[Function]}
+            toggleDrawer={[Function]}
+          >
+            <div>
+              <NavigationBody
+                isDrawerOpen={false}
+                navigationLinks={
+                  Array [
+                    Object {
+                      "DisplayName": "About Me",
+                      "LinkTo": "/",
+                      "key": "AboutMe",
+                    },
+                    Object {
+                      "DisplayName": "Portfolio",
+                      "LinkTo": "/portfolio",
+                      "key": "Portfolio",
+                    },
+                    Object {
+                      "DisplayName": "Contact",
+                      "LinkTo": "/contact",
+                      "key": "Contact",
+                    },
+                    Object {
+                      "DisplayName": "Messages",
+                      "LinkTo": "/messages",
+                      "key": "Messages",
+                    },
+                  ]
+                }
+                selectItem={[Function]}
+                toggleDrawer={[Function]}
+              >
+                <AppBar
+                  toggleDrawer={[Function]}
+                >
+                  <div
+                    className="appBar"
+                  >
+                    <BasicButton
+                      className="iconButton"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="iconButton"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <FontAwesome
+                          className="icon"
+                          key=".0"
+                          name="bars"
+                        >
+                          <span
+                            aria-hidden={true}
+                            className="fa fa-bars icon"
+                          />
+                        </FontAwesome>
+                      </div>
+                    </BasicButton>
+                    <div
+                      className="heading"
+                    >
+                      Coder Daily
+                    </div>
+                    <div
+                      className="linkContainer"
+                    >
+                      Log In
+                    </div>
+                  </div>
+                </AppBar>
+                <Drawer
+                  isDrawerOpen={false}
+                  itemKeyAttr="key"
+                  itemLabelAttr="DisplayName"
+                  items={
+                    Array [
+                      Object {
+                        "DisplayName": "About Me",
+                        "LinkTo": "/",
+                        "key": "AboutMe",
+                      },
+                      Object {
+                        "DisplayName": "Portfolio",
+                        "LinkTo": "/portfolio",
+                        "key": "Portfolio",
+                      },
+                      Object {
+                        "DisplayName": "Contact",
+                        "LinkTo": "/contact",
+                        "key": "Contact",
+                      },
+                      Object {
+                        "DisplayName": "Messages",
+                        "LinkTo": "/messages",
+                        "key": "Messages",
+                      },
+                    ]
+                  }
+                  selectItem={[Function]}
+                >
+                  <div
+                    className="drawer"
+                  >
+                    <BasicButton
+                      className="item"
+                      key="AboutMe"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        About Me
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Portfolio"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Portfolio
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Contact"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Contact
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Messages"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Messages
+                      </div>
+                    </BasicButton>
+                  </div>
+                </Drawer>
+              </NavigationBody>
+            </div>
+          </Navigation>
+        </Connect(Navigation)>
+      </withSaga(Connect(Navigation))>
+    </withReducer(withSaga(Connect(Navigation)))>
+    <HeaderBar
+      header="Contact Me"
+      subMessage="Feel free to send me a message and i will get back to you"
+    >
+      <div
+        className="jumbotron"
+      >
+        <h1>
+          Contact Me
+        </h1>
+        <p>
+          Feel free to send me a message and i will get back to you
+        </p>
+      </div>
+    </HeaderBar>
+    <ContactBody
+      messageStatus="closed"
+      submitMessageForm={[MockFunction]}
+    >
+      <div
+        className="messageForm"
+      >
+        <input
+          className="input"
+          placeholder="Your Email"
+          type="text"
+        />
+        <input
+          className="input"
+          placeholder="Subject"
+          type="text"
+        />
+        <textarea
+          className="inputLargeText"
+          placeholder="Your Message"
+          type="text"
+        />
+        <div
+          className="actionContainer"
+        >
+          <BasicButton
+            className="button"
+            onClick={[Function]}
+          >
+            <div
+              className="button"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Clear
+            </div>
+          </BasicButton>
+          <BasicButton
+            className="button"
+            onClick={[Function]}
+          >
+            <div
+              className="button"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Submit
+            </div>
+          </BasicButton>
+        </div>
+      </div>
+    </ContactBody>
+  </ContactMePage>
+</Provider>
+`;
+
+exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody succeeded 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {
+        "Navigation": [Function],
+      },
+      "injectedSagas": Object {
+        "Navigation": Object {
+          "mode": "@@saga-injector/restart-on-remount",
+          "saga": [Function],
+          "task": Object {
+            "@@redux-saga/TASK": true,
+            "cancel": [Function],
+            "cont": undefined,
+            "done": Promise {},
+            "error": [Function],
+            "id": 1,
+            "isAborted": [Function],
+            "isCancelled": [Function],
+            "isRunning": [Function],
+            "joiners": Array [],
+            "name": "rootSaga",
+            "result": [Function],
+            "setContext": [Function],
+          },
+        },
+      },
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <ContactMePage
+    messageStatus="succeeded"
+    submitMessageForm={[MockFunction]}
+  >
+    <withReducer(withSaga(Connect(Navigation)))>
+      <withSaga(Connect(Navigation))>
+        <Connect(Navigation)>
+          <Navigation
+            isDrawerOpen={false}
+            navigationLinks={
+              Array [
+                Object {
+                  "DisplayName": "About Me",
+                  "LinkTo": "/",
+                  "key": "AboutMe",
+                },
+                Object {
+                  "DisplayName": "Portfolio",
+                  "LinkTo": "/portfolio",
+                  "key": "Portfolio",
+                },
+                Object {
+                  "DisplayName": "Contact",
+                  "LinkTo": "/contact",
+                  "key": "Contact",
+                },
+                Object {
+                  "DisplayName": "Messages",
+                  "LinkTo": "/messages",
+                  "key": "Messages",
+                },
+              ]
+            }
+            selectItem={[Function]}
+            toggleDrawer={[Function]}
+          >
+            <div>
+              <NavigationBody
+                isDrawerOpen={false}
+                navigationLinks={
+                  Array [
+                    Object {
+                      "DisplayName": "About Me",
+                      "LinkTo": "/",
+                      "key": "AboutMe",
+                    },
+                    Object {
+                      "DisplayName": "Portfolio",
+                      "LinkTo": "/portfolio",
+                      "key": "Portfolio",
+                    },
+                    Object {
+                      "DisplayName": "Contact",
+                      "LinkTo": "/contact",
+                      "key": "Contact",
+                    },
+                    Object {
+                      "DisplayName": "Messages",
+                      "LinkTo": "/messages",
+                      "key": "Messages",
+                    },
+                  ]
+                }
+                selectItem={[Function]}
+                toggleDrawer={[Function]}
+              >
+                <AppBar
+                  toggleDrawer={[Function]}
+                >
+                  <div
+                    className="appBar"
+                  >
+                    <BasicButton
+                      className="iconButton"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="iconButton"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <FontAwesome
+                          className="icon"
+                          key=".0"
+                          name="bars"
+                        >
+                          <span
+                            aria-hidden={true}
+                            className="fa fa-bars icon"
+                          />
+                        </FontAwesome>
+                      </div>
+                    </BasicButton>
+                    <div
+                      className="heading"
+                    >
+                      Coder Daily
+                    </div>
+                    <div
+                      className="linkContainer"
+                    >
+                      Log In
+                    </div>
+                  </div>
+                </AppBar>
+                <Drawer
+                  isDrawerOpen={false}
+                  itemKeyAttr="key"
+                  itemLabelAttr="DisplayName"
+                  items={
+                    Array [
+                      Object {
+                        "DisplayName": "About Me",
+                        "LinkTo": "/",
+                        "key": "AboutMe",
+                      },
+                      Object {
+                        "DisplayName": "Portfolio",
+                        "LinkTo": "/portfolio",
+                        "key": "Portfolio",
+                      },
+                      Object {
+                        "DisplayName": "Contact",
+                        "LinkTo": "/contact",
+                        "key": "Contact",
+                      },
+                      Object {
+                        "DisplayName": "Messages",
+                        "LinkTo": "/messages",
+                        "key": "Messages",
+                      },
+                    ]
+                  }
+                  selectItem={[Function]}
+                >
+                  <div
+                    className="drawer"
+                  >
+                    <BasicButton
+                      className="item"
+                      key="AboutMe"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        About Me
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Portfolio"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Portfolio
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Contact"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Contact
+                      </div>
+                    </BasicButton>
+                    <BasicButton
+                      className="item"
+                      key="Messages"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="item"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        Messages
+                      </div>
+                    </BasicButton>
+                  </div>
+                </Drawer>
+              </NavigationBody>
+            </div>
+          </Navigation>
+        </Connect(Navigation)>
+      </withSaga(Connect(Navigation))>
+    </withReducer(withSaga(Connect(Navigation)))>
+    <HeaderBar
+      header="Contact Me"
+      subMessage="Feel free to send me a message and i will get back to you"
+    >
+      <div
+        className="jumbotron"
+      >
+        <h1>
+          Contact Me
+        </h1>
+        <p>
+          Feel free to send me a message and i will get back to you
+        </p>
+      </div>
+    </HeaderBar>
+    <Expire
+      delay={1500}
+      messageStatus="succeeded"
+      submitMessageForm={[MockFunction]}
+    >
+      <div>
+        <ResultBanner
+          message="Message Sent"
+          resultClass="succeeded"
+        >
+          <div
+            className="grayOut"
+          >
+            <div
+              className="succeeded"
+            >
+              Message Sent
+            </div>
+          </div>
+        </ResultBanner>
+      </div>
+    </Expire>
+    <ContactBody
+      messageStatus="succeeded"
+      submitMessageForm={[MockFunction]}
+    >
+      <div
+        className="messageForm"
+      >
+        <input
+          className="input"
+          placeholder="Your Email"
+          type="text"
+        />
+        <input
+          className="input"
+          placeholder="Subject"
+          type="text"
+        />
+        <textarea
+          className="inputLargeText"
+          placeholder="Your Message"
+          type="text"
+        />
+        <div
+          className="actionContainer"
+        >
+          <BasicButton
+            className="button"
+            onClick={[Function]}
+          >
+            <div
+              className="button"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Clear
+            </div>
+          </BasicButton>
+          <BasicButton
+            className="button"
+            onClick={[Function]}
+          >
+            <div
+              className="button"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              Submit
+            </div>
+          </BasicButton>
+        </div>
+      </div>
+    </ContactBody>
+  </ContactMePage>
+</Provider>
+`;
