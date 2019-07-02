@@ -5,7 +5,11 @@ import { shallow } from 'enzyme';
 import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
 import HomePage from '../index';
 
+const renderComponent = () => shallow(<HomePage />);
+
 describe('<HomePage />', () => {
-  const renderedComponent = shallow(<HomePage />);
-  expect(renderedComponent.contains(<Navigation />)).toEqual(true);
+  it('should render the Navigation', () => {
+    const wrapper = renderComponent();
+    expect(wrapper.contains(<Navigation />)).toEqual(true);
+  });
 });

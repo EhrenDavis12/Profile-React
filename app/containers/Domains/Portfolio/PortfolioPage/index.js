@@ -10,12 +10,15 @@
  */
 
 import React from 'react';
-// import Navigation from 'components/Domains/SharedKernel/Navigation';
-import Navigation from 'containers/Domains/Navigations/Navigation';
+import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class PortfolioPage extends React.PureComponent {
   render() {
-    return <Navigation />;
+    return (
+      <React.Fragment>
+        <Navigation />
+      </React.Fragment>
+    );
   }
 }
