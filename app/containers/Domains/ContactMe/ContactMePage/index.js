@@ -14,7 +14,7 @@ import Navigation from 'containers/Domains/Navigations/Navigation';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
 import ContactBody from 'components/Domains/ContactMe/ContactBody';
 import ResultBanner from 'components/Domains/SharedKernel/ResultBanner';
-import Expire from 'components/Domains/SharedKernel/Expire';
+import Expire from 'containers/Domains/SharedKernel/Expire';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';

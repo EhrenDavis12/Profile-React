@@ -18,7 +18,9 @@
       "request": "launch",
       "name": "Jest Current File",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": ["app/utils/tests/sagaUtiles.test.js"],
+      "args": [
+        "app/containers/Domains/SharedKernel/Expire/tests/index.test.js"
+      ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "windows": {
