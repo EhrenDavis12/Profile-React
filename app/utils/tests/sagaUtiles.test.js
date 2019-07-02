@@ -29,7 +29,7 @@ describe('fetching methods group', () => {
       let putDescriptor = generator.next().value;
       expect(putDescriptor).toEqual(call(request, path));
       putDescriptor = generator.next(data).value;
-      expect(putDescriptor).toEqual(data);
+      expect(putDescriptor).toEqual({ data });
     });
 
     it('should throw error from fetchJson', () => {
@@ -201,7 +201,7 @@ describe('Posting methods group', () => {
         }),
       );
       putDescriptor = generator.next(body).value;
-      expect(putDescriptor).toEqual(body);
+      expect(putDescriptor).toEqual({ data: body });
     });
 
     it('should throw error from postJson', () => {

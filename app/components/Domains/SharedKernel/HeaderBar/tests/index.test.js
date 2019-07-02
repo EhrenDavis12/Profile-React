@@ -1,14 +1,13 @@
 import React from 'react';
-// import { mount } from 'enzyme';
 // import { enzymeFind } from 'styled-components/test-utils';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import HeaderBar from '../index';
 
 const header = 'test.png';
 const subMessage = 'test';
 const renderComponent = (props = {}) =>
-  shallow(<HeaderBar header={header} subMessage={subMessage} {...props} />);
+  mount(<HeaderBar header={header} subMessage={subMessage} {...props} />);
 
 describe('<HeaderBar />', () => {
   it('should have header attribute', () => {
