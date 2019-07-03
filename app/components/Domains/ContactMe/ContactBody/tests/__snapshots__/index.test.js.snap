@@ -1,65 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ContactBody /> renders as expected 1`] = `
+exports[`<ContactBody /> renders as expected SnapShot 1`] = `
 <div
   className="messageForm"
 >
   <input
     className="input"
+    id="emailInput"
     placeholder="Your Email"
-    type="text"
+    type="email"
   />
   <input
     className="input"
+    id="subjectInput"
     placeholder="Subject"
     type="text"
   />
   <textarea
     className="inputLargeText"
-    placeholder="Your Message"
-    type="text"
-  />
-  <div
-    className="actionContainer"
-  >
-    <div
-      className="button"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      Clear
-    </div>
-    <div
-      className="button"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      Submit
-    </div>
-  </div>
-</div>
-`;
-
-exports[`ContactBody renders as expected 1`] = `
-<div
-  className="messageForm"
->
-  <input
-    className="input"
-    placeholder="Your Email"
-    type="text"
-  />
-  <input
-    className="input"
-    placeholder="Subject"
-    type="text"
-  />
-  <textarea
-    className="inputLargeText"
+    id="messageInput"
     placeholder="Your Message"
     type="text"
   />

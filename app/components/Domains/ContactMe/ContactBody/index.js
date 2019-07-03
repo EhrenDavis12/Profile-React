@@ -35,6 +35,7 @@ class ContactBody extends React.Component {
 
   clear = () => {
     this.setState({ errorText: '' });
+    this.messageField.value = '';
     this.clientEmailField.value = '';
     this.subjectField.value = '';
   };
@@ -46,6 +47,7 @@ class ContactBody extends React.Component {
     return (
       <div className="messageForm">
         <input
+          id="emailInput"
           className={classNames('input', {
             inputError: this.state.errorText,
           })}
@@ -53,10 +55,11 @@ class ContactBody extends React.Component {
           ref={f => {
             this.clientEmailField = f;
           }}
-          type="text"
+          type="email"
         />
         {fieldError}
         <input
+          id="subjectInput"
           className="input"
           placeholder="Subject"
           ref={f => {
@@ -65,6 +68,7 @@ class ContactBody extends React.Component {
           type="text"
         />
         <textarea
+          id="messageInput"
           className="inputLargeText"
           placeholder="Your Message"
           ref={f => {
@@ -73,10 +77,10 @@ class ContactBody extends React.Component {
           type="text"
         />
         <div className="actionContainer">
-          <BasicButton className="button" onClick={this.clear}>
+          <BasicButton id="clear" className="button" onClick={this.clear}>
             Clear
           </BasicButton>
-          <BasicButton className="button" onClick={this.submit}>
+          <BasicButton id="submit" className="button" onClick={this.submit}>
             Submit
           </BasicButton>
         </div>
