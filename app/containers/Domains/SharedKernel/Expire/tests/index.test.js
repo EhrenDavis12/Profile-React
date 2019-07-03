@@ -1,13 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
-import { browserHistory } from 'react-router-dom';
-import configureStore from '../../../../../configureStore';
+// import { Provider } from 'react-redux';
+// import { browserHistory } from 'react-router-dom';
+// import configureStore from '../../../../../configureStore';
 
 import Expire from '../index';
 
 describe('Expire setup', () => {
-  let store;
+  // let store;
   let wrapper;
   let actionAfterExpireSpy;
   const childrenOrg = <h1>foo</h1>;
@@ -23,7 +23,7 @@ describe('Expire setup', () => {
     );
 
   beforeAll(() => {
-    store = configureStore({}, browserHistory);
+    // store = configureStore({}, browserHistory);
     actionAfterExpireSpy = jest.fn();
     jest.useFakeTimers();
   });

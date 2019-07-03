@@ -32,7 +32,6 @@ describe('<MessageDetails />', () => {
       <MessageDetails selectUserMessage={mockCallBack} userMessage={obj} />,
     );
     // const tree = renderComponent(mockCallBack, obj);
-    console.log(tree);
     tree.root
       .findByProps({ className: 'MessageDetails-Box' })
       .children[0].props.onClick();
