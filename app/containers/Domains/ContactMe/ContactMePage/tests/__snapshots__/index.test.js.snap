@@ -269,16 +269,19 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody c
       >
         <input
           className="input"
+          id="emailInput"
           placeholder="Your Email"
-          type="text"
+          type="email"
         />
         <input
           className="input"
+          id="subjectInput"
           placeholder="Subject"
           type="text"
         />
         <textarea
           className="inputLargeText"
+          id="messageInput"
           placeholder="Your Message"
           type="text"
         />
@@ -287,6 +290,7 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody c
         >
           <BasicButton
             className="button"
+            id="clear"
             onClick={[Function]}
           >
             <div
@@ -301,6 +305,7 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody c
           </BasicButton>
           <BasicButton
             className="button"
+            id="submit"
             onClick={[Function]}
           >
             <div
@@ -611,16 +616,19 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody s
       >
         <input
           className="input"
+          id="emailInput"
           placeholder="Your Email"
-          type="text"
+          type="email"
         />
         <input
           className="input"
+          id="subjectInput"
           placeholder="Subject"
           type="text"
         />
         <textarea
           className="inputLargeText"
+          id="messageInput"
           placeholder="Your Message"
           type="text"
         />
@@ -629,6 +637,7 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody s
         >
           <BasicButton
             className="button"
+            id="clear"
             onClick={[Function]}
           >
             <div
@@ -643,6 +652,7 @@ exports[`<ContactMePage /> <ContactMePage /> should render its UserMessageBody s
           </BasicButton>
           <BasicButton
             className="button"
+            id="submit"
             onClick={[Function]}
           >
             <div
