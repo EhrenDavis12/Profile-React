@@ -46,6 +46,7 @@ class ContactBody extends React.Component {
     ) : null;
     return (
       <div className="messageForm">
+        <div className="breakSnapShotTest" />
         <input
           id="emailInput"
           className={classNames('input', {
