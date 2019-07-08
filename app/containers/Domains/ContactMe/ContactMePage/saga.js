@@ -8,7 +8,7 @@ import { submitMessageFormSucceeded, submitMessageFormFailed } from './actions';
 export function* submitMessageFormStart() {
   yield call(
     postStateApi,
-    'localhost:3001/api/v1/messages',
+    process.env.REACT_APP_CONTACT_ME_API_POST_MESSAGES,
     makeSelectMessageForm,
     submitMessageFormSucceeded,
     submitMessageFormFailed,

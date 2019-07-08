@@ -3,7 +3,8 @@
  */
 
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
@@ -113,16 +114,23 @@ module.exports = options => ({
       },
     ],
   },
-  plugins: options.plugins.concat([
+  plugins: options.plugins.concat([new Dotenv()]),
+  /* plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
     // drop any unreachable code.
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        REACT_APP_USER_UUID: JSON.stringify(
+          '2f67b460-6469-11e9-b132-2b223266dc25',
+        ),
+        REACT_APP_CONTACT_ME_API_POST_MESSAGES: JSON.stringify(
+          process.env.REACT_APP_CONTACT_ME_API_POST_MESSAGES,
+        ),
       },
     }),
-  ]),
+  ]), */
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
