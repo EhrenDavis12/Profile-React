@@ -27,7 +27,7 @@ class ContactBody extends React.Component {
 
     this.props.submitMessageForm({
       contactInfo: email,
-      userUuid: '2f67b460-6469-11e9-b132-2b223266dc25',
+      userUuid: process.env.REACT_APP_USER_UUID,
       subject: this.subjectField.value,
       message: this.messageField.value,
     });
