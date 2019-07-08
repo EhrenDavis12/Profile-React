@@ -30,7 +30,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "localhost:3001/api/v1/messages",
+      undefined,
       [Function],
       [Function],
       [Function],
