@@ -122,11 +122,10 @@ module.exports = options => ({
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        REACT_APP_USER_UUID: JSON.stringify(
-          '2f67b460-6469-11e9-b132-2b223266dc25',
-        ),
-        REACT_APP_CONTACT_ME_API_POST_MESSAGES: JSON.stringify(
-          process.env.REACT_APP_CONTACT_ME_API_POST_MESSAGES,
+        USER_UUID: JSON.stringify(process.env.USER_UUID),
+        CONTACT_ME_API_URL: JSON.stringify(process.env.CONTACT_ME_API_URL),
+        CONTACT_ME_API_MESSAGES: JSON.stringify(
+          process.env.CONTACT_ME_API_MESSAGES,
         ),
       },
     }),
