@@ -28,7 +28,9 @@ import {
 export function* fetchUserStart() {
   yield call(
     fetchApi,
-    'localhost:3001/api/v1/users/?uuid=2f67b460-6469-11e9-b132-2b223266dc25',
+    `${process.env.CONTACT_ME_API_URL}/api/v1/users/?uuid=${
+      process.env.USER_UUID
+    }`,
     requestUserSucceeded,
     requestUserFailed,
   );
@@ -41,7 +43,9 @@ export function* fetchUserSaga() {
 export function* fetchUserMessagesStart() {
   yield call(
     fetchApiMiddleMan,
-    'localhost:3001/api/v1/messagesByUser/?userUuid=2f67b460-6469-11e9-b132-2b223266dc25',
+    `${process.env.CONTACT_ME_API_URL}/api/v1/messagesByUser/?uuid=${
+      process.env.USER_UUID
+    }`,
     formatUserMessageStart,
     requestUserMessagesSucceeded,
     requestUserMessagesFailed,

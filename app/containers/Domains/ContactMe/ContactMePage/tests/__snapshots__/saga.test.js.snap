@@ -30,7 +30,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      undefined,
+      "undefinedundefined",
       [Function],
       [Function],
       [Function],
