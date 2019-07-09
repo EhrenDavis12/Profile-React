@@ -19,7 +19,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "localhost:3001/api/v1/users/?uuid=2f67b460-6469-11e9-b132-2b223266dc25",
+      "undefined/api/v1/users/?uuid=undefined",
       [Function],
       [Function],
     ],
@@ -48,7 +48,7 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "localhost:3001/api/v1/messagesByUser/?userUuid=2f67b460-6469-11e9-b132-2b223266dc25",
+      "undefined/api/v1/messagesByUser/?uuid=undefined",
       [Function],
       [Function],
       [Function],
