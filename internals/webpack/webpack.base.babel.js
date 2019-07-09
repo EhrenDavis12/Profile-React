@@ -3,8 +3,9 @@
  */
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
+const { definitions } = new Dotenv();
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
@@ -114,11 +115,12 @@ module.exports = options => ({
       },
     ],
   },
-  plugins: options.plugins.concat([
+  plugins: [new webpack.DefinePlugin({ ...definitions })],
+  /* plugins: options.plugins.concat([
     new Dotenv({
       path: path.resolve(__dirname, './.env'),
     }),
-  ]),
+  ]), */
   /* plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
