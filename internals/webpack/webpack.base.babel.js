@@ -114,7 +114,11 @@ module.exports = options => ({
       },
     ],
   },
-  plugins: options.plugins.concat([new Dotenv()]),
+  plugins: options.plugins.concat([
+    new Dotenv({
+      path: path.resolve(__dirname, './.env'),
+    }),
+  ]),
   /* plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
