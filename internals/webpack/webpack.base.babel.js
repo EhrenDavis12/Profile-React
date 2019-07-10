@@ -22,6 +22,9 @@ try {
       `env file path is 3: ${path.resolve(__dirname, '..', '..', '.env')}`,
     );
   }
+  if (fs.existsSync('./.env')) {
+    console.log(`env file path is 3: ./.env}`);
+  }
 } catch (err) {
   console.error(err);
 }
@@ -162,14 +165,16 @@ module.exports = options => ({
       },
     }),
   ]), */
-  plugins: options.plugins.concat([
-    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
-    // inside your code for any environment checks; Terser will automatically
-    // drop any unreachable code.
+  /* plugins: options.plugins.concat([
     new webpack.DefinePlugin({
       'process.env': new Dotenv(),
     }),
-  ]),
+  ]), */
+  plugins: [
+    new Dotenv({
+      path: path.resolve(__dirname, '..', '.env'),
+    }),
+  ],
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
