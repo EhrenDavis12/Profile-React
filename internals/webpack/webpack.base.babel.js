@@ -3,7 +3,7 @@
  */
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 // const { definitions } = new Dotenv();
 const fs = require('fs');
@@ -136,16 +136,16 @@ module.exports = options => ({
     ],
   },
   // plugins: [new webpack.DefinePlugin({ ...definitions })],
-  plugins: options.plugins.concat([
+  /* plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
-      path: path.resolve(__dirname, '..', '..', '.env'),
+      // path: path.resolve(__dirname, '..', '..', '.env'),
       // safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
       // systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
       // silent: true, // hide any errors
       // defaults: false, // load '.env.defaults' as the default values if empty.
     }),
-  ]),
+  ]), */
   // plugins: options.plugins.concat([new Dotenv()]),
   /* plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
@@ -162,6 +162,14 @@ module.exports = options => ({
       },
     }),
   ]), */
+  plugins: options.plugins.concat([
+    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
+    // inside your code for any environment checks; Terser will automatically
+    // drop any unreachable code.
+    new webpack.DefinePlugin({
+      'process.env': new Dotenv(),
+    }),
+  ]),
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
