@@ -6,7 +6,22 @@ const path = require('path');
 // const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 // const { definitions } = new Dotenv();
-console.log(`env file path is: ${path.resolve(__dirname, './.env')}`);
+const fs = require('fs');
+
+console.log(`here here here here here here here here here here here here here`);
+console.log(`__dirname: ${__dirname}`);
+try {
+  if (fs.existsSync(path.resolve(__dirname, './.env'))) {
+    console.log(`env file path is 1: ${path.resolve(__dirname, './.env')}`);
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '.env'))) {
+    console.log(`env file path is 2: ${path.resolve(__dirname, '..', '.env')}`);
+  }
+} catch (err) {
+  console.error(err);
+}
+console.log(`here here here here here here here here here here here here here`);
+
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
 // see https://github.com/webpack/loader-utils/issues/56 parseQuery() will be replaced with getOptions()
