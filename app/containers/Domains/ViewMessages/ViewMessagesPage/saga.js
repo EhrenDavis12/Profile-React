@@ -28,7 +28,7 @@ import {
 export function* fetchUserStart() {
   yield call(
     fetchApi,
-    `${process.env.REACT_APP_CONTACT_ME_API_URL}/api/v1/users/?uuid=${
+    `${process.env.CONTACT_ME_API_URL}/api/v1/users/?uuid=${
       process.env.USER_UUID
     }`,
     requestUserSucceeded,
