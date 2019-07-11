@@ -28,6 +28,26 @@ try {
   if (fs.existsSync('.env')) {
     console.log(`env file path is 5: .env}`);
   }
+  if (fs.existsSync(path.resolve(__dirname, '..', './.env'))) {
+    console.log(
+      `env file path is 6: ${path.resolve(__dirname, '..', './.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '/.env'))) {
+    console.log(
+      `env file path is 7: ${path.resolve(__dirname, '..', '/.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '..', '/.env'))) {
+    console.log(
+      `env file path is 8: ${path.resolve(__dirname, '..', '..', '/.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '..', './.env'))) {
+    console.log(
+      `env file path is 9: ${path.resolve(__dirname, '..', '..', './.env')}`,
+    );
+  }
 } catch (err) {
   console.error(err);
 }
@@ -144,8 +164,8 @@ module.exports = options => ({
   // plugins: [new webpack.DefinePlugin({ ...definitions })],
   plugins: options.plugins.concat([
     new Dotenv({
-      path: path.resolve(__dirname, './.env'),
-      // path: path.resolve(__dirname, '..', '..', '.env'),
+      // path: path.resolve(__dirname, './.env'),
+      path: path.resolve(__dirname, '..', '.env'),
       // safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
       // systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
       // silent: true, // hide any errors
