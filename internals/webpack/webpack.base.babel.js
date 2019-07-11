@@ -162,7 +162,7 @@ module.exports = options => ({
     ],
   },
   // plugins: [new webpack.DefinePlugin({ ...definitions })], // wont work envweb
-  plugins: options.plugins.concat([
+  /* plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
       path: path.resolve(__dirname, '..', '.env'),
@@ -171,9 +171,9 @@ module.exports = options => ({
       // silent: true, // hide any errors
       // defaults: false, // load '.env.defaults' as the default values if empty.
     }),
-  ]),
+  ]), */
   // plugins: options.plugins.concat([new Dotenv()]),
-  /* plugins: options.plugins.concat([
+  plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
     // drop any unreachable code.
@@ -187,7 +187,7 @@ module.exports = options => ({
         ),
       },
     }),
-  ]), */
+  ]),
   /* plugins: options.plugins.concat([
     // not working env2
     new webpack.DefinePlugin({

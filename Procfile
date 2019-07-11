@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production node --inspect server
+web: npm run start:prods
