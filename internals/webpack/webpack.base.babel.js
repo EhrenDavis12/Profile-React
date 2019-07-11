@@ -3,9 +3,9 @@
  */
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
-// const { definitions } = new Dotenv();
+const { definitions } = new Dotenv();
 const fs = require('fs');
 
 console.log(`here here here here here here here here here here here here here`);
@@ -161,7 +161,7 @@ module.exports = options => ({
       },
     ],
   },
-  // plugins: [new webpack.DefinePlugin({ ...definitions })],
+  // plugins: [new webpack.DefinePlugin({ ...definitions })], // wont work envweb
   plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
@@ -189,11 +189,12 @@ module.exports = options => ({
     }),
   ]), */
   /* plugins: options.plugins.concat([
+    // not working env2
     new webpack.DefinePlugin({
       'process.env': new Dotenv(),
     }),
   ]), */
-  /* plugins: [
+  /* plugins: [ // not working at all
     new Dotenv({
       path: path.resolve(__dirname, '..', '.env'),
     }),
