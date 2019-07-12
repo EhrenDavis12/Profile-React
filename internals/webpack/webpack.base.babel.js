@@ -3,9 +3,9 @@
  */
 
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
-const { definitions } = new Dotenv();
+// const { definitions } = new Dotenv();
 const fs = require('fs');
 
 console.log(`here here here here here here here here here here here here here`);
@@ -161,7 +161,6 @@ module.exports = options => ({
       },
     ],
   },
-  // plugins: [new webpack.DefinePlugin({ ...definitions })], // wont work envweb
   /* plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
@@ -172,11 +171,8 @@ module.exports = options => ({
       // defaults: false, // load '.env.defaults' as the default values if empty.
     }),
   ]), */
-  // plugins: options.plugins.concat([new Dotenv()]),
-  plugins: options.plugins.concat([
-    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
-    // inside your code for any environment checks; Terser will automatically
-    // drop any unreachable code.
+  plugins: options.plugins.concat([new Dotenv()]),
+  /* plugins: options.plugins.concat([
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
@@ -187,18 +183,13 @@ module.exports = options => ({
         ),
       },
     }),
-  ]),
+  ]), */
   /* plugins: options.plugins.concat([
     // not working env2
     new webpack.DefinePlugin({
       'process.env': new Dotenv(),
     }),
   ]), */
-  /* plugins: [ // not working at all
-    new Dotenv({
-      path: path.resolve(__dirname, '..', '.env'),
-    }),
-  ], */
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
