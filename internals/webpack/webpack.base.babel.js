@@ -9,7 +9,9 @@ const Dotenv = require('dotenv-webpack');
 const fs = require('fs');
 
 console.log(`here here here here here here here here here here here here here`);
-console.log(JSON.stringify(new Dotenv()));
+console.log(JSON.stringify({ ...new Dotenv() }));
+console.log(JSON.stringify(JSON.stringify(process.env.CONTACT_ME_API_URL)));
+
 /* console.log(`__dirname: ${__dirname}`);
 try {
   if (fs.existsSync(path.resolve(__dirname, './.env'))) {
