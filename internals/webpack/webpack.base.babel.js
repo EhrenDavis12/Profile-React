@@ -3,13 +3,14 @@
  */
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 // const { definitions } = new Dotenv();
 const fs = require('fs');
 
 console.log(`here here here here here here here here here here here here here`);
-console.log(`__dirname: ${__dirname}`);
+console.log(JSON.stringify(new Dotenv()));
+/* console.log(`__dirname: ${__dirname}`);
 try {
   if (fs.existsSync(path.resolve(__dirname, './.env'))) {
     console.log(`env file path is 1: ${path.resolve(__dirname, './.env')}`);
@@ -50,7 +51,7 @@ try {
   }
 } catch (err) {
   console.error(err);
-}
+} */
 console.log(`here here here here here here here here here here here here here`);
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
@@ -161,7 +162,7 @@ module.exports = options => ({
       },
     ],
   },
-  plugins: options.plugins.concat([
+  /* plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
       // path: path.resolve(__dirname, '..', '.env'),
@@ -171,9 +172,9 @@ module.exports = options => ({
       // silent: true, // hide any errors
       // defaults: false, // load '.env.defaults' as the default values if empty.
     }),
-  ]),
+  ]), */
   // plugins: options.plugins.concat([new Dotenv()]),
-  /* plugins: options.plugins.concat([
+  plugins: options.plugins.concat([
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
@@ -184,13 +185,7 @@ module.exports = options => ({
         ),
       },
     }),
-  ]), */
-  /* plugins: options.plugins.concat([
-    // not working env2
-    new webpack.DefinePlugin({
-      'process.env': new Dotenv(),
-    }),
-  ]), */
+  ]),
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
