@@ -5,11 +5,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-// console.log(`here here here here here here here here here here here here here`);
-// console.log(JSON.stringify(process.env.CONTACT_ME_API_URL));
-// console.log(process.env.CONTACT_ME_API_URL);
-// console.log(`here here here here here here here here here here here here here`);
-
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
 // see https://github.com/webpack/loader-utils/issues/56 parseQuery() will be replaced with getOptions()
