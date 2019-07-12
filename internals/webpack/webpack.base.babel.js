@@ -3,10 +3,56 @@
  */
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
-// const { definitions } = new Dotenv();
-console.log(`env file path is: ${path.resolve(__dirname, './.env')}`);
+const { definitions } = new Dotenv();
+const fs = require('fs');
+
+console.log(`here here here here here here here here here here here here here`);
+console.log(`__dirname: ${__dirname}`);
+try {
+  if (fs.existsSync(path.resolve(__dirname, './.env'))) {
+    console.log(`env file path is 1: ${path.resolve(__dirname, './.env')}`);
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '.env'))) {
+    console.log(`env file path is 2: ${path.resolve(__dirname, '..', '.env')}`);
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '..', '.env'))) {
+    console.log(
+      `env file path is 3: ${path.resolve(__dirname, '..', '..', '.env')}`,
+    );
+  }
+  if (fs.existsSync('./.env')) {
+    console.log(`env file path is 4: ./.env}`);
+  }
+  if (fs.existsSync('.env')) {
+    console.log(`env file path is 5: .env}`);
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', './.env'))) {
+    console.log(
+      `env file path is 6: ${path.resolve(__dirname, '..', './.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '/.env'))) {
+    console.log(
+      `env file path is 7: ${path.resolve(__dirname, '..', '/.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '..', '/.env'))) {
+    console.log(
+      `env file path is 8: ${path.resolve(__dirname, '..', '..', '/.env')}`,
+    );
+  }
+  if (fs.existsSync(path.resolve(__dirname, '..', '..', './.env'))) {
+    console.log(
+      `env file path is 9: ${path.resolve(__dirname, '..', '..', './.env')}`,
+    );
+  }
+} catch (err) {
+  console.error(err);
+}
+console.log(`here here here here here here here here here here here here here`);
+
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
 // see https://github.com/webpack/loader-utils/issues/56 parseQuery() will be replaced with getOptions()
@@ -115,8 +161,8 @@ module.exports = options => ({
       },
     ],
   },
-  // plugins: [new webpack.DefinePlugin({ ...definitions })],
-  plugins: options.plugins.concat([
+  // plugins: [new webpack.DefinePlugin({ ...definitions })], // wont work envweb
+  /* plugins: options.plugins.concat([
     new Dotenv({
       // path: path.resolve(__dirname, './.env'),
       path: path.resolve(__dirname, '..', '.env'),
@@ -125,9 +171,9 @@ module.exports = options => ({
       // silent: true, // hide any errors
       // defaults: false, // load '.env.defaults' as the default values if empty.
     }),
-  ]),
+  ]), */
   // plugins: options.plugins.concat([new Dotenv()]),
-  /* plugins: options.plugins.concat([
+  plugins: options.plugins.concat([
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
     // drop any unreachable code.
@@ -141,7 +187,18 @@ module.exports = options => ({
         ),
       },
     }),
+  ]),
+  /* plugins: options.plugins.concat([
+    // not working env2
+    new webpack.DefinePlugin({
+      'process.env': new Dotenv(),
+    }),
   ]), */
+  /* plugins: [ // not working at all
+    new Dotenv({
+      path: path.resolve(__dirname, '..', '.env'),
+    }),
+  ], */
   resolve: {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.jsx', '.react.js'],
