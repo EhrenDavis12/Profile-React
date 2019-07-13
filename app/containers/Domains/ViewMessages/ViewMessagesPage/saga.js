@@ -41,6 +41,7 @@ export function* fetchUserSaga() {
 }
 
 export function* fetchUserMessagesStart() {
+  debugger;
   yield call(
     fetchApiMiddleMan,
     `${process.env.CONTACT_ME_API_URL}/api/v1/messagesByUser/?uuid=${
