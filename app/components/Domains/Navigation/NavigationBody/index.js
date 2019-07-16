@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 import AppBar from 'components/Domains/Navigation/AppBar';
 import Drawer from 'components/Domains/SharedKernel/Drawer';
-import './index.css';
+import './styles.css';
 
 function NavigationBody({
   navigationLinks,

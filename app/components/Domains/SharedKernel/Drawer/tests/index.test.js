@@ -1,11 +1,11 @@
 import React from 'react';
-// import { mount } from 'enzyme';
-// import { enzymeFind } from 'styled-components/test-utils';
+import 'jest-styled-components';
 
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
-import renderer from 'react-test-renderer';
+// import renderer from 'react-test-renderer';
 import Drawer from '../index';
+import { DrawerStyled, ItemButtonStyled } from '../styles';
 
 const testData = {
   items: [
@@ -25,25 +25,30 @@ const testData = {
   itemKeyAttr: 'key',
   isDrawerOpen: false,
 };
-const renderComponent = mockData => shallow(<Drawer {...mockData} />);
+const renderComponent = mockData => mount(<Drawer {...mockData} />);
 
 describe('<Drawer />', () => {
-  it('should have className for closed drawer', () => {
-    const renderedComponent = renderComponent(testData);
-    expect(renderedComponent.prop('className')).toEqual('drawer');
+  it('should have 2 styled Button components', () => {
+    const wrapper = renderComponent(testData);
+    expect(wrapper.find(ItemButtonStyled)).toHaveLength(2);
   });
 
-  it('should have className for open drawer', () => {
-    const renderedComponent = renderComponent({
+  it('should have props of a closed Drawer', () => {
+    const wrapper = renderComponent(testData);
+    expect(wrapper.find(DrawerStyled)).toHaveStyleRule('left', '-300px');
+  });
+
+  it('should have props of a open Drawer', () => {
+    const wrapper = renderComponent({
       ...testData,
       isDrawerOpen: true,
     });
-    expect(renderedComponent.prop('className')).toEqual('drawer drawerOpen');
+    expect(wrapper.find(DrawerStyled)).toHaveStyleRule('left', '0');
   });
 
   it('should have children', () => {
-    const renderedComponent = renderComponent(testData);
-    expect(renderedComponent.prop('children').length).toEqual(2);
+    const wrapper = renderComponent(testData);
+    expect(wrapper.find(DrawerStyled).prop('children').length).toEqual(2);
   });
 
   it('Children should handle click events', () => {
@@ -53,10 +58,11 @@ describe('<Drawer />', () => {
       selectItem: mockCallBack,
       isDrawerOpen: true,
     };
-    const tree = renderer.create(<Drawer {...propsData} />);
-    tree.root
-      .findByProps({ className: 'drawer drawerOpen' })
-      .children[0].props.onClick();
+    const renderedComponent = renderComponent(propsData);
+    renderedComponent
+      .find(ItemButtonStyled)
+      .first()
+      .simulate('click');
     expect(mockCallBack.mock.calls.length).toEqual(1);
   });
 });
