@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expected 1`] = `
+.c0 {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  padding: 0px;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  box-shadow: rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;
+  z-index: 1000;
+  color: #000000;
+}
+
+.c0.drawerOpen {
+  left: 0;
+}
+
+.c1 {
+  padding: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: solid 1px #f6f6f6;
+}
+
+.c1:hover {
+  background-color: #f6f6f6;
+}
+
 <Provider
   store={
     Object {
@@ -236,11 +266,15 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                           "componentStyle": ComponentStyle {
                             "componentId": "styles__DrawerStyled-fj1ofq-0",
                             "isStatic": false,
-                            "lastClassName": "dRFtXm",
+                            "lastClassName": "c0",
                             "rules": Array [
                               "position:fixed;top:0;left:",
                               [Function],
-                              ";height:100%;width:300px;background:#fff;padding:0px;transition:0.25s ease-in-out;box-shadow:rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;z-index:1000;&.drawerOpen{left:0;}",
+                              ";height:100%;width:300px;background:",
+                              "#fff",
+                              ";padding:0px;transition:0.25s ease-in-out;box-shadow:rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;z-index:1000;color:",
+                              "#000000",
+                              ";&.drawerOpen{left:0;}",
                             ],
                           },
                           "displayName": "styles__DrawerStyled",
@@ -255,7 +289,7 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                       isDrawerOpen={false}
                     >
                       <div
-                        className="styles__DrawerStyled-fj1ofq-0 dRFtXm"
+                        className="c0"
                       >
                         <styles__ItemButtonStyled
                           key="AboutMe"
@@ -269,9 +303,13 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styles__ItemButtonStyled-fj1ofq-1",
                                   "isStatic": true,
-                                  "lastClassName": "lbhiYP",
+                                  "lastClassName": "c1",
                                   "rules": Array [
-                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                    "#f6f6f6",
+                                    ";&:hover{background-color:",
+                                    "#f6f6f6",
+                                    ";}",
                                   ],
                                 },
                                 "displayName": "styles__ItemButtonStyled",
@@ -287,11 +325,11 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                             onClick={[Function]}
                           >
                             <BasicButton
-                              className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                              className="c1"
                               onClick={[Function]}
                             >
                               <div
-                                className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                                className="c1"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 role="button"
@@ -314,9 +352,13 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styles__ItemButtonStyled-fj1ofq-1",
                                   "isStatic": true,
-                                  "lastClassName": "lbhiYP",
+                                  "lastClassName": "c1",
                                   "rules": Array [
-                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                    "#f6f6f6",
+                                    ";&:hover{background-color:",
+                                    "#f6f6f6",
+                                    ";}",
                                   ],
                                 },
                                 "displayName": "styles__ItemButtonStyled",
@@ -332,11 +374,11 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                             onClick={[Function]}
                           >
                             <BasicButton
-                              className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                              className="c1"
                               onClick={[Function]}
                             >
                               <div
-                                className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                                className="c1"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 role="button"
@@ -359,9 +401,13 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styles__ItemButtonStyled-fj1ofq-1",
                                   "isStatic": true,
-                                  "lastClassName": "lbhiYP",
+                                  "lastClassName": "c1",
                                   "rules": Array [
-                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                    "#f6f6f6",
+                                    ";&:hover{background-color:",
+                                    "#f6f6f6",
+                                    ";}",
                                   ],
                                 },
                                 "displayName": "styles__ItemButtonStyled",
@@ -377,11 +423,11 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                             onClick={[Function]}
                           >
                             <BasicButton
-                              className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                              className="c1"
                               onClick={[Function]}
                             >
                               <div
-                                className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                                className="c1"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 role="button"
@@ -404,9 +450,13 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styles__ItemButtonStyled-fj1ofq-1",
                                   "isStatic": true,
-                                  "lastClassName": "lbhiYP",
+                                  "lastClassName": "c1",
                                   "rules": Array [
-                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                    "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                    "#f6f6f6",
+                                    ";&:hover{background-color:",
+                                    "#f6f6f6",
+                                    ";}",
                                   ],
                                 },
                                 "displayName": "styles__ItemButtonStyled",
@@ -422,11 +472,11 @@ exports[`<ViewMessagesPage /> <ViewMessagesPage /> snap Shots renders as expecte
                             onClick={[Function]}
                           >
                             <BasicButton
-                              className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                              className="c1"
                               onClick={[Function]}
                             >
                               <div
-                                className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
+                                className="c1"
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
                                 role="button"

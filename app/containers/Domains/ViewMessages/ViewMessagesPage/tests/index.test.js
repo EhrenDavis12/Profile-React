@@ -2,6 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router-dom';
+import 'jest-styled-components';
 import configureStore from '../../../../../configureStore';
 // import { enzymeFind } from 'styled-components/test-utils';
 import {

@@ -181,11 +181,15 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "componentStyle": ComponentStyle {
                           "componentId": "styles__DrawerStyled-fj1ofq-0",
                           "isStatic": false,
-                          "lastClassName": "dRFtXm",
+                          "lastClassName": "gMmBUU",
                           "rules": Array [
                             "position:fixed;top:0;left:",
                             [Function],
-                            ";height:100%;width:300px;background:#fff;padding:0px;transition:0.25s ease-in-out;box-shadow:rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;z-index:1000;&.drawerOpen{left:0;}",
+                            ";height:100%;width:300px;background:",
+                            "#fff",
+                            ";padding:0px;transition:0.25s ease-in-out;box-shadow:rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;z-index:1000;color:",
+                            "#000000",
+                            ";&.drawerOpen{left:0;}",
                           ],
                         },
                         "displayName": "styles__DrawerStyled",
@@ -200,7 +204,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     isDrawerOpen={false}
                   >
                     <div
-                      className="styles__DrawerStyled-fj1ofq-0 dRFtXm"
+                      className="styles__DrawerStyled-fj1ofq-0 gMmBUU"
                     >
                       <styles__ItemButtonStyled
                         key="AboutMe"
@@ -216,7 +220,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 "isStatic": true,
                                 "lastClassName": "lbhiYP",
                                 "rules": Array [
-                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
                                 ],
                               },
                               "displayName": "styles__ItemButtonStyled",
@@ -261,7 +269,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 "isStatic": true,
                                 "lastClassName": "lbhiYP",
                                 "rules": Array [
-                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
                                 ],
                               },
                               "displayName": "styles__ItemButtonStyled",
@@ -306,7 +318,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 "isStatic": true,
                                 "lastClassName": "lbhiYP",
                                 "rules": Array [
-                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
                                 ],
                               },
                               "displayName": "styles__ItemButtonStyled",
@@ -351,7 +367,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 "isStatic": true,
                                 "lastClassName": "lbhiYP",
                                 "rules": Array [
-                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px #f6f6f6;&:hover{background-color:#f6f6f6;}",
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
                                 ],
                               },
                               "displayName": "styles__ItemButtonStyled",
