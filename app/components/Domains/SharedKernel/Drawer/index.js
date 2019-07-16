@@ -6,10 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styled from 'styled-components';
-import './styles.css';
-import classNames from 'classnames';
-import BasicButton from 'components/Domains/SharedKernel/Buttons/BasicButton';
+import { DrawerStyled, ItemButtonStyled } from './styles';
 
 function Drawer({
   items,
@@ -19,19 +16,11 @@ function Drawer({
   isDrawerOpen,
 }) {
   const itemNodes = items.map(item => (
-    <BasicButton
-      className="item"
-      key={item[itemKeyAttr]}
-      onClick={() => selectItem(item)}
-    >
+    <ItemButtonStyled key={item[itemKeyAttr]} onClick={() => selectItem(item)}>
       {item[itemLabelAttr]}
-    </BasicButton>
+    </ItemButtonStyled>
   ));
-  return (
-    <div className={classNames('drawer', { drawerOpen: isDrawerOpen })}>
-      {itemNodes}
-    </div>
-  );
+  return <DrawerStyled isDrawerOpen={isDrawerOpen}>{itemNodes}</DrawerStyled>;
 }
 
 Drawer.propTypes = {

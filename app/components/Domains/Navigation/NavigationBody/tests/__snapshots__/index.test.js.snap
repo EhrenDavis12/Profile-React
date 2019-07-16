@@ -29,10 +29,10 @@ Array [
     </div>
   </div>,
   <div
-    className="drawer"
+    className="styles__DrawerStyled-fj1ofq-0 dRFtXm"
   >
     <div
-      className="item"
+      className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
@@ -41,7 +41,7 @@ Array [
       About Me
     </div>
     <div
-      className="item"
+      className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
@@ -50,7 +50,7 @@ Array [
       Portfolio
     </div>
     <div
-      className="item"
+      className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
@@ -59,7 +59,7 @@ Array [
       Contact
     </div>
     <div
-      className="item"
+      className="styles__ItemButtonStyled-fj1ofq-1 lbhiYP"
       onClick={[Function]}
       onKeyDown={[Function]}
       role="button"
