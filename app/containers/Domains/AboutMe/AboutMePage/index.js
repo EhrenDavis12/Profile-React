@@ -10,20 +10,18 @@
  */
 
 import React from 'react';
-import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class AboutMePage extends React.PureComponent {
   render() {
     return (
-      <>
-        <Navigation />
+      <React.Fragment>
         <HeaderBar
           header="Ehren Davis"
           subMessage="Sr. Developer at Hyland .Inc"
         />
-      </>
+      </React.Fragment>
     );
   }
 }

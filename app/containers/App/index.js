@@ -15,6 +15,7 @@ import AboutMePage from 'containers/Domains/AboutMe/AboutMePage/Loadable';
 import PortfolioPage from 'containers/Domains/Portfolio/PortfolioPage/Loadable';
 import ContactMePage from 'containers/Domains/ContactMe/ContactMePage/Loadable';
 import ViewMessagesPage from 'containers/Domains/ViewMessages/ViewMessagesPage/Loadable';
+import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
 
 import GlobalStyle from '../../global-styles';
 import './styles.css';
@@ -22,6 +23,7 @@ import './styles.css';
 export default function App() {
   return (
     <div className="container">
+      <Navigation />
       <Switch>
         <Route exact path="/" component={AboutMePage} />
         <Route exact path="/portfolio" component={PortfolioPage} />

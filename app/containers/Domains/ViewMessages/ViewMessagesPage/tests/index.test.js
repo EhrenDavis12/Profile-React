@@ -46,7 +46,6 @@ describe('<ViewMessagesPage />', () => {
   describe('<ViewMessagesPage />', () => {
     it('should render its UserMessageBody', () => {
       wrapper = renderComponent(userData);
-      expect(wrapper.find('Navigation').length).toEqual(1);
       expect(wrapper).toBeDefined();
       expect(requestUserSpy).toHaveBeenCalled();
       expect(requestUserMessagesSpy).toHaveBeenCalled();
