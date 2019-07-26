@@ -10,12 +10,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import NotFoundPage from 'containers/Domains/NotFound/NotFoundPage/Loadable';
-import AboutMePage from 'containers/Domains/AboutMe/AboutMePage/Loadable';
-import PortfolioPage from 'containers/Domains/Portfolio/PortfolioPage/Loadable';
-import ContactMePage from 'containers/Domains/ContactMe/ContactMePage/Loadable';
-import ViewMessagesPage from 'containers/Domains/ViewMessages/ViewMessagesPage/Loadable';
-import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
+import NotFoundPage from 'Domains/NotFound/NotFoundPage/Loadable';
+import AboutMePage from 'Domains/AboutMe/container/Loadable';
+import PortfolioPage from 'Domains/Portfolio/PortfolioPage/Loadable';
+import ContactMePage from 'Domains/ContactMe/container/Loadable';
+import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable';
+import Navigation from 'Domains/Navigation/container/Loadable';
 
 import GlobalStyle from '../../global-styles';
 import './styles.css';

@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationBody /> renders as expected 1`] = `
+Array [
+  <div
+    className="appBar"
+  >
+    <div
+      className="iconButton"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-bars icon"
+      />
+    </div>
+    <div
+      className="heading"
+    >
+      Coder Daily
+    </div>
+    <div
+      className="linkContainer"
+    >
+      Log In
+    </div>
+  </div>,
+  .c0 {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  padding: 0px;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  box-shadow: rgba(0,0,0,0.15) 0px 3px 10px,rgba(0,0,0,0.22) 0px 3px 10px;
+  z-index: 1000;
+  color: #000000;
+}
+
+.c0.drawerOpen {
+  left: 0;
+}
+
+.c1 {
+  padding: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: solid 1px #f6f6f6;
+}
+
+.c1:hover {
+  background-color: #f6f6f6;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      About Me
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Portfolio
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Contact
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Messages
+    </div>
+  </div>,
+]
+`;
