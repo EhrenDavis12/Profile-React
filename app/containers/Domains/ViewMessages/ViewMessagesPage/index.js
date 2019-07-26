@@ -12,7 +12,6 @@ import { compose } from 'redux';
 
 import UserMessageBody from 'components/Domains/ViewMessages/UserMessagesBody';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
-import Navigation from 'containers/Domains/Navigations/Navigation';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
@@ -41,14 +40,13 @@ export class ViewMessagesPage extends React.Component {
       );
     }
     return (
-      <>
-        <Navigation />
+      <React.Fragment>
         <HeaderBar
           header="Your messages are here"
           subMessage="Take a look at your recent messages"
         />
         {userMessageBodyElement}
-      </>
+      </React.Fragment>
     );
   }
 }

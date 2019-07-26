@@ -10,14 +10,13 @@
  */
 
 import React from 'react';
-import Navigation from 'containers/Domains/Navigations/Navigation/Loadable';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class PortfolioPage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Navigation />
+        <h1>PortfolioPage</h1>
       </React.Fragment>
     );
   }

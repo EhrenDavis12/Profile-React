@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import Navigation from 'containers/Domains/Navigations/Navigation';
 import HeaderBar from 'components/Domains/SharedKernel/HeaderBar';
 import ContactBody from 'components/Domains/ContactMe/ContactBody';
 import ResultBanner from 'components/Domains/SharedKernel/ResultBanner';
@@ -36,15 +35,14 @@ export class ContactMePage extends React.Component {
         </Expire>
       ) : null;
     return (
-      <>
-        <Navigation />
+      <React.Fragment>
         <HeaderBar
           header="Contact Me"
           subMessage="Feel free to send me a message and i will get back to you"
         />
         {resultBanner}
         <ContactBody {...this.props} />
-      </>
+      </React.Fragment>
     );
   }
 }

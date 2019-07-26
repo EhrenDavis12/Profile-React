@@ -32,7 +32,6 @@ describe('<ContactMePage />', () => {
     it('should render its UserMessageBody succeeded', () => {
       wrapper = renderComponent('succeeded');
       expect(wrapper).toBeDefined();
-      expect(wrapper.find('Navigation').length).toEqual(1);
       expect(wrapper.find('HeaderBar').length).toEqual(1);
       expect(wrapper).toMatchSnapshot();
     });
@@ -40,7 +39,6 @@ describe('<ContactMePage />', () => {
     it('should render its UserMessageBody closed', () => {
       wrapper = renderComponent('closed');
       expect(wrapper).toBeDefined();
-      expect(wrapper.find('Navigation').length).toEqual(1);
       expect(wrapper.find('HeaderBar').length).toEqual(1);
       expect(wrapper).toMatchSnapshot();
     });
