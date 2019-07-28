@@ -11,7 +11,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import NotFoundPage from 'Domains/NotFound/NotFoundPage/Loadable';
-import AboutMePage from 'Domains/AboutMe/container/Loadable';
+import AboutMePage from 'Domains/AboutMe/containers/MainPage/Loadable';
 import PortfolioPage from 'Domains/Portfolio/PortfolioPage/Loadable';
 import ContactMePage from 'Domains/ContactMe/container/Loadable';
 import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable';
@@ -22,7 +22,7 @@ import './styles.css';
 
 export default function App() {
   return (
-    <div className="container">
+    <div>
       <Navigation />
       <Switch>
         <Route exact path="/" component={AboutMePage} />

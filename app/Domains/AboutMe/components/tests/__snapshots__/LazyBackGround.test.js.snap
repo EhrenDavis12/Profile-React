@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LazyBackGround /> should render the page 1`] = `
+<LazyHero
+  color="#fff"
+  imageSrc="IMAGE_MOCK"
+  isCentered={true}
+  isFixed={false}
+  minHeight="290vh"
+  opacity={0}
+  parallaxOffset={2500}
+  transitionDuration={600}
+  transitionTimingFunction="ease-in-out"
+>
+  <div
+    className="container"
+  >
+    <div>
+      Hello Wold
+    </div>
+  </div>
+</LazyHero>
+`;
