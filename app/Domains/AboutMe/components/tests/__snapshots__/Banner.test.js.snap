@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BannerSection /> should render the page 1`] = `
+<Banner__Background>
+  <div>
+    Hello Wold
+  </div>
+</Banner__Background>
+`;

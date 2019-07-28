@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutMePage /> should render the page 1`] = `
+<LazyBackGround>
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <ProfessionalIntro />
+  </BannerSection>
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <Hobbies />
+  </BannerSection>
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <LoadableComponent />
+  </BannerSection>
+</LazyBackGround>
+`;
