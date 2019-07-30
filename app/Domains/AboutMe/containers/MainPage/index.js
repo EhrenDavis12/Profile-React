@@ -13,7 +13,7 @@ import React from 'react';
 
 import ContactMePage from 'Domains/ContactMe/container/Loadable';
 
-import LazyBackGround from '../../components/LazyBackGround';
+import BackGround from '../../components/BackGround';
 import Banner from '../../components/Banner';
 import ProfessionalIntro from '../../components/ProfessionalIntro';
 import Hobbies from '../../components/Hobbies';
@@ -22,7 +22,7 @@ import Hobbies from '../../components/Hobbies';
 export default class AboutMePage extends React.PureComponent {
   render() {
     return (
-      <LazyBackGround>
+      <BackGround>
         <Banner className="row col-lg-12">
           <ProfessionalIntro />
         </Banner>
@@ -34,7 +34,7 @@ export default class AboutMePage extends React.PureComponent {
         <Banner className="row col-lg-12">
           <ContactMePage />
         </Banner>
-      </LazyBackGround>
+      </BackGround>
     );
   }
 }

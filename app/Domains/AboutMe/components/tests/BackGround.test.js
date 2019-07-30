@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
-import LazyBackGround from '../LazyBackGround';
+import BackGround from '../BackGround';
 
-describe('<LazyBackGround />', () => {
+describe('<BackGround />', () => {
   it('should render the page', () => {
     const renderedComponent = shallow(
-      <LazyBackGround>
+      <BackGround>
         <div>Hello Wold</div>
-      </LazyBackGround>,
+      </BackGround>,
     );
     expect(renderedComponent).toMatchSnapshot();
   });
