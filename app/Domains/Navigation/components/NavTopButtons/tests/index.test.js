@@ -1,7 +1,7 @@
 import React from 'react';
 import 'jest-styled-components';
 import { mount } from 'enzyme';
-import { Nav, HamburgerButtonStyled, ItemButtonStyled } from '../styles';
+import { ItemButtonStyled } from '../styles';
 
 import NavTopButtons from '../index';
 
