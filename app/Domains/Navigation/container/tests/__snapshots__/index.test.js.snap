@@ -2,6 +2,25 @@
 
 exports[`<Navigation /> <Navigation /> snap Shots renders as expected with populated messages 1`] = `
 .c0 {
+  width: 100%;
+  padding: 20px;
+  background-color: #00afcc;
+  color: #fff;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0.9;
+  -webkit-filter: alpha(opacity=90);
+  filter: alpha(opacity=90);
+}
+
+.c1 {
   position: fixed;
   top: 0;
   left: -300px;
@@ -16,18 +35,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
   color: #000000;
 }
 
-.c0.drawerOpen {
+.c1.drawerOpen {
   left: 0;
 }
 
-.c1 {
+.c2 {
   padding: 25px;
   text-transform: uppercase;
   cursor: pointer;
   border-bottom: solid 1px #f6f6f6;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #f6f6f6;
 }
 
@@ -132,43 +151,69 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
               <AppBar
                 toggleDrawer={[Function]}
               >
-                <div
-                  className="appBar"
-                >
-                  <BasicButton
-                    className="iconButton"
-                    onClick={[Function]}
+                <styles__Nav>
+                  <StyledComponent
+                    forwardedClass={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styles__Nav-f0nxkg-0",
+                          "isStatic": true,
+                          "lastClassName": "c0",
+                          "rules": Array [
+                            "width:100%;padding:20px;background-color:#00afcc;color:#fff;font-size:24px;display:flex;justify-content:space-between;opacity:0.9;filter:alpha(opacity=90);",
+                          ],
+                        },
+                        "displayName": "styles__Nav",
+                        "render": [Function],
+                        "styledComponentId": "styles__Nav-f0nxkg-0",
+                        "target": "div",
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
                   >
                     <div
-                      className="iconButton"
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                      role="button"
-                      tabIndex={0}
+                      className="c0"
                     >
-                      <FontAwesome
-                        className="icon"
-                        key=".0"
-                        name="bars"
+                      <BasicButton
+                        className="iconButton"
+                        onClick={[Function]}
                       >
-                        <span
-                          aria-hidden={true}
-                          className="fa fa-bars icon"
-                        />
-                      </FontAwesome>
+                        <div
+                          className="iconButton"
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          role="button"
+                          tabIndex={0}
+                        >
+                          <FontAwesome
+                            className="icon"
+                            key=".0"
+                            name="bars"
+                          >
+                            <span
+                              aria-hidden={true}
+                              className="fa fa-bars icon"
+                            />
+                          </FontAwesome>
+                        </div>
+                      </BasicButton>
+                      <div
+                        className="heading"
+                      >
+                        Ehren Davis
+                      </div>
+                      <div
+                        className="linkContainer"
+                      >
+                        Log In
+                      </div>
                     </div>
-                  </BasicButton>
-                  <div
-                    className="heading"
-                  >
-                    Coder Daily
-                  </div>
-                  <div
-                    className="linkContainer"
-                  >
-                    Log In
-                  </div>
-                </div>
+                  </StyledComponent>
+                </styles__Nav>
               </AppBar>
               <Drawer
                 isDrawerOpen={false}
@@ -211,7 +256,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "componentStyle": ComponentStyle {
                           "componentId": "styles__DrawerStyled-sc-2wdqmg-0",
                           "isStatic": false,
-                          "lastClassName": "c0",
+                          "lastClassName": "c1",
                           "rules": Array [
                             "position:fixed;top:0;left:",
                             [Function],
@@ -234,7 +279,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     isDrawerOpen={false}
                   >
                     <div
-                      className="c0"
+                      className="c1"
                     >
                       <styles__ItemButtonStyled
                         key="AboutMe"
@@ -248,7 +293,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
                                 "isStatic": true,
-                                "lastClassName": "c1",
+                                "lastClassName": "c2",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -270,11 +315,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                           onClick={[Function]}
                         >
                           <BasicButton
-                            className="c1"
+                            className="c2"
                             onClick={[Function]}
                           >
                             <div
-                              className="c1"
+                              className="c2"
                               onClick={[Function]}
                               onKeyDown={[Function]}
                               role="button"
@@ -297,7 +342,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
                                 "isStatic": true,
-                                "lastClassName": "c1",
+                                "lastClassName": "c2",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -319,11 +364,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                           onClick={[Function]}
                         >
                           <BasicButton
-                            className="c1"
+                            className="c2"
                             onClick={[Function]}
                           >
                             <div
-                              className="c1"
+                              className="c2"
                               onClick={[Function]}
                               onKeyDown={[Function]}
                               role="button"
@@ -346,7 +391,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
                                 "isStatic": true,
-                                "lastClassName": "c1",
+                                "lastClassName": "c2",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -368,11 +413,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                           onClick={[Function]}
                         >
                           <BasicButton
-                            className="c1"
+                            className="c2"
                             onClick={[Function]}
                           >
                             <div
-                              className="c1"
+                              className="c2"
                               onClick={[Function]}
                               onKeyDown={[Function]}
                               role="button"
@@ -395,7 +440,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
                                 "isStatic": true,
-                                "lastClassName": "c1",
+                                "lastClassName": "c2",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -417,11 +462,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                           onClick={[Function]}
                         >
                           <BasicButton
-                            className="c1"
+                            className="c2"
                             onClick={[Function]}
                           >
                             <div
-                              className="c1"
+                              className="c2"
                               onClick={[Function]}
                               onKeyDown={[Function]}
                               role="button"

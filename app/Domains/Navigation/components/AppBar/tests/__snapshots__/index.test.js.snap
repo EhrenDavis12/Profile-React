@@ -2,7 +2,7 @@
 
 exports[`<AppBar /> renders as expected 1`] = `
 <div
-  className="appBar"
+  className="styles__Nav-f0nxkg-0 gGbmCv"
 >
   <div
     className="iconButton"
@@ -19,7 +19,7 @@ exports[`<AppBar /> renders as expected 1`] = `
   <div
     className="heading"
   >
-    Coder Daily
+    Ehren Davis
   </div>
   <div
     className="linkContainer"

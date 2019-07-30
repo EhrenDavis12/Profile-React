@@ -9,7 +9,7 @@ const Background = styled.section`
   background-size: cover;
   background-position: center;
   background-image: url('${BannerImg}');
-  margin-bottom: 40px;
+  margin-top: 40px;
   border: 2px solid black;
 
   opacity: 0.9;

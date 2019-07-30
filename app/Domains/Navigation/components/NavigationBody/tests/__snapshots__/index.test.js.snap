@@ -2,8 +2,27 @@
 
 exports[`<NavigationBody /> renders as expected 1`] = `
 Array [
-  <div
-    className="appBar"
+  .c0 {
+  width: 100%;
+  padding: 20px;
+  background-color: #00afcc;
+  color: #fff;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0.9;
+  -webkit-filter: alpha(opacity=90);
+  filter: alpha(opacity=90);
+}
+
+<div
+    className="c0"
   >
     <div
       className="iconButton"
@@ -20,7 +39,7 @@ Array [
     <div
       className="heading"
     >
-      Coder Daily
+      Ehren Davis
     </div>
     <div
       className="linkContainer"
