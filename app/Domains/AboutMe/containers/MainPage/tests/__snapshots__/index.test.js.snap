@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AboutMePage /> should render the page 1`] = `
-<BackGround>
+<Fragment>
   <BannerSection
     className="row col-lg-12"
   >
@@ -17,5 +17,5 @@ exports[`<AboutMePage /> should render the page 1`] = `
   >
     <LoadableComponent />
   </BannerSection>
-</BackGround>
+</Fragment>
 `;

@@ -17,12 +17,14 @@ import ContactMePage from 'Domains/ContactMe/container/Loadable';
 import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable';
 import Navigation from 'Domains/Navigation/container/Loadable';
 
+import BackGround from 'Domains/SharedKernel/components/BackGrounds/BackGround';
+
 import GlobalStyle from '../../global-styles';
 import './styles.css';
 
 export default function App() {
   return (
-    <div>
+    <BackGround>
       <Navigation />
       <Switch>
         <Route exact path="/" component={AboutMePage} />
@@ -32,6 +34,6 @@ export default function App() {
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
-    </div>
+    </BackGround>
   );
 }

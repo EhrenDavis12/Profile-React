@@ -8,9 +8,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
-import AppBar from 'Domains/Navigation/components/AppBar';
+import NavTopButtons from 'Domains/Navigation/components/NavTopButtons';
 import Drawer from 'Domains/SharedKernel/components/Drawer';
-import './styles.css';
 
 function NavigationBody({
   navigationLinks,
@@ -18,18 +17,15 @@ function NavigationBody({
   selectItem,
   isDrawerOpen,
 }) {
-  /* const nav = (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">About Me</Link>
-        </li>
-      </ul>
-    </nav>
-  ); */
   return (
-    <>
-      <AppBar toggleDrawer={toggleDrawer} />
+    <React.Fragment>
+      <NavTopButtons
+        toggleDrawer={toggleDrawer}
+        items={navigationLinks}
+        selectItem={selectItem}
+        itemLabelAttr="DisplayName"
+        itemKeyAttr="key"
+      />
       <Drawer
         items={navigationLinks}
         selectItem={selectItem}
@@ -37,12 +33,11 @@ function NavigationBody({
         itemKeyAttr="key"
         isDrawerOpen={isDrawerOpen}
       />
-    </>
+    </React.Fragment>
   );
 }
 
 NavigationBody.propTypes = {
-  // links: PropTypes.array.isRequired,
   navigationLinks: PropTypes.array.isRequired,
   toggleDrawer: PropTypes.func.isRequired,
   selectItem: PropTypes.func.isRequired,
