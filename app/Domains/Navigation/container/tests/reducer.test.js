@@ -9,23 +9,18 @@ describe('navigationReducer', () => {
         navigationLinks: [
           {
             key: 'AboutMe',
-            LinkTo: '/',
+            LinkTo: 'ProfessionalIntro',
             DisplayName: 'About Me',
           },
           {
-            key: 'Portfolio',
-            LinkTo: '/portfolio',
-            DisplayName: 'Portfolio',
+            key: 'Hobbies',
+            LinkTo: 'Hobbies',
+            DisplayName: 'Hobbies',
           },
           {
-            key: 'Contact',
-            LinkTo: '/contact',
-            DisplayName: 'Contact',
-          },
-          {
-            key: 'Messages',
-            LinkTo: '/messages',
-            DisplayName: 'Messages',
+            key: 'ContactMe',
+            LinkTo: 'ContactMePage',
+            DisplayName: 'ContactMe',
           },
         ],
         isDrawerOpen: false,

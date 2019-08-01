@@ -6,26 +6,30 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+// import { animateScroll as scroll } from 'react-scroll';
 // import FontAwesome from 'react-fontawesome';
 // import BasicButton from 'Domains/SharedKernel/components/Buttons/BasicButton';
-import { Nav, HamburgerButtonStyled, ItemButtonStyled } from './styles';
+import { Nav, HamburgerButtonStyled, LinkStyled } from './styles';
 // import { Nav } from './styles';
 
-function NavTopButtons({
-  toggleDrawer,
-  items,
-  selectItem,
-  itemLabelAttr,
-  itemKeyAttr,
-}) {
+function NavTopButtons({ toggleDrawer, items, itemLabelAttr, itemKeyAttr }) {
+  /* scrollToTop = () => {
+    scroll.scrollToTop();
+  }; */
+
+  const itemLinkAttr = 'LinkTo';
+  const True = true; // eslint errors smooth=true
   const itemNodes = items.map(item => (
     <li className="nav-item" key={`${item[itemKeyAttr]}"_nav"`}>
-      <ItemButtonStyled
-        className="nav-link active"
-        onClick={() => selectItem(item)}
+      <LinkStyled
+        activeClass="active"
+        smooth={True}
+        duration={600}
+        to={`${item[itemLinkAttr]}`}
+        offset={-70}
       >
         {item[itemLabelAttr]}
-      </ItemButtonStyled>
+      </LinkStyled>
     </li>
   ));
 
@@ -53,7 +57,6 @@ function NavTopButtons({
 NavTopButtons.propTypes = {
   toggleDrawer: PropTypes.func.isRequired,
   items: PropTypes.array.isRequired,
-  selectItem: PropTypes.func.isRequired,
   itemLabelAttr: PropTypes.string.isRequired,
   itemKeyAttr: PropTypes.string.isRequired,
 };

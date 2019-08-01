@@ -1,44 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`navigationSaga Saga should execute the pushLinkSaga 1`] = `
+exports[`navigationSaga Saga should execute the blank rootSaga 1`] = `
 Object {
   "@@redux-saga/IO": true,
-  "FORK": Object {
-    "args": Array [
-      "app/Navigation/SELECT_LINK",
-      [Function],
-    ],
-    "context": null,
-    "fn": [Function],
-  },
-}
-`;
-
-exports[`navigationSaga Saga should execute the pushLinkStart 1`] = `
-Object {
-  "@@redux-saga/IO": true,
-  "PUT": Object {
-    "action": Object {
-      "payload": Object {
-        "args": Array [
-          "testSagasLink",
-        ],
-        "method": "push",
-      },
-      "type": "@@router/CALL_HISTORY_METHOD",
-    },
-    "channel": null,
-  },
-}
-`;
-
-exports[`navigationSaga Saga should execute the rootSaga 1`] = `
-Object {
-  "@@redux-saga/IO": true,
-  "ALL": Array [
-    GeneratorFunctionPrototype {
-      "_invoke": [Function],
-    },
-  ],
+  "ALL": undefined,
 }
 `;

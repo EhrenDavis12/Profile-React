@@ -6,7 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DrawerStyled, ItemButtonStyled } from './styles';
+import { DrawerStyled, LinkStyled } from './styles';
 
 function Drawer({
   items,
@@ -15,10 +15,20 @@ function Drawer({
   itemKeyAttr,
   isDrawerOpen,
 }) {
+  const itemLinkAttr = 'LinkTo';
+  const True = true; // eslint errors smooth=true
   const itemNodes = items.map(item => (
-    <ItemButtonStyled key={item[itemKeyAttr]} onClick={() => selectItem(item)}>
+    <LinkStyled
+      activeClass="active"
+      smooth={True}
+      duration={600}
+      to={`${item[itemLinkAttr]}`}
+      offset={-70}
+      key={item[itemKeyAttr]}
+      onClick={() => selectItem(item)}
+    >
       {item[itemLabelAttr]}
-    </ItemButtonStyled>
+    </LinkStyled>
   ));
   return <DrawerStyled isDrawerOpen={isDrawerOpen}>{itemNodes}</DrawerStyled>;
 }

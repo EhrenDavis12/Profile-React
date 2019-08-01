@@ -41,6 +41,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
   text-transform: uppercase;
   cursor: pointer;
   border-bottom: solid 1px #f6f6f6;
+  display: block;
 }
 
 .c3:hover {
@@ -69,7 +70,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
             "isAborted": [Function],
             "isCancelled": [Function],
             "isRunning": [Function],
-            "joiners": Array [],
+            "joiners": null,
             "name": "rootSaga",
             "result": [Function],
             "setContext": [Function],
@@ -92,23 +93,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
             Array [
               Object {
                 "DisplayName": "About Me",
-                "LinkTo": "/",
+                "LinkTo": "ProfessionalIntro",
                 "key": "AboutMe",
               },
               Object {
-                "DisplayName": "Portfolio",
-                "LinkTo": "/portfolio",
-                "key": "Portfolio",
+                "DisplayName": "Hobbies",
+                "LinkTo": "Hobbies",
+                "key": "Hobbies",
               },
               Object {
-                "DisplayName": "Contact",
-                "LinkTo": "/contact",
-                "key": "Contact",
-              },
-              Object {
-                "DisplayName": "Messages",
-                "LinkTo": "/messages",
-                "key": "Messages",
+                "DisplayName": "ContactMe",
+                "LinkTo": "ContactMePage",
+                "key": "ContactMe",
               },
             ]
           }
@@ -122,23 +118,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 Array [
                   Object {
                     "DisplayName": "About Me",
-                    "LinkTo": "/",
+                    "LinkTo": "ProfessionalIntro",
                     "key": "AboutMe",
                   },
                   Object {
-                    "DisplayName": "Portfolio",
-                    "LinkTo": "/portfolio",
-                    "key": "Portfolio",
+                    "DisplayName": "Hobbies",
+                    "LinkTo": "Hobbies",
+                    "key": "Hobbies",
                   },
                   Object {
-                    "DisplayName": "Contact",
-                    "LinkTo": "/contact",
-                    "key": "Contact",
-                  },
-                  Object {
-                    "DisplayName": "Messages",
-                    "LinkTo": "/messages",
-                    "key": "Messages",
+                    "DisplayName": "ContactMe",
+                    "LinkTo": "ContactMePage",
+                    "key": "ContactMe",
                   },
                 ]
               }
@@ -152,23 +143,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                   Array [
                     Object {
                       "DisplayName": "About Me",
-                      "LinkTo": "/",
+                      "LinkTo": "ProfessionalIntro",
                       "key": "AboutMe",
                     },
                     Object {
-                      "DisplayName": "Portfolio",
-                      "LinkTo": "/portfolio",
-                      "key": "Portfolio",
+                      "DisplayName": "Hobbies",
+                      "LinkTo": "Hobbies",
+                      "key": "Hobbies",
                     },
                     Object {
-                      "DisplayName": "Contact",
-                      "LinkTo": "/contact",
-                      "key": "Contact",
-                    },
-                    Object {
-                      "DisplayName": "Messages",
-                      "LinkTo": "/messages",
-                      "key": "Messages",
+                      "DisplayName": "ContactMe",
+                      "LinkTo": "ContactMePage",
+                      "key": "ContactMe",
                     },
                   ]
                 }
@@ -185,7 +171,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": undefined,
                         "componentStyle": ComponentStyle {
-                          "componentId": "styles__Nav-sc-1iujtvx-2",
+                          "componentId": "styles__Nav-sc-1iujtvx-3",
                           "isStatic": true,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -194,7 +180,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         },
                         "displayName": "styles__Nav",
                         "render": [Function],
-                        "styledComponentId": "styles__Nav-sc-1iujtvx-2",
+                        "styledComponentId": "styles__Nav-sc-1iujtvx-3",
                         "target": "nav",
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
@@ -227,14 +213,14 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__HamburgerButtonStyled-sc-1iujtvx-1",
+                                "componentId": "styles__HamburgerButtonStyled-sc-1iujtvx-2",
                                 "isStatic": true,
-                                "lastClassName": "ezokXg",
+                                "lastClassName": "dqgFGn",
                                 "rules": Array [],
                               },
                               "displayName": "styles__HamburgerButtonStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__HamburgerButtonStyled-sc-1iujtvx-1",
+                              "styledComponentId": "styles__HamburgerButtonStyled-sc-1iujtvx-2",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -281,18 +267,22 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             className="nav-item"
                             key="AboutMe\\"_nav\\""
                           >
-                            <styles__ItemButtonStyled
-                              className="nav-link active"
-                              onClick={[Function]}
+                            <styles__LinkStyled
+                              activeClass="active"
+                              duration={600}
+                              offset={-70}
+                              smooth={true}
+                              to="ProfessionalIntro"
                             >
                               <StyledComponent
-                                className="nav-link active"
+                                activeClass="active"
+                                duration={600}
                                 forwardedClass={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                      "componentId": "styles__LinkStyled-sc-1iujtvx-1",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -303,9 +293,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                         ";}",
                                       ],
                                     },
-                                    "displayName": "styles__ItemButtonStyled",
+                                    "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                    "styledComponentId": "styles__LinkStyled-sc-1iujtvx-1",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -313,41 +303,53 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                   }
                                 }
                                 forwardedRef={null}
-                                onClick={[Function]}
+                                offset={-70}
+                                smooth={true}
+                                to="ProfessionalIntro"
                               >
-                                <BasicButton
-                                  className="nav-link active c1"
-                                  onClick={[Function]}
+                                <Link
+                                  activeClass="active"
+                                  className="c1"
+                                  duration={600}
+                                  offset={-70}
+                                  smooth={true}
+                                  to="ProfessionalIntro"
                                 >
-                                  <div
-                                    className="nav-link active c1"
+                                  <LinkElement
+                                    className="c1"
                                     onClick={[Function]}
-                                    onKeyDown={[Function]}
-                                    role="button"
-                                    tabIndex={0}
                                   >
-                                    About Me
-                                  </div>
-                                </BasicButton>
+                                    <a
+                                      className="c1"
+                                      onClick={[Function]}
+                                    >
+                                      About Me
+                                    </a>
+                                  </LinkElement>
+                                </Link>
                               </StyledComponent>
-                            </styles__ItemButtonStyled>
+                            </styles__LinkStyled>
                           </li>
                           <li
                             className="nav-item"
-                            key="Portfolio\\"_nav\\""
+                            key="Hobbies\\"_nav\\""
                           >
-                            <styles__ItemButtonStyled
-                              className="nav-link active"
-                              onClick={[Function]}
+                            <styles__LinkStyled
+                              activeClass="active"
+                              duration={600}
+                              offset={-70}
+                              smooth={true}
+                              to="Hobbies"
                             >
                               <StyledComponent
-                                className="nav-link active"
+                                activeClass="active"
+                                duration={600}
                                 forwardedClass={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                      "componentId": "styles__LinkStyled-sc-1iujtvx-1",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -358,9 +360,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                         ";}",
                                       ],
                                     },
-                                    "displayName": "styles__ItemButtonStyled",
+                                    "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                    "styledComponentId": "styles__LinkStyled-sc-1iujtvx-1",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -368,41 +370,53 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                   }
                                 }
                                 forwardedRef={null}
-                                onClick={[Function]}
+                                offset={-70}
+                                smooth={true}
+                                to="Hobbies"
                               >
-                                <BasicButton
-                                  className="nav-link active c1"
-                                  onClick={[Function]}
+                                <Link
+                                  activeClass="active"
+                                  className="c1"
+                                  duration={600}
+                                  offset={-70}
+                                  smooth={true}
+                                  to="Hobbies"
                                 >
-                                  <div
-                                    className="nav-link active c1"
+                                  <LinkElement
+                                    className="c1"
                                     onClick={[Function]}
-                                    onKeyDown={[Function]}
-                                    role="button"
-                                    tabIndex={0}
                                   >
-                                    Portfolio
-                                  </div>
-                                </BasicButton>
+                                    <a
+                                      className="c1"
+                                      onClick={[Function]}
+                                    >
+                                      Hobbies
+                                    </a>
+                                  </LinkElement>
+                                </Link>
                               </StyledComponent>
-                            </styles__ItemButtonStyled>
+                            </styles__LinkStyled>
                           </li>
                           <li
                             className="nav-item"
-                            key="Contact\\"_nav\\""
+                            key="ContactMe\\"_nav\\""
                           >
-                            <styles__ItemButtonStyled
-                              className="nav-link active"
-                              onClick={[Function]}
+                            <styles__LinkStyled
+                              activeClass="active"
+                              duration={600}
+                              offset={-70}
+                              smooth={true}
+                              to="ContactMePage"
                             >
                               <StyledComponent
-                                className="nav-link active"
+                                activeClass="active"
+                                duration={600}
                                 forwardedClass={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                      "componentId": "styles__LinkStyled-sc-1iujtvx-1",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -413,9 +427,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                         ";}",
                                       ],
                                     },
-                                    "displayName": "styles__ItemButtonStyled",
+                                    "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                                    "styledComponentId": "styles__LinkStyled-sc-1iujtvx-1",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -423,79 +437,32 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                   }
                                 }
                                 forwardedRef={null}
-                                onClick={[Function]}
+                                offset={-70}
+                                smooth={true}
+                                to="ContactMePage"
                               >
-                                <BasicButton
-                                  className="nav-link active c1"
-                                  onClick={[Function]}
+                                <Link
+                                  activeClass="active"
+                                  className="c1"
+                                  duration={600}
+                                  offset={-70}
+                                  smooth={true}
+                                  to="ContactMePage"
                                 >
-                                  <div
-                                    className="nav-link active c1"
+                                  <LinkElement
+                                    className="c1"
                                     onClick={[Function]}
-                                    onKeyDown={[Function]}
-                                    role="button"
-                                    tabIndex={0}
                                   >
-                                    Contact
-                                  </div>
-                                </BasicButton>
+                                    <a
+                                      className="c1"
+                                      onClick={[Function]}
+                                    >
+                                      ContactMe
+                                    </a>
+                                  </LinkElement>
+                                </Link>
                               </StyledComponent>
-                            </styles__ItemButtonStyled>
-                          </li>
-                          <li
-                            className="nav-item"
-                            key="Messages\\"_nav\\""
-                          >
-                            <styles__ItemButtonStyled
-                              className="nav-link active"
-                              onClick={[Function]}
-                            >
-                              <StyledComponent
-                                className="nav-link active"
-                                forwardedClass={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": undefined,
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
-                                      "isStatic": true,
-                                      "lastClassName": "c1",
-                                      "rules": Array [
-                                        "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                        "#f6f6f6",
-                                        ";&:hover{background-color:",
-                                        "#f6f6f6",
-                                        ";}",
-                                      ],
-                                    },
-                                    "displayName": "styles__ItemButtonStyled",
-                                    "render": [Function],
-                                    "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
-                                    "target": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                    Symbol(Symbol.hasInstance): [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                                onClick={[Function]}
-                              >
-                                <BasicButton
-                                  className="nav-link active c1"
-                                  onClick={[Function]}
-                                >
-                                  <div
-                                    className="nav-link active c1"
-                                    onClick={[Function]}
-                                    onKeyDown={[Function]}
-                                    role="button"
-                                    tabIndex={0}
-                                  >
-                                    Messages
-                                  </div>
-                                </BasicButton>
-                              </StyledComponent>
-                            </styles__ItemButtonStyled>
+                            </styles__LinkStyled>
                           </li>
                         </ul>
                       </div>
@@ -511,23 +478,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                   Array [
                     Object {
                       "DisplayName": "About Me",
-                      "LinkTo": "/",
+                      "LinkTo": "ProfessionalIntro",
                       "key": "AboutMe",
                     },
                     Object {
-                      "DisplayName": "Portfolio",
-                      "LinkTo": "/portfolio",
-                      "key": "Portfolio",
+                      "DisplayName": "Hobbies",
+                      "LinkTo": "Hobbies",
+                      "key": "Hobbies",
                     },
                     Object {
-                      "DisplayName": "Contact",
-                      "LinkTo": "/contact",
-                      "key": "Contact",
-                    },
-                    Object {
-                      "DisplayName": "Messages",
-                      "LinkTo": "/messages",
-                      "key": "Messages",
+                      "DisplayName": "ContactMe",
+                      "LinkTo": "ContactMePage",
+                      "key": "ContactMe",
                     },
                   ]
                 }
@@ -569,30 +531,37 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     <div
                       className="c2"
                     >
-                      <styles__ItemButtonStyled
+                      <styles__LinkStyled
+                        activeClass="active"
+                        duration={600}
                         key="AboutMe"
+                        offset={-70}
                         onClick={[Function]}
+                        smooth={true}
+                        to="ProfessionalIntro"
                       >
                         <StyledComponent
+                          activeClass="active"
+                          duration={600}
                           forwardedClass={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                                "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
-                                  ";&:hover{background-color:",
+                                  ";display:block;&:hover{background-color:",
                                   "#f6f6f6",
                                   ";}",
                                 ],
                               },
-                              "displayName": "styles__ItemButtonStyled",
+                              "displayName": "styles__LinkStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                              "styledComponentId": "styles__LinkStyled-sc-2wdqmg-2",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -600,48 +569,65 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             }
                           }
                           forwardedRef={null}
+                          offset={-70}
                           onClick={[Function]}
+                          smooth={true}
+                          to="ProfessionalIntro"
                         >
-                          <BasicButton
+                          <Link
+                            activeClass="active"
                             className="c3"
+                            duration={600}
+                            offset={-70}
                             onClick={[Function]}
+                            smooth={true}
+                            to="ProfessionalIntro"
                           >
-                            <div
+                            <LinkElement
                               className="c3"
                               onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
-                              tabIndex={0}
                             >
-                              About Me
-                            </div>
-                          </BasicButton>
+                              <a
+                                className="c3"
+                                onClick={[Function]}
+                              >
+                                About Me
+                              </a>
+                            </LinkElement>
+                          </Link>
                         </StyledComponent>
-                      </styles__ItemButtonStyled>
-                      <styles__ItemButtonStyled
-                        key="Portfolio"
+                      </styles__LinkStyled>
+                      <styles__LinkStyled
+                        activeClass="active"
+                        duration={600}
+                        key="Hobbies"
+                        offset={-70}
                         onClick={[Function]}
+                        smooth={true}
+                        to="Hobbies"
                       >
                         <StyledComponent
+                          activeClass="active"
+                          duration={600}
                           forwardedClass={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                                "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
-                                  ";&:hover{background-color:",
+                                  ";display:block;&:hover{background-color:",
                                   "#f6f6f6",
                                   ";}",
                                 ],
                               },
-                              "displayName": "styles__ItemButtonStyled",
+                              "displayName": "styles__LinkStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                              "styledComponentId": "styles__LinkStyled-sc-2wdqmg-2",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -649,48 +635,65 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             }
                           }
                           forwardedRef={null}
+                          offset={-70}
                           onClick={[Function]}
+                          smooth={true}
+                          to="Hobbies"
                         >
-                          <BasicButton
+                          <Link
+                            activeClass="active"
                             className="c3"
+                            duration={600}
+                            offset={-70}
                             onClick={[Function]}
+                            smooth={true}
+                            to="Hobbies"
                           >
-                            <div
+                            <LinkElement
                               className="c3"
                               onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
-                              tabIndex={0}
                             >
-                              Portfolio
-                            </div>
-                          </BasicButton>
+                              <a
+                                className="c3"
+                                onClick={[Function]}
+                              >
+                                Hobbies
+                              </a>
+                            </LinkElement>
+                          </Link>
                         </StyledComponent>
-                      </styles__ItemButtonStyled>
-                      <styles__ItemButtonStyled
-                        key="Contact"
+                      </styles__LinkStyled>
+                      <styles__LinkStyled
+                        activeClass="active"
+                        duration={600}
+                        key="ContactMe"
+                        offset={-70}
                         onClick={[Function]}
+                        smooth={true}
+                        to="ContactMePage"
                       >
                         <StyledComponent
+                          activeClass="active"
+                          duration={600}
                           forwardedClass={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                                "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
-                                  ";&:hover{background-color:",
+                                  ";display:block;&:hover{background-color:",
                                   "#f6f6f6",
                                   ";}",
                                 ],
                               },
-                              "displayName": "styles__ItemButtonStyled",
+                              "displayName": "styles__LinkStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
+                              "styledComponentId": "styles__LinkStyled-sc-2wdqmg-2",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -698,73 +701,34 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             }
                           }
                           forwardedRef={null}
+                          offset={-70}
                           onClick={[Function]}
+                          smooth={true}
+                          to="ContactMePage"
                         >
-                          <BasicButton
+                          <Link
+                            activeClass="active"
                             className="c3"
+                            duration={600}
+                            offset={-70}
                             onClick={[Function]}
+                            smooth={true}
+                            to="ContactMePage"
                           >
-                            <div
+                            <LinkElement
                               className="c3"
                               onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
-                              tabIndex={0}
                             >
-                              Contact
-                            </div>
-                          </BasicButton>
+                              <a
+                                className="c3"
+                                onClick={[Function]}
+                              >
+                                ContactMe
+                              </a>
+                            </LinkElement>
+                          </Link>
                         </StyledComponent>
-                      </styles__ItemButtonStyled>
-                      <styles__ItemButtonStyled
-                        key="Messages"
-                        onClick={[Function]}
-                      >
-                        <StyledComponent
-                          forwardedClass={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": undefined,
-                              "componentStyle": ComponentStyle {
-                                "componentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
-                                "isStatic": true,
-                                "lastClassName": "c3",
-                                "rules": Array [
-                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                  "#f6f6f6",
-                                  ";&:hover{background-color:",
-                                  "#f6f6f6",
-                                  ";}",
-                                ],
-                              },
-                              "displayName": "styles__ItemButtonStyled",
-                              "render": [Function],
-                              "styledComponentId": "styles__ItemButtonStyled-sc-2wdqmg-1",
-                              "target": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                              Symbol(Symbol.hasInstance): [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          onClick={[Function]}
-                        >
-                          <BasicButton
-                            className="c3"
-                            onClick={[Function]}
-                          >
-                            <div
-                              className="c3"
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
-                              tabIndex={0}
-                            >
-                              Messages
-                            </div>
-                          </BasicButton>
-                        </StyledComponent>
-                      </styles__ItemButtonStyled>
+                      </styles__LinkStyled>
                     </div>
                   </StyledComponent>
                 </styles__DrawerStyled>
