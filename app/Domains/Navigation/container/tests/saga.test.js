@@ -3,13 +3,15 @@
  */
 
 /* eslint-disable redux-saga/yield-effects */
-import { takeLatest, put, all } from 'redux-saga/effects';
+// import { takeLatest, put, all } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 
-import { push } from 'react-router-redux';
-import { SELECT_LINK } from '../constants';
-import rootSaga, { pushLinkSaga, pushLinkStart } from '../saga';
+// import { push } from 'react-router-redux';
+// import { SELECT_LINK } from '../constants';
+// import rootSaga, { pushLinkSaga, pushLinkStart } from '../saga';
+import rootSaga from '../saga';
 
-const action = { selectedLink: { LinkTo: 'testSagasLink' } };
+// const action = { selectedLink: { LinkTo: 'testSagasLink' } };
 
 describe('navigationSaga Saga', () => {
   /* it('should execute the pushLinkSaga', () => {
