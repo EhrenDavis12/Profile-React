@@ -44,3 +44,18 @@ export const LinkStyled = styled(Link)`
     background-color: ${theme.SecondaryBkg};
   }
 `;
+
+export const CoverStyled = styled(BasicButton)`
+  position: fixed;
+  top: 0;
+  display: ${props => (props.isDrawerOpen ? '' : 'none')};
+  height: 100%;
+  width: 100%;
+  background: rgba(50, 50, 50, 0.5);
+  transition: 0.25s ease-in-out;
+  z-index: 950;
+
+  padding-left: 305px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 1);
+`;
