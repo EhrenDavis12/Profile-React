@@ -7,27 +7,48 @@
 import { fromJS } from 'immutable';
 import { TOGGLE_DRAWER, SELECT_LINK } from './constants';
 
+// export const initialState = fromJS({
+//   navigationLinks: [
+//     {
+//       key: 'AboutMe',
+//       LinkTo: '/',
+//       DisplayName: 'About Me',
+//     },
+//     {
+//       key: 'Portfolio',
+//       LinkTo: '/portfolio',
+//       DisplayName: 'Portfolio',
+//     },
+//     {
+//       key: 'Contact',
+//       LinkTo: '/contact',
+//       DisplayName: 'Contact',
+//     },
+//     {
+//       key: 'Messages',
+//       LinkTo: '/messages',
+//       DisplayName: 'Messages',
+//     },
+//   ],
+//   isDrawerOpen: false,
+// });
+
 export const initialState = fromJS({
   navigationLinks: [
     {
       key: 'AboutMe',
-      LinkTo: '/',
+      LinkTo: 'ProfessionalIntro',
       DisplayName: 'About Me',
     },
     {
-      key: 'Portfolio',
-      LinkTo: '/portfolio',
-      DisplayName: 'Portfolio',
+      key: 'Hobbies',
+      LinkTo: 'Hobbies',
+      DisplayName: 'Hobbies',
     },
     {
-      key: 'Contact',
-      LinkTo: '/contact',
-      DisplayName: 'Contact',
-    },
-    {
-      key: 'Messages',
-      LinkTo: '/messages',
-      DisplayName: 'Messages',
+      key: 'ContactMe',
+      LinkTo: 'ContactMePage',
+      DisplayName: 'ContactMe',
     },
   ],
   isDrawerOpen: false,

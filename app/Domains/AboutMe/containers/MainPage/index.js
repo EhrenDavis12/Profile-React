@@ -23,15 +23,21 @@ export default class AboutMePage extends React.PureComponent {
     return (
       <React.Fragment>
         <Banner className="row col-lg-12">
-          <ProfessionalIntro />
+          <div id="ProfessionalIntro">
+            <ProfessionalIntro />
+          </div>
         </Banner>
 
         <Banner className="row col-lg-12">
-          <Hobbies />
+          <div id="Hobbies">
+            <Hobbies />
+          </div>
         </Banner>
 
         <Banner className="row col-lg-12">
-          <ContactMePage />
+          <div id="ContactMePage">
+            <ContactMePage />
+          </div>
         </Banner>
       </React.Fragment>
     );

@@ -25,12 +25,12 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
     Array [
       Object {
         "DisplayName": "About Me",
-        "LinkTo": "/",
+        "LinkTo": "AboutMe",
         "key": "AboutMe",
       },
       Object {
         "DisplayName": "Portfolio",
-        "LinkTo": "/portfolio",
+        "LinkTo": "portfolio",
         "key": "Portfolio",
       },
     ]
@@ -48,7 +48,7 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": undefined,
           "componentStyle": ComponentStyle {
-            "componentId": "styles__Nav-sc-1iujtvx-2",
+            "componentId": "styles__Nav-sc-1iujtvx-3",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -57,7 +57,7 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
           },
           "displayName": "styles__Nav",
           "render": [Function],
-          "styledComponentId": "styles__Nav-sc-1iujtvx-2",
+          "styledComponentId": "styles__Nav-sc-1iujtvx-3",
           "target": "nav",
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -90,14 +90,14 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": undefined,
                 "componentStyle": ComponentStyle {
-                  "componentId": "styles__HamburgerButtonStyled-sc-1iujtvx-1",
+                  "componentId": "styles__HamburgerButtonStyled-sc-1iujtvx-2",
                   "isStatic": true,
-                  "lastClassName": "ezokXg",
+                  "lastClassName": "dqgFGn",
                   "rules": Array [],
                 },
                 "displayName": "styles__HamburgerButtonStyled",
                 "render": [Function],
-                "styledComponentId": "styles__HamburgerButtonStyled-sc-1iujtvx-1",
+                "styledComponentId": "styles__HamburgerButtonStyled-sc-1iujtvx-2",
                 "target": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -144,18 +144,22 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
               className="nav-item"
               key="AboutMe\\"_nav\\""
             >
-              <styles__ItemButtonStyled
-                className="nav-link active"
-                onClick={[Function]}
+              <styles__LinkStyled
+                activeClass="active"
+                duration={600}
+                offset={-70}
+                smooth={true}
+                to="AboutMe"
               >
                 <StyledComponent
-                  className="nav-link active"
+                  activeClass="active"
+                  duration={600}
                   forwardedClass={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": undefined,
                       "componentStyle": ComponentStyle {
-                        "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                        "componentId": "styles__LinkStyled-sc-1iujtvx-1",
                         "isStatic": true,
                         "lastClassName": "c1",
                         "rules": Array [
@@ -166,9 +170,9 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
                           ";}",
                         ],
                       },
-                      "displayName": "styles__ItemButtonStyled",
+                      "displayName": "styles__LinkStyled",
                       "render": [Function],
-                      "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                      "styledComponentId": "styles__LinkStyled-sc-1iujtvx-1",
                       "target": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
@@ -176,41 +180,53 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
                     }
                   }
                   forwardedRef={null}
-                  onClick={[Function]}
+                  offset={-70}
+                  smooth={true}
+                  to="AboutMe"
                 >
-                  <BasicButton
-                    className="nav-link active c1"
-                    onClick={[Function]}
+                  <Link
+                    activeClass="active"
+                    className="c1"
+                    duration={600}
+                    offset={-70}
+                    smooth={true}
+                    to="AboutMe"
                   >
-                    <div
-                      className="nav-link active c1"
+                    <LinkElement
+                      className="c1"
                       onClick={[Function]}
-                      onKeyDown={[Function]}
-                      role="button"
-                      tabIndex={0}
                     >
-                      About Me
-                    </div>
-                  </BasicButton>
+                      <a
+                        className="c1"
+                        onClick={[Function]}
+                      >
+                        About Me
+                      </a>
+                    </LinkElement>
+                  </Link>
                 </StyledComponent>
-              </styles__ItemButtonStyled>
+              </styles__LinkStyled>
             </li>
             <li
               className="nav-item"
               key="Portfolio\\"_nav\\""
             >
-              <styles__ItemButtonStyled
-                className="nav-link active"
-                onClick={[Function]}
+              <styles__LinkStyled
+                activeClass="active"
+                duration={600}
+                offset={-70}
+                smooth={true}
+                to="portfolio"
               >
                 <StyledComponent
-                  className="nav-link active"
+                  activeClass="active"
+                  duration={600}
                   forwardedClass={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": undefined,
                       "componentStyle": ComponentStyle {
-                        "componentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                        "componentId": "styles__LinkStyled-sc-1iujtvx-1",
                         "isStatic": true,
                         "lastClassName": "c1",
                         "rules": Array [
@@ -221,9 +237,9 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
                           ";}",
                         ],
                       },
-                      "displayName": "styles__ItemButtonStyled",
+                      "displayName": "styles__LinkStyled",
                       "render": [Function],
-                      "styledComponentId": "styles__ItemButtonStyled-sc-1iujtvx-0",
+                      "styledComponentId": "styles__LinkStyled-sc-1iujtvx-1",
                       "target": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
@@ -231,24 +247,32 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
                     }
                   }
                   forwardedRef={null}
-                  onClick={[Function]}
+                  offset={-70}
+                  smooth={true}
+                  to="portfolio"
                 >
-                  <BasicButton
-                    className="nav-link active c1"
-                    onClick={[Function]}
+                  <Link
+                    activeClass="active"
+                    className="c1"
+                    duration={600}
+                    offset={-70}
+                    smooth={true}
+                    to="portfolio"
                   >
-                    <div
-                      className="nav-link active c1"
+                    <LinkElement
+                      className="c1"
                       onClick={[Function]}
-                      onKeyDown={[Function]}
-                      role="button"
-                      tabIndex={0}
                     >
-                      Portfolio
-                    </div>
-                  </BasicButton>
+                      <a
+                        className="c1"
+                        onClick={[Function]}
+                      >
+                        Portfolio
+                      </a>
+                    </LinkElement>
+                  </Link>
                 </StyledComponent>
-              </styles__ItemButtonStyled>
+              </styles__LinkStyled>
             </li>
           </ul>
         </div>

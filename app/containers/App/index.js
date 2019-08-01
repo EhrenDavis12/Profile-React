@@ -12,9 +12,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import NotFoundPage from 'Domains/NotFound/NotFoundPage/Loadable';
 import AboutMePage from 'Domains/AboutMe/containers/MainPage/Loadable';
-import PortfolioPage from 'Domains/Portfolio/PortfolioPage/Loadable';
+/* import PortfolioPage from 'Domains/Portfolio/PortfolioPage/Loadable';
 import ContactMePage from 'Domains/ContactMe/container/Loadable';
-import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable';
+import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable'; */
 import Navigation from 'Domains/Navigation/container/Loadable';
 
 import BackGround from 'Domains/SharedKernel/components/BackGrounds/BackGround';
@@ -28,9 +28,9 @@ export default function App() {
       <Navigation />
       <Switch>
         <Route exact path="/" component={AboutMePage} />
-        <Route exact path="/portfolio" component={PortfolioPage} />
+        {/* <Route exact path="/portfolio" component={PortfolioPage} />
         <Route exact path="/contact" component={ContactMePage} />
-        <Route exact path="/messages" component={ViewMessagesPage} />
+        <Route exact path="/messages" component={ViewMessagesPage} /> */}
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
