@@ -6,7 +6,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DrawerStyled, LinkStyled } from './styles';
+import { DrawerStyled, LinkStyled, CoverStyled } from './styles';
 
 function Drawer({
   items,
@@ -30,7 +30,14 @@ function Drawer({
       {item[itemLabelAttr]}
     </LinkStyled>
   ));
-  return <DrawerStyled isDrawerOpen={isDrawerOpen}>{itemNodes}</DrawerStyled>;
+  return (
+    <React.Fragment>
+      <CoverStyled isDrawerOpen={isDrawerOpen} onClick={() => selectItem(null)}>
+        X
+      </CoverStyled>
+      <DrawerStyled isDrawerOpen={isDrawerOpen}>{itemNodes}</DrawerStyled>
+    </React.Fragment>
+  );
 }
 
 Drawer.propTypes = {

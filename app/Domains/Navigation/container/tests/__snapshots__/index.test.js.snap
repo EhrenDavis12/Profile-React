@@ -17,7 +17,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
   z-index: 900;
 }
 
-.c2 {
+.c3 {
   position: fixed;
   top: 0;
   left: -300px;
@@ -32,11 +32,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
   color: #000000;
 }
 
-.c2.drawerOpen {
+.c3.drawerOpen {
   left: 0;
 }
 
-.c3 {
+.c4 {
   padding: 25px;
   text-transform: uppercase;
   cursor: pointer;
@@ -44,8 +44,23 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
   display: block;
 }
 
-.c3:hover {
+.c4:hover {
   background-color: #f6f6f6;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(50,50,50,0.5);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  z-index: 950;
+  padding-left: 305px;
+  font-size: 25px;
+  color: rgba(0,0,0,1);
 }
 
 <Provider
@@ -495,6 +510,55 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 }
                 selectItem={[Function]}
               >
+                <styles__CoverStyled
+                  isDrawerOpen={false}
+                  onClick={[Function]}
+                >
+                  <StyledComponent
+                    forwardedClass={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": undefined,
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styles__CoverStyled-sc-2wdqmg-3",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "position:fixed;top:0;display:",
+                            [Function],
+                            ";height:100%;width:100%;background:rgba(50,50,50,0.5);transition:0.25s ease-in-out;z-index:950;padding-left:305px;font-size:25px;color:rgba(0,0,0,1);",
+                          ],
+                        },
+                        "displayName": "styles__CoverStyled",
+                        "render": [Function],
+                        "styledComponentId": "styles__CoverStyled-sc-2wdqmg-3",
+                        "target": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                        Symbol(Symbol.hasInstance): [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    isDrawerOpen={false}
+                    onClick={[Function]}
+                  >
+                    <BasicButton
+                      className="c2"
+                      isDrawerOpen={false}
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="c2"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        X
+                      </div>
+                    </BasicButton>
+                  </StyledComponent>
+                </styles__CoverStyled>
                 <styles__DrawerStyled
                   isDrawerOpen={false}
                 >
@@ -506,7 +570,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "componentStyle": ComponentStyle {
                           "componentId": "styles__DrawerStyled-sc-2wdqmg-0",
                           "isStatic": false,
-                          "lastClassName": "c2",
+                          "lastClassName": "c3",
                           "rules": Array [
                             "position:fixed;top:0;left:",
                             [Function],
@@ -529,7 +593,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     isDrawerOpen={false}
                   >
                     <div
-                      className="c2"
+                      className="c3"
                     >
                       <styles__LinkStyled
                         activeClass="active"
@@ -550,7 +614,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
-                                "lastClassName": "c3",
+                                "lastClassName": "c4",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -576,7 +640,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         >
                           <Link
                             activeClass="active"
-                            className="c3"
+                            className="c4"
                             duration={600}
                             offset={-70}
                             onClick={[Function]}
@@ -584,11 +648,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             to="ProfessionalIntro"
                           >
                             <LinkElement
-                              className="c3"
+                              className="c4"
                               onClick={[Function]}
                             >
                               <a
-                                className="c3"
+                                className="c4"
                                 onClick={[Function]}
                               >
                                 About Me
@@ -616,7 +680,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
-                                "lastClassName": "c3",
+                                "lastClassName": "c4",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -642,7 +706,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         >
                           <Link
                             activeClass="active"
-                            className="c3"
+                            className="c4"
                             duration={600}
                             offset={-70}
                             onClick={[Function]}
@@ -650,11 +714,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             to="Hobbies"
                           >
                             <LinkElement
-                              className="c3"
+                              className="c4"
                               onClick={[Function]}
                             >
                               <a
-                                className="c3"
+                                className="c4"
                                 onClick={[Function]}
                               >
                                 Hobbies
@@ -682,7 +746,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "componentStyle": ComponentStyle {
                                 "componentId": "styles__LinkStyled-sc-2wdqmg-2",
                                 "isStatic": true,
-                                "lastClassName": "c3",
+                                "lastClassName": "c4",
                                 "rules": Array [
                                   "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
                                   "#f6f6f6",
@@ -708,7 +772,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         >
                           <Link
                             activeClass="active"
-                            className="c3"
+                            className="c4"
                             duration={600}
                             offset={-70}
                             onClick={[Function]}
@@ -716,11 +780,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             to="ContactMePage"
                           >
                             <LinkElement
-                              className="c3"
+                              className="c4"
                               onClick={[Function]}
                             >
                               <a
-                                className="c3"
+                                className="c4"
                                 onClick={[Function]}
                               >
                                 ContactMe
