@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavTopButtons /> renders as expected 1`] = `
+.c1 {
+  padding: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: solid 1px #f6f6f6;
+}
+
+.c1:hover {
+  background-color: #f6f6f6;
+}
+
+.c0 {
+  padding-left: 0px;
+  z-index: 900;
+}
+
+<NavTopButtons
+  isDrawerOpen={false}
+  itemKeyAttr="key"
+  itemLabelAttr="DisplayName"
+  items={
+    Array [
+      Object {
+        "DisplayName": "About Me",
+        "LinkTo": "AboutMe",
+        "key": "AboutMe",
+      },
+      Object {
+        "DisplayName": "Portfolio",
+        "LinkTo": "portfolio",
+        "key": "Portfolio",
+      },
+    ]
+  }
+  selectItem={[Function]}
+  toggleDrawer={[Function]}
+>
+  <styles__Nav
+    className="navbar sticky-top navbar-expand-md navbar-light"
+  >
+    <StyledComponent
+      className="navbar sticky-top navbar-expand-md navbar-light"
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": undefined,
+          "componentStyle": ComponentStyle {
+            "componentId": "styles__Nav-sc-1t8u81o-3",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "padding-left:0px;z-index:900;",
+            ],
+          },
+          "displayName": "styles__Nav",
+          "render": [Function],
+          "styledComponentId": "styles__Nav-sc-1t8u81o-3",
+          "target": "nav",
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <nav
+        className="navbar sticky-top navbar-expand-md navbar-light c0"
+      >
+        <styles__HamburgerButtonStyled
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+          data-target="#navbarNav"
+          data-toggle="collapse"
+          onClick={[Function]}
+          type="button"
+        >
+          <StyledComponent
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            className="navbar-toggler"
+            data-target="#navbarNav"
+            data-toggle="collapse"
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": undefined,
+                "componentStyle": ComponentStyle {
+                  "componentId": "styles__HamburgerButtonStyled-sc-1t8u81o-2",
+                  "isStatic": true,
+                  "lastClassName": "jpCVxo",
+                  "rules": Array [],
+                },
+                "displayName": "styles__HamburgerButtonStyled",
+                "render": [Function],
+                "styledComponentId": "styles__HamburgerButtonStyled-sc-1t8u81o-2",
+                "target": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+            type="button"
+          >
+            <BasicButton
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              className="navbar-toggler "
+              data-target="#navbarNav"
+              data-toggle="collapse"
+              onClick={[Function]}
+              type="button"
+            >
+              <div
+                className="navbar-toggler "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              >
+                <span
+                  className="navbar-toggler-icon"
+                  key=".0"
+                />
+              </div>
+            </BasicButton>
+          </StyledComponent>
+        </styles__HamburgerButtonStyled>
+        <div
+          className="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul
+            className="nav justify-content-end"
+          >
+            <li
+              className="nav-item"
+              key="AboutMe\\"_nav\\""
+            >
+              <styles__LinkStyled
+                activeClass="active"
+                duration={600}
+                offset={-70}
+                smooth={true}
+                to="AboutMe"
+              >
+                <StyledComponent
+                  activeClass="active"
+                  duration={600}
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                          "#f6f6f6",
+                          ";&:hover{background-color:",
+                          "#f6f6f6",
+                          ";}",
+                        ],
+                      },
+                      "displayName": "styles__LinkStyled",
+                      "render": [Function],
+                      "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                      "target": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  offset={-70}
+                  smooth={true}
+                  to="AboutMe"
+                >
+                  <Link
+                    activeClass="active"
+                    className="c1"
+                    duration={600}
+                    offset={-70}
+                    smooth={true}
+                    to="AboutMe"
+                  >
+                    <LinkElement
+                      className="c1"
+                      onClick={[Function]}
+                    >
+                      <a
+                        className="c1"
+                        onClick={[Function]}
+                      >
+                        About Me
+                      </a>
+                    </LinkElement>
+                  </Link>
+                </StyledComponent>
+              </styles__LinkStyled>
+            </li>
+            <li
+              className="nav-item"
+              key="Portfolio\\"_nav\\""
+            >
+              <styles__LinkStyled
+                activeClass="active"
+                duration={600}
+                offset={-70}
+                smooth={true}
+                to="portfolio"
+              >
+                <StyledComponent
+                  activeClass="active"
+                  duration={600}
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                          "#f6f6f6",
+                          ";&:hover{background-color:",
+                          "#f6f6f6",
+                          ";}",
+                        ],
+                      },
+                      "displayName": "styles__LinkStyled",
+                      "render": [Function],
+                      "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                      "target": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  offset={-70}
+                  smooth={true}
+                  to="portfolio"
+                >
+                  <Link
+                    activeClass="active"
+                    className="c1"
+                    duration={600}
+                    offset={-70}
+                    smooth={true}
+                    to="portfolio"
+                  >
+                    <LinkElement
+                      className="c1"
+                      onClick={[Function]}
+                    >
+                      <a
+                        className="c1"
+                        onClick={[Function]}
+                      >
+                        Portfolio
+                      </a>
+                    </LinkElement>
+                  </Link>
+                </StyledComponent>
+              </styles__LinkStyled>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </StyledComponent>
+  </styles__Nav>
+</NavTopButtons>
+`;
