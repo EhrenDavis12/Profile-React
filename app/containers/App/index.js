@@ -10,14 +10,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import NotFoundPage from 'Domains/NotFound/NotFoundPage/Loadable';
-import AboutMePage from 'Domains/AboutMe/containers/MainPage/Loadable';
-/* import PortfolioPage from 'Domains/Portfolio/PortfolioPage/Loadable';
-import ContactMePage from 'Domains/ContactMe/container/Loadable';
-import ViewMessagesPage from 'Domains/ViewMessages/container/Loadable'; */
-import Navigation from 'Domains/Navigation/container/Loadable';
+import NotFoundPage from 'containers/NotFound/NotFoundPage/Loadable';
+import AboutMePage from 'containers/AboutMe/containers/MainPage/Loadable';
+/* import PortfolioPage from 'containers/Portfolio/PortfolioPage/Loadable';
+import ContactMePage from 'containers/ContactMe/container/Loadable';
+import ViewMessagesPage from 'containers/ViewMessages/container/Loadable'; */
+import Navigation from 'containers/Navigation/container/Loadable';
 
-import BackGround from 'Domains/SharedKernel/components/BackGrounds/BackGround';
+import BackGround from 'components/BackGrounds/BackGround';
 
 import GlobalStyle from '../../global-styles';
 import './styles.css';

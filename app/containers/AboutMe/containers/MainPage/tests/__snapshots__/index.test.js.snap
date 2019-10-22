@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutMePage /> should render the page 1`] = `
+<Fragment>
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <div
+      id="ProfessionalIntro"
+    >
+      <ProfessionalIntro />
+    </div>
+  </BannerSection>
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <div
+      id="Hobbies"
+    >
+      <Hobbies />
+    </div>
+  </BannerSection>
+</Fragment>
+`;
