@@ -5,11 +5,7 @@ import ProfessionalIntro from '../ProfessionalIntro';
 
 describe('<ProfessionalIntro />', () => {
   it('should render the page', () => {
-    const renderedComponent = shallow(
-      <ProfessionalIntro>
-        <div>Hello Wold</div>
-      </ProfessionalIntro>,
-    );
+    const renderedComponent = shallow(<ProfessionalIntro />);
     expect(renderedComponent).toMatchSnapshot();
   });
 });

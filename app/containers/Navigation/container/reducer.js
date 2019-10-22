@@ -35,10 +35,15 @@ import { TOGGLE_DRAWER, SELECT_LINK } from './constants';
 
 export const initialState = fromJS({
   navigationLinks: [
-    {
+    /* {
       key: 'AboutMe',
       LinkTo: 'ProfessionalIntro',
       DisplayName: 'About Me',
+    }, */
+    {
+      key: 'Portfolio',
+      LinkTo: 'Portfolio',
+      DisplayName: 'Portfolio',
     },
     {
       key: 'Hobbies',
