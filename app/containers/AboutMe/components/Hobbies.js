@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 // import HeaderBar from 'components/HeaderBar';
-import { P, H2 } from './styles';
+import { H2 } from './styles';
 
 function Hobbies() {
   return (
