@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 // import HeaderBar from 'components/HeaderBar';
-import { P, H2, Row12, PLeft } from './styles';
+import { H2, Row12, PLeft } from './styles';
 
 function ProfessionalIntro() {
   return (
