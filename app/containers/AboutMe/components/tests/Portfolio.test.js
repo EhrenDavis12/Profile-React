@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
-import Hobbies from '../Hobbies';
+import Portfolio from '../Portfolio';
 
-describe('<Hobbies />', () => {
+describe('<Portfolio />', () => {
   it('should render the page', () => {
-    const renderedComponent = shallow(<Hobbies />);
+    const renderedComponent = shallow(<Portfolio />);
     expect(renderedComponent).toMatchSnapshot();
   });
 });

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const P = styled.p`
   margin-left: 20px;
+  padding-right: 20px;
   font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
 `;
 export const PLeft = styled(P)`

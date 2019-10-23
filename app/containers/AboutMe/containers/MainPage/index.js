@@ -14,7 +14,8 @@ import React from 'react';
 // import ContactMePage from 'containers/ContactMe/container/Loadable';
 
 import Banner from '../../components/Banner';
-import ProfessionalIntro from '../../components/ProfessionalIntro';
+// import ProfessionalIntro from '../../components/ProfessionalIntro';
+import Portfolio from '../../components/Portfolio';
 import Hobbies from '../../components/Hobbies';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -22,9 +23,15 @@ export default class AboutMePage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Banner className="row col-lg-12">
+        {/* <Banner className="row col-lg-12">
           <div id="ProfessionalIntro">
             <ProfessionalIntro />
+          </div>
+        </Banner> */}
+
+        <Banner className="row col-lg-12">
+          <div id="Portfolio">
+            <Portfolio />
           </div>
         </Banner>
 

@@ -6,7 +6,7 @@ exports[`<AboutMePage /> should render the page 1`] = `
     className="row col-lg-12"
   >
     <div
-      id="ProfessionalIntro"
+      id="Portfolio"
     >
       <ProfessionalIntro />
     </div>

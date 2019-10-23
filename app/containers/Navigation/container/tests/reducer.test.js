@@ -7,10 +7,15 @@ describe('navigationReducer', () => {
     expect(navigationReducer(undefined, {})).toEqual(
       fromJS({
         navigationLinks: [
-          {
+          /* {
             key: 'AboutMe',
             LinkTo: 'ProfessionalIntro',
             DisplayName: 'About Me',
+          }, */
+          {
+            key: 'Portfolio',
+            LinkTo: 'Portfolio',
+            DisplayName: 'Portfolio',
           },
           {
             key: 'Hobbies',

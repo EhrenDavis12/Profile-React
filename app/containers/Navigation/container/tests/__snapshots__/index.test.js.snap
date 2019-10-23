@@ -107,9 +107,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
           navigationLinks={
             Array [
               Object {
-                "DisplayName": "About Me",
-                "LinkTo": "ProfessionalIntro",
-                "key": "AboutMe",
+                "DisplayName": "Portfolio",
+                "LinkTo": "Portfolio",
+                "key": "Portfolio",
               },
               Object {
                 "DisplayName": "Hobbies",
@@ -127,9 +127,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
               navigationLinks={
                 Array [
                   Object {
-                    "DisplayName": "About Me",
-                    "LinkTo": "ProfessionalIntro",
-                    "key": "AboutMe",
+                    "DisplayName": "Portfolio",
+                    "LinkTo": "Portfolio",
+                    "key": "Portfolio",
                   },
                   Object {
                     "DisplayName": "Hobbies",
@@ -147,9 +147,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 items={
                   Array [
                     Object {
-                      "DisplayName": "About Me",
-                      "LinkTo": "ProfessionalIntro",
-                      "key": "AboutMe",
+                      "DisplayName": "Portfolio",
+                      "LinkTo": "Portfolio",
+                      "key": "Portfolio",
                     },
                     Object {
                       "DisplayName": "Hobbies",
@@ -265,14 +265,14 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         >
                           <li
                             className="nav-item"
-                            key="AboutMe\\"_nav\\""
+                            key="Portfolio\\"_nav\\""
                           >
                             <styles__LinkStyled
                               activeClass="active"
                               duration={600}
                               offset={-70}
                               smooth={true}
-                              to="ProfessionalIntro"
+                              to="Portfolio"
                             >
                               <StyledComponent
                                 activeClass="active"
@@ -305,7 +305,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 forwardedRef={null}
                                 offset={-70}
                                 smooth={true}
-                                to="ProfessionalIntro"
+                                to="Portfolio"
                               >
                                 <Link
                                   activeClass="active"
@@ -313,7 +313,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                   duration={600}
                                   offset={-70}
                                   smooth={true}
-                                  to="ProfessionalIntro"
+                                  to="Portfolio"
                                 >
                                   <LinkElement
                                     className="c1"
@@ -323,7 +323,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                       className="c1"
                                       onClick={[Function]}
                                     >
-                                      About Me
+                                      Portfolio
                                     </a>
                                   </LinkElement>
                                 </Link>
@@ -410,9 +410,9 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 items={
                   Array [
                     Object {
-                      "DisplayName": "About Me",
-                      "LinkTo": "ProfessionalIntro",
-                      "key": "AboutMe",
+                      "DisplayName": "Portfolio",
+                      "LinkTo": "Portfolio",
+                      "key": "Portfolio",
                     },
                     Object {
                       "DisplayName": "Hobbies",
@@ -511,11 +511,11 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                       <styles__LinkStyled
                         activeClass="active"
                         duration={600}
-                        key="AboutMe"
+                        key="Portfolio"
                         offset={-70}
                         onClick={[Function]}
                         smooth={true}
-                        to="ProfessionalIntro"
+                        to="Portfolio"
                       >
                         <StyledComponent
                           activeClass="active"
@@ -549,7 +549,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                           offset={-70}
                           onClick={[Function]}
                           smooth={true}
-                          to="ProfessionalIntro"
+                          to="Portfolio"
                         >
                           <Link
                             activeClass="active"
@@ -558,7 +558,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                             offset={-70}
                             onClick={[Function]}
                             smooth={true}
-                            to="ProfessionalIntro"
+                            to="Portfolio"
                           >
                             <LinkElement
                               className="c4"
@@ -568,7 +568,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 className="c4"
                                 onClick={[Function]}
                               >
-                                About Me
+                                Portfolio
                               </a>
                             </LinkElement>
                           </Link>
