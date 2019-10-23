@@ -13,7 +13,7 @@ import React from 'react';
 
 // import ContactMePage from 'containers/ContactMe/container/Loadable';
 
-import Banner from '../../components/Banner';
+import Banner from 'components/Banners/Banner';
 // import ProfessionalIntro from '../../components/ProfessionalIntro';
 import Portfolio from '../../components/Portfolio';
 import Hobbies from '../../components/Hobbies';
@@ -23,12 +23,6 @@ export default class AboutMePage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        {/* <Banner className="row col-lg-12">
-          <div id="ProfessionalIntro">
-            <ProfessionalIntro />
-          </div>
-        </Banner> */}
-
         <Banner className="row col-lg-12">
           <div id="Portfolio">
             <Portfolio />
@@ -40,12 +34,6 @@ export default class AboutMePage extends React.PureComponent {
             <Hobbies />
           </div>
         </Banner>
-
-        {/* <Banner className="row col-lg-12">
-          <div id="ContactMePage">
-            <ContactMePage />
-          </div>
-        </Banner> */}
       </React.Fragment>
     );
   }
