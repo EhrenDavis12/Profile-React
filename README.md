@@ -1,12 +1,34 @@
 This project is created from react-boilerplate
 
-<div align="center">
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/react-boilerplate/react-boilerplate">
-    <img src="https://david-dm.org/react-boilerplate/react-boilerplate.svg" alt="Dependency Status" />
-  </a>
-</div>
-<br />
+<a href="https://ehren-davis-profile-app.herokuapp.com/">
+  Project deployed Using Heroku 
+</a>
+
+Checkout
+<a href="https://github.com/EhrenDavis12/Profile-React/tree/master/app/components">
+app/components
+</a>
+and
+<a href="https://github.com/EhrenDavis12/Profile-React/tree/master/app/containers">
+app/containers
+</a>
+on this project!
+
+<ul>
+  <li>100% Jest/Enzyme tested</li>
+  <li>Setup with continues integrations using Travis</li>
+  <li>Do to the reduction of scope to this project, the technology was reduced as well. Checkout the 
+    <a href="https://github.com/EhrenDavis12/Profile-React/tree/master/app/containers/Navigation/container">
+      Navigation container 
+    </a>
+    to see whats left of the structure
+  </li>
+  <ul>
+    <li>Redux</li>
+    <li>Redux-sagas</li>
+    <li>reselect</li>
+  </ul>
+</ul>
 
 ## License
 

@@ -7,11 +7,6 @@ describe('navigationReducer', () => {
     expect(navigationReducer(undefined, {})).toEqual(
       fromJS({
         navigationLinks: [
-          /* {
-            key: 'AboutMe',
-            LinkTo: 'ProfessionalIntro',
-            DisplayName: 'About Me',
-          }, */
           {
             key: 'Portfolio',
             LinkTo: 'Portfolio',
@@ -22,11 +17,6 @@ describe('navigationReducer', () => {
             LinkTo: 'Hobbies',
             DisplayName: 'Hobbies',
           },
-          /* {
-            key: 'ContactMe',
-            LinkTo: 'ContactMePage',
-            DisplayName: 'ContactMe',
-          }, */
         ],
         isDrawerOpen: false,
       }),
