@@ -22,7 +22,7 @@ on this project!
     <a href="https://github.com/EhrenDavis12/Profile-React/tree/master/app/containers/Navigation/container">
       Navigation container 
     </a>
-    to see whats left of the structure
+    to see what is left of the structure
     <ul>
       <li>Redux</li>
       <li>Redux-sagas</li>
