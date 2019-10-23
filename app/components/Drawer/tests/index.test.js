@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 
 // import renderer from 'react-test-renderer';
 import Drawer from '../index';
-import { DrawerStyled, LinkStyled } from '../styles';
+import { DrawerStyled, LinkStyled, CoverStyled } from '../styles';
 
 const testData = {
   items: [
@@ -58,7 +58,7 @@ describe('<Drawer />', () => {
     expect(wrapper.find(DrawerStyled).prop('children').length).toEqual(2);
   });
 
-  /* it('Children should handle click events', () => {
+  it('Children should handle click events', () => {
     const mockCallBack = jest.fn(() => true);
     const propsData = {
       ...testData,
@@ -71,5 +71,20 @@ describe('<Drawer />', () => {
       .first()
       .simulate('click');
     expect(mockCallBack.mock.calls.length).toEqual(1);
-  }); */
+  });
+
+  it('Close Drawer', () => {
+    const mockCallBack = jest.fn(() => true);
+    const propsData = {
+      ...testData,
+      selectItem: mockCallBack,
+      isDrawerOpen: true,
+    };
+    const renderedComponent = renderComponent(propsData);
+    renderedComponent
+      .find(CoverStyled)
+      .first()
+      .simulate('click');
+    expect(mockCallBack.mock.calls.length).toEqual(1);
+  });
 });
