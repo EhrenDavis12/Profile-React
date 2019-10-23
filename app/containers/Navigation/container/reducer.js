@@ -35,11 +35,6 @@ import { TOGGLE_DRAWER, SELECT_LINK } from './constants';
 
 export const initialState = fromJS({
   navigationLinks: [
-    /* {
-      key: 'AboutMe',
-      LinkTo: 'ProfessionalIntro',
-      DisplayName: 'About Me',
-    }, */
     {
       key: 'Portfolio',
       LinkTo: 'Portfolio',
@@ -50,11 +45,6 @@ export const initialState = fromJS({
       LinkTo: 'Hobbies',
       DisplayName: 'Hobbies',
     },
-    /* {
-      key: 'ContactMe',
-      LinkTo: 'ContactMePage',
-      DisplayName: 'ContactMe',
-    }, */
   ],
   isDrawerOpen: false,
 });
