@@ -17,17 +17,18 @@ on this project!
 <ul>
   <li>100% Jest/Enzyme tested</li>
   <li>Setup with continues integrations using Travis</li>
+  <li>Using styled-components</li>
   <li>Do to the reduction of scope to this project, the technology was reduced as well. Checkout the 
     <a href="https://github.com/EhrenDavis12/Profile-React/tree/master/app/containers/Navigation/container">
       Navigation container 
     </a>
     to see whats left of the structure
+    <ul>
+      <li>Redux</li>
+      <li>Redux-sagas</li>
+      <li>reselect</li>
+    </ul>
   </li>
-  <ul>
-    <li>Redux</li>
-    <li>Redux-sagas</li>
-    <li>reselect</li>
-  </ul>
 </ul>
 
 ## License
