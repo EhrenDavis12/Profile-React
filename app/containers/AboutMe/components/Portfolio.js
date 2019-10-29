@@ -1,48 +1,23 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
-// import HeaderBar from 'components/HeaderBar';
-import { H2, Row12, PLeft } from './styles';
+import Banner from 'components/Banners/Banner';
+import { PLeft } from './styles';
+import DesertCodeCamp from './Projects/DesertCodeCamp';
+import BootCampTeamFinal from './Projects/BootCampTeamFinal';
 
 function ProfessionalIntro() {
   return (
-    <div className="row">
-      <Row12>
-        <H2>Professional Intro</H2>
-      </Row12>
-      <Row12>
-        <PLeft>
-          This Repository is the android application that I made in 3 weeks.
-          <br />
-          <a href="https://github.com/EhrenDavis12/DesertCodeCamp">
-            GetHub Repository
-          </a>
-          <br />
-          <a href="https://play.google.com/store/apps/details?id=com.ehrendavis.desertcodecampscheduler">
-            App Deployed in Google Play Store
-          </a>
-          <br />
-          <br />
-          Boot camp Final Team project: Duration 1 month
-          <br />
-          <a href="https://broken-glass-app.herokuapp.com/">Go To Web Site</a>
-          <br />
-          <a href="https://github.com/EhrenDavis12/broken-glass-app">
-            Front End GetHub Repository
-          </a>
-          <br />
-          <a href="https://github.com/EhrenDavis12/broken-glass-api">
-            Back End GetHub Repository
-          </a>
-          <br />
-          On this project I worked on:
-          <ul>
-            <li>Auth0 integration.</li>
-            <li>Google Maps integration</li>
-            <li>Deployment using Heroku</li>
-            <li>
-              Setting up the environment up connections between app and api.
-            </li>
-          </ul>
+    <div>
+      <PLeft>
+        <Banner>
+          <DesertCodeCamp />
+        </Banner>
+
+        <Banner>
+          <BootCampTeamFinal />
+        </Banner>
+
+        {/* <Banner>
           <br />
           This is a project I worked on to learn/refine technologies.
           React-redux(-sagas), jest - and more.
@@ -76,8 +51,8 @@ function ProfessionalIntro() {
           <a href="https://github.com/EhrenDavis12/RPG_StarWars">
             GetHub Repository
           </a>
-        </PLeft>
-      </Row12>
+        </Banner> */}
+      </PLeft>
     </div>
   );
 }

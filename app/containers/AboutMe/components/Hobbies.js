@@ -1,24 +1,22 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
-// import HeaderBar from 'components/HeaderBar';
-import { H2 } from './styles';
+import Banner from 'components/Banners/Banner';
+import { P } from './styles';
 
 function Hobbies() {
   return (
-    <div className="row">
-      <div className="row col-lg-12">
-        <H2>Hobbies</H2>
-      </div>
-      <div className="row col-lg-12">
+    <P>
+      <Banner>
         <ul>
-          <li>Programming</li>
-          <li>Dancing West Coast Swing</li>
-          <li>Hiking</li>
-          <li>Billiards</li>
+          <li>Programming - Go to work and program, Go home and program</li>
+          <li>Dancing - West Coast Swing - any change I get</li>
+          <li>Hiking - A good way to clear your mind and find your ground</li>
+          <li>Billiards - Used to be on a team not any more</li>
+          <li>Ultimate Frisbee - saturday pick up games</li>
           <li>ATV Riding</li>
         </ul>
-      </div>
-    </div>
+      </Banner>
+    </P>
   );
 }
 

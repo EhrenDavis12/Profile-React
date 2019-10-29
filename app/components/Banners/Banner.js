@@ -11,6 +11,7 @@ const Background = styled.section`
   background-image: url('${BannerImg}');
   margin-top: 40px;
   border: 2px solid black;
+  padding: 20px;
 
   opacity: 0.9;
   filter: alpha(opacity=90);
