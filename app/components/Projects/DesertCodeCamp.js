@@ -1,7 +1,7 @@
 import React from 'react';
-import { P, SectionBreak, Img } from '../styles';
+import { P, SectionBreak, Img } from 'components/SharedStyles/styles';
 
-const DesertCodeCampIcon = require('./DesertCodeCampIcon.png');
+const DesertCodeCampIcon = require('images/DesertCodeCampIcon.png');
 
 function DesertCodeCamp() {
   return (

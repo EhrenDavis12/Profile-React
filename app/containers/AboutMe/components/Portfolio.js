@@ -1,9 +1,9 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 import Banner from 'components/Banners/Banner';
-import { PLeft } from './styles';
-import DesertCodeCamp from './Projects/DesertCodeCamp';
-import BootCampTeamFinal from './Projects/BootCampTeamFinal';
+import { PLeft } from 'components/SharedStyles/styles';
+import DesertCodeCamp from 'components/Projects/DesertCodeCamp';
+import BootCampTeamFinal from 'components/Projects/BootCampTeamFinal';
 
 function ProfessionalIntro() {
   return (

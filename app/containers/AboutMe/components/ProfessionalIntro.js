@@ -1,7 +1,6 @@
-// import PropTypes from 'prop-types';
 import React from 'react';
 import Header from 'components/Banners/Header';
-import { PLeft } from './styles';
+import { PLeft } from 'components/SharedStyles/styles';
 
 function ProfessionalIntro() {
   return (

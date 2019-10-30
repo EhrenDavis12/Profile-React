@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render the page 1`] = `
+<Header__Row12>
+  <Header__H2>
+    Hello Wold
+  </Header__H2>
+</Header__Row12>
+`;

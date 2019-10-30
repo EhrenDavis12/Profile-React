@@ -8,17 +8,23 @@ exports[`<AboutMePage /> should render the page 1`] = `
     <div
       id="Portfolio"
     >
-      <ProfessionalIntro />
+      <Header>
+        Portfolio
+      </Header>
     </div>
   </BannerSection>
+  <ProfessionalIntro />
   <BannerSection
     className="row col-lg-12"
   >
     <div
       id="Hobbies"
     >
-      <Hobbies />
+      <Header>
+        Hobbies
+      </Header>
     </div>
   </BannerSection>
+  <Hobbies />
 </Fragment>
 `;

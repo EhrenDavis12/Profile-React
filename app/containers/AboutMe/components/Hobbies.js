@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 import Banner from 'components/Banners/Banner';
-import { P } from './styles';
+import { P } from 'components/SharedStyles/styles';
 
 function Hobbies() {
   return (

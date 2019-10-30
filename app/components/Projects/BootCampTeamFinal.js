@@ -1,5 +1,5 @@
 import React from 'react';
-import { P, SectionBreak, Img } from '../styles';
+import { P, SectionBreak, Img } from 'components/SharedStyles/styles';
 
 const BGIcon = require('images/BGIcon.png');
 
