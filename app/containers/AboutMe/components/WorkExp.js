@@ -1,13 +1,12 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 // import HeaderBar from 'components/HeaderBar';
-import { H2 } from './styles';
 
 function Hobbies() {
   return (
     <div className="row">
       <div className="row col-lg-12">
-        <H2>Hobbies</H2>
+        <h2>Hobbies</h2>
       </div>
       <div className="row col-lg-12">
         <ul>
