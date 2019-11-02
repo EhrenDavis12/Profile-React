@@ -18,3 +18,9 @@ export const Img = styled.img`
   height: 200px;
   width: 200px;
 `;
+
+export const Ul = styled.ul`
+  -webkit-column-width: 150px;
+  -moz-column-width: 150px;
+  column-width: 150px;
+`;

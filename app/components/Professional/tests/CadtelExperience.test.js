@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
-import ProfessionalIntro from '../ProfessionalIntro';
+import CadtelExperience from '../CadtelExperience';
 
-describe('<ProfessionalIntro />', () => {
+describe('<CadtelExperience />', () => {
   it('should render the page', () => {
-    const renderedComponent = shallow(<ProfessionalIntro />);
+    const renderedComponent = shallow(<CadtelExperience />);
     expect(renderedComponent).toMatchSnapshot();
   });
 });

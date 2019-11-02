@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfessionalExperience /> should render the page 1`] = `
+<styles__PLeft>
+  <BannerSection>
+    <HylandExperience />
+  </BannerSection>
+  <BannerSection>
+    <CadtelExperience />
+  </BannerSection>
+</styles__PLeft>
+`;

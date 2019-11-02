@@ -19,16 +19,6 @@ import { TOGGLE_DRAWER, SELECT_LINK } from './constants';
 //       LinkTo: '/portfolio',
 //       DisplayName: 'Portfolio',
 //     },
-//     {
-//       key: 'Contact',
-//       LinkTo: '/contact',
-//       DisplayName: 'Contact',
-//     },
-//     {
-//       key: 'Messages',
-//       LinkTo: '/messages',
-//       DisplayName: 'Messages',
-//     },
 //   ],
 //   isDrawerOpen: false,
 // });
@@ -44,6 +34,16 @@ export const initialState = fromJS({
       key: 'Hobbies',
       LinkTo: 'Hobbies',
       DisplayName: 'Hobbies',
+    },
+    {
+      key: 'TechnicalSkills',
+      LinkTo: 'TechnicalSkills',
+      DisplayName: 'Technical Skills',
+    },
+    {
+      key: 'ProfessionalExperience',
+      LinkTo: 'ProfessionalExperience',
+      DisplayName: 'Professional Experience',
     },
   ],
   isDrawerOpen: false,

@@ -11,7 +11,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import NotFoundPage from 'containers/NotFound/NotFoundPage/Loadable';
-import AboutMePage from 'containers/AboutMe/containers/MainPage/Loadable';
+import AboutMePage from 'containers/AboutMeContent/Loadable';
 /* import PortfolioPage from 'containers/Portfolio/PortfolioPage/Loadable';
 import ContactMePage from 'containers/ContactMe/container/Loadable';
 import ViewMessagesPage from 'containers/ViewMessages/container/Loadable'; */
