@@ -9,7 +9,7 @@ exports[`<AboutMePage /> should render the page 1`] = `
       id="Portfolio"
     >
       <Header>
-        Portfolio
+        Self Project Portfolio
       </Header>
     </div>
   </BannerSection>
@@ -26,5 +26,29 @@ exports[`<AboutMePage /> should render the page 1`] = `
     </div>
   </BannerSection>
   <Hobbies />
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <div
+      id="TechnicalSkills"
+    >
+      <Header>
+        Technical Skills
+      </Header>
+    </div>
+  </BannerSection>
+  <TechnicalSkills />
+  <BannerSection
+    className="row col-lg-12"
+  >
+    <div
+      id="ProfessionalExperience"
+    >
+      <Header>
+        Professional Experience
+      </Header>
+    </div>
+  </BannerSection>
+  <ProfessionalExperience />
 </Fragment>
 `;

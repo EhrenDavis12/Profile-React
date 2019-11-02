@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TechnicalSkills /> should render the page 1`] = `
+<styles__PLeft>
+  <BannerSection>
+    <TechnicalSkills />
+  </BannerSection>
+</styles__PLeft>
+`;
