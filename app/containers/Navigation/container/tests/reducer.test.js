@@ -1,4 +1,3 @@
-import { fromJS } from 'immutable';
 import navigationReducer from '../reducer';
 import { TOGGLE_DRAWER, SELECT_LINK } from '../constants';
 
