@@ -56,7 +56,7 @@ exports[`<BootCampTeamFinal /> should render the page 1`] = `
           </a>
         </styles__P>
       </styles__SectionBreak>
-      <styles__P>
+      <styles__Div>
         On this project I worked on:
         <ul>
           <li>
@@ -72,7 +72,7 @@ exports[`<BootCampTeamFinal /> should render the page 1`] = `
             Setting up the environment up connections between app and api
           </li>
         </ul>
-      </styles__P>
+      </styles__Div>
     </div>
     <div
       className="col-md-5"

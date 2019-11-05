@@ -6,7 +6,7 @@ exports[`<AboutMePage /> should render the page 1`] = `
     header="Self Project Portfolio"
     id="Portfolio"
     image="IMAGE_MOCK"
-    strength={2000}
+    strength={800}
   >
     <ProfessionalIntro />
   </SectionBanner>
@@ -30,9 +30,17 @@ exports[`<AboutMePage /> should render the page 1`] = `
     header="ProfessionalExperience"
     id="ProfessionalExperience"
     image="IMAGE_MOCK"
-    strength={2000}
+    strength={800}
   >
     <ProfessionalExperience />
+  </SectionBanner>
+  <SectionBanner
+    header="Education"
+    id="Education"
+    image="IMAGE_MOCK"
+    strength={1000}
+  >
+    <Education />
   </SectionBanner>
 </Fragment>
 `;

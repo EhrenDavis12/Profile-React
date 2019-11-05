@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProfessionalExperience /> should render the page 1`] = `
-<styles__PLeft>
+<div
+  className="container"
+>
   <BannerSection>
     <HylandExperience />
   </BannerSection>
   <BannerSection>
     <CadtelExperience />
   </BannerSection>
-</styles__PLeft>
+</div>
 `;

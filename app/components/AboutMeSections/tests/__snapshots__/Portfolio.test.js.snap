@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Portfolio /> should render the page 1`] = `
-<div>
-  <styles__PLeft>
-    <BannerSection>
-      <DesertCodeCamp />
-    </BannerSection>
-    <BannerSection>
-      <BootCampTeamFinal />
-    </BannerSection>
-  </styles__PLeft>
+<div
+  className="container"
+>
+  <BannerSection>
+    <DesertCodeCamp />
+  </BannerSection>
+  <BannerSection>
+    <BootCampTeamFinal />
+  </BannerSection>
 </div>
 `;

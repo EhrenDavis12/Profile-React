@@ -12,7 +12,7 @@
 import React from 'react';
 
 // import BkgImg from 'images/background-calm-clouds.jpg';
-// import BkgImg2 from 'images/nature-milky-way-galaxy-space.jpg';
+import BkgImg2 from 'images/nature-milky-way-galaxy-space.jpg';
 import BkgImg3 from 'images/nature-milky-way-stars-galaxy.jpg';
 import BkgImg4 from 'images/rocksWithNightSky.jpg';
 import BkgImg5 from 'images/blue_milky_way.jpg';
@@ -24,6 +24,7 @@ import Portfolio from 'components/AboutMeSections/Portfolio';
 import Hobbies from 'components/AboutMeSections/Hobbies';
 import ProfessionalExperience from 'components/AboutMeSections/ProfessionalExperience';
 import TechnicalSkills from 'components/AboutMeSections/TechnicalSkills';
+import Education from 'components/AboutMeSections/Education';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class AboutMePage extends React.PureComponent {
@@ -34,7 +35,7 @@ export default class AboutMePage extends React.PureComponent {
           image={BkgImg5}
           id="Portfolio"
           header="Self Project Portfolio"
-          strength={2000}
+          strength={800}
         >
           <Portfolio />
         </ParallaxBanner>
@@ -61,9 +62,18 @@ export default class AboutMePage extends React.PureComponent {
           image={BkgImg3}
           id="ProfessionalExperience"
           header="ProfessionalExperience"
-          strength={2000}
+          strength={800}
         >
           <ProfessionalExperience />
+        </ParallaxBanner>
+
+        <ParallaxBanner
+          image={BkgImg2}
+          id="Education"
+          header="Education"
+          strength={1000}
+        >
+          <Education />
         </ParallaxBanner>
       </React.Fragment>
     );

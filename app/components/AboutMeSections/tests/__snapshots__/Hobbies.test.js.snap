@@ -1,28 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Hobbies /> should render the page 1`] = `
-<styles__P>
+<div
+  className="container"
+>
   <BannerSection>
     <ul>
       <li>
         Programming - Go to work and program, Go home and program
       </li>
       <li>
-        Dancing - West Coast Swing - any change I get
+        Dancing - West Coast Swing - any chance I get
       </li>
       <li>
         Hiking - A good way to clear your mind and find your ground
       </li>
       <li>
-        Billiards - Used to be on a team not any more
+        Billiards - Was in a league and casually shooting with friends
       </li>
       <li>
-        Ultimate Frisbee - saturday pick up games
+        Ultimate Frisbee - Saturday pick up games
       </li>
       <li>
-        ATV Riding
+        ATV Riding - Off road here I!
       </li>
     </ul>
   </BannerSection>
-</styles__P>
+</div>
 `;

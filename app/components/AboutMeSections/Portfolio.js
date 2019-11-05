@@ -1,23 +1,21 @@
 // import PropTypes from 'prop-types';
 import React from 'react';
 import Banner from 'components/Banners/Banner';
-import { PLeft } from 'components/SharedStyles/styles';
 import DesertCodeCamp from 'components/Projects/DesertCodeCamp';
 import BootCampTeamFinal from 'components/Projects/BootCampTeamFinal';
 
 function ProfessionalIntro() {
   return (
-    <div>
-      <PLeft>
-        <Banner>
-          <DesertCodeCamp />
-        </Banner>
+    <div className="container">
+      <Banner>
+        <DesertCodeCamp />
+      </Banner>
 
-        <Banner>
-          <BootCampTeamFinal />
-        </Banner>
+      <Banner>
+        <BootCampTeamFinal />
+      </Banner>
 
-        {/* <Banner>
+      {/* <Banner>
           <br />
           This is a project I worked on to learn/refine technologies.
           React-redux(-sagas), jest - and more.
@@ -52,7 +50,6 @@ function ProfessionalIntro() {
             GetHub Repository
           </a>
         </Banner> */}
-      </PLeft>
     </div>
   );
 }
