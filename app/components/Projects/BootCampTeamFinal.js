@@ -1,5 +1,5 @@
 import React from 'react';
-import { P, SectionBreak, Img } from 'components/SharedStyles/styles';
+import { P, SectionBreak, Img, Div } from 'components/SharedStyles/styles';
 
 const BGIcon = require('images/BGIcon.png');
 
@@ -44,7 +44,7 @@ function BootCampTeamFinal() {
               </a>
             </P>
           </SectionBreak>
-          <P>
+          <Div>
             On this project I worked on:
             <ul>
               <li>Auth0 integration</li>
@@ -54,7 +54,7 @@ function BootCampTeamFinal() {
                 Setting up the environment up connections between app and api
               </li>
             </ul>
-          </P>
+          </Div>
         </div>
         <div className="col-md-5">
           <Img src={BGIcon} alt="BrokenGlassIcon" />

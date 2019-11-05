@@ -1,5 +1,5 @@
 import React from 'react';
-import { P, SectionBreak, Img } from 'components/SharedStyles/styles';
+import { P, Div, SectionBreak, Img } from 'components/SharedStyles/styles';
 
 const DesertCodeCampIcon = require('images/DesertCodeCampIcon.png');
 
@@ -25,7 +25,7 @@ function DesertCodeCamp() {
 
       <div className="row">
         <div className="col-md-7">
-          <P>
+          <Div>
             <div>Duration:</div>
             <ul>
               <li>One Week to learn React Native</li>
@@ -33,8 +33,8 @@ function DesertCodeCamp() {
               <li>One Week for deployment to google play store</li>
               <li>No further updates will be made to this project</li>
             </ul>
-          </P>
-          <P>
+          </Div>
+          <Div>
             <div>
               You may see the code at the{' '}
               <a href="https://github.com/EhrenDavis12/DesertCodeCamp">
@@ -47,7 +47,7 @@ function DesertCodeCamp() {
                 Google Play Store
               </a>
             </div>
-          </P>
+          </Div>
         </div>
         <div className="col-md-5">
           <Img src={DesertCodeCampIcon} alt="desertCodeCampIcon" />

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Education /> should render the page 1`] = `
+<div
+  className="container"
+>
+  <BannerSection>
+    <h4>
+      Continuing Education
+    </h4>
+    <styles__P>
+      PRESENT
+    </styles__P>
+    <styles__P>
+      Utilizing Pluralsight Online Classes
+    </styles__P>
+    <styles__P>
+      Continuing education to maintain up to date knowledge on new languages, trends, and skills
+    </styles__P>
+  </BannerSection>
+  <BannerSection>
+    <h4>
+      Full Stack Web Development Certificate
+    </h4>
+    <styles__P>
+      JANUARY ,2019
+    </styles__P>
+    <styles__P>
+      University of Arizona
+    </styles__P>
+  </BannerSection>
+  <BannerSection>
+    <h4>
+      Bachelor of Science in Game & Simulation Development
+    </h4>
+    <styles__P>
+      JUNE ,2009
+    </styles__P>
+    <styles__P>
+      Devry University
+    </styles__P>
+  </BannerSection>
+</div>
+`;

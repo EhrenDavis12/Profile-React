@@ -22,7 +22,7 @@ exports[`<DesertCodeCamp /> should render the page 1`] = `
     <div
       className="col-md-7"
     >
-      <styles__P>
+      <styles__Div>
         <div>
           Duration:
         </div>
@@ -40,8 +40,8 @@ exports[`<DesertCodeCamp /> should render the page 1`] = `
             No further updates will be made to this project
           </li>
         </ul>
-      </styles__P>
-      <styles__P>
+      </styles__Div>
+      <styles__Div>
         <div>
           You may see the code at the
            
@@ -60,7 +60,7 @@ exports[`<DesertCodeCamp /> should render the page 1`] = `
             Google Play Store
           </a>
         </div>
-      </styles__P>
+      </styles__Div>
     </div>
     <div
       className="col-md-5"
