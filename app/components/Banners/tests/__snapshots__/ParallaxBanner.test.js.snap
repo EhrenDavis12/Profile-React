@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ParallaxBanner /> should render the page default Strength 1`] = `
+<Fragment>
+  <t
+    bgClassName="react-parallax-bgimage"
+    bgImage="IMAGE_MOCK"
+    bgImageAlt=""
+    className=""
+    contentClassName=""
+    disabled={false}
+    log={false}
+    strength={500}
+  >
+    <ParallaxBanner__Container
+      className="container"
+    >
+      <BannerSection
+        className="row"
+      >
+        <div
+          id="Hobbies"
+        >
+          <Header>
+            Hobbies
+          </Header>
+        </div>
+      </BannerSection>
+      <div>
+        Hello World
+      </div>
+    </ParallaxBanner__Container>
+  </t>
+  <ParallaxBanner__PaddingSections>
+    | | |
+  </ParallaxBanner__PaddingSections>
+</Fragment>
+`;
+
+exports[`<ParallaxBanner /> should render the page given Strength 1`] = `
+<Fragment>
+  <t
+    bgClassName="react-parallax-bgimage"
+    bgImage="IMAGE_MOCK"
+    bgImageAlt=""
+    className=""
+    contentClassName=""
+    disabled={false}
+    log={false}
+    strength={1000}
+  >
+    <ParallaxBanner__Container
+      className="container"
+    >
+      <BannerSection
+        className="row"
+      >
+        <div
+          id="Hobbies"
+        >
+          <Header>
+            Hobbies
+          </Header>
+        </div>
+      </BannerSection>
+      <div>
+        Hello World
+      </div>
+    </ParallaxBanner__Container>
+  </t>
+  <ParallaxBanner__PaddingSections>
+    | | |
+  </ParallaxBanner__PaddingSections>
+</Fragment>
+`;
