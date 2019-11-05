@@ -2,53 +2,37 @@
 
 exports[`<AboutMePage /> should render the page 1`] = `
 <Fragment>
-  <BannerSection
-    className="row col-lg-12"
+  <SectionBanner
+    header="Self Project Portfolio"
+    id="Portfolio"
+    image="IMAGE_MOCK"
+    strength={2000}
   >
-    <div
-      id="Portfolio"
-    >
-      <Header>
-        Self Project Portfolio
-      </Header>
-    </div>
-  </BannerSection>
-  <ProfessionalIntro />
-  <BannerSection
-    className="row col-lg-12"
+    <ProfessionalIntro />
+  </SectionBanner>
+  <SectionBanner
+    header="TechnicalSkills"
+    id="TechnicalSkills"
+    image="IMAGE_MOCK"
+    strength={1000}
   >
-    <div
-      id="Hobbies"
-    >
-      <Header>
-        Hobbies
-      </Header>
-    </div>
-  </BannerSection>
-  <Hobbies />
-  <BannerSection
-    className="row col-lg-12"
+    <TechnicalSkills />
+  </SectionBanner>
+  <SectionBanner
+    header="Hobbies"
+    id="Hobbies"
+    image="IMAGE_MOCK"
+    strength={1000}
   >
-    <div
-      id="TechnicalSkills"
-    >
-      <Header>
-        Technical Skills
-      </Header>
-    </div>
-  </BannerSection>
-  <TechnicalSkills />
-  <BannerSection
-    className="row col-lg-12"
+    <Hobbies />
+  </SectionBanner>
+  <SectionBanner
+    header="ProfessionalExperience"
+    id="ProfessionalExperience"
+    image="IMAGE_MOCK"
+    strength={2000}
   >
-    <div
-      id="ProfessionalExperience"
-    >
-      <Header>
-        Professional Experience
-      </Header>
-    </div>
-  </BannerSection>
-  <ProfessionalExperience />
+    <ProfessionalExperience />
+  </SectionBanner>
 </Fragment>
 `;

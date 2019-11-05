@@ -2,10 +2,10 @@
 
 exports[`<Navigation /> <Navigation /> snap Shots renders as expected with populated messages 1`] = `
 .c1 {
-  padding: 25px;
+  padding: 15px 25px 15px 25px;
   text-transform: uppercase;
   cursor: pointer;
-  border-bottom: solid 1px #f6f6f6;
+  hight: 100px;
 }
 
 .c1:hover {
@@ -13,8 +13,13 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
 }
 
 .c0 {
-  padding-left: 0px;
+  padding: 15px 0px 15px 20px;
   z-index: 900;
+  background-image: url('IMAGE_MOCK');
+  background-color: #f6f6f6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .c3 {
@@ -201,16 +206,20 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": undefined,
                         "componentStyle": ComponentStyle {
-                          "componentId": "styles__Nav-sc-1t8u81o-3",
+                          "componentId": "styles__Nav-sc-1t8u81o-2",
                           "isStatic": true,
                           "lastClassName": "c0",
                           "rules": Array [
-                            "padding-left:0px;z-index:900;",
+                            "padding:15px 0px 15px 20px;z-index:900;background-image:url('",
+                            "IMAGE_MOCK",
+                            "');background-color:",
+                            "#f6f6f6",
+                            ";background-position:center;background-repeat:no-repeat;background-size:cover;",
                           ],
                         },
                         "displayName": "styles__Nav",
                         "render": [Function],
-                        "styledComponentId": "styles__Nav-sc-1t8u81o-3",
+                        "styledComponentId": "styles__Nav-sc-1t8u81o-2",
                         "target": "nav",
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
@@ -243,14 +252,14 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__HamburgerButtonStyled-sc-1t8u81o-2",
+                                "componentId": "styles__HamburgerButtonStyled-sc-1t8u81o-1",
                                 "isStatic": true,
-                                "lastClassName": "jpCVxo",
+                                "lastClassName": "jBYtkn",
                                 "rules": Array [],
                               },
                               "displayName": "styles__HamburgerButtonStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__HamburgerButtonStyled-sc-1t8u81o-2",
+                              "styledComponentId": "styles__HamburgerButtonStyled-sc-1t8u81o-1",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -312,20 +321,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
-                                        "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                        "#f6f6f6",
-                                        ";&:hover{background-color:",
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
                                         "#f6f6f6",
                                         ";}",
                                       ],
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -379,20 +386,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
-                                        "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                        "#f6f6f6",
-                                        ";&:hover{background-color:",
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
                                         "#f6f6f6",
                                         ";}",
                                       ],
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -446,20 +451,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
-                                        "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                        "#f6f6f6",
-                                        ";&:hover{background-color:",
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
                                         "#f6f6f6",
                                         ";}",
                                       ],
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -513,20 +516,18 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
-                                        "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
-                                        "#f6f6f6",
-                                        ";&:hover{background-color:",
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
                                         "#f6f6f6",
                                         ";}",
                                       ],
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-1",
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],

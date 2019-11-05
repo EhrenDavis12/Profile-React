@@ -10,9 +10,16 @@
  */
 
 import React from 'react';
-import Banner from 'components/Banners/Banner';
-import Header from 'components/Banners/Header';
-// import ProfessionalIntro from 'components/ProfessionalIntro';
+
+// import BkgImg from 'images/background-calm-clouds.jpg';
+// import BkgImg2 from 'images/nature-milky-way-galaxy-space.jpg';
+import BkgImg3 from 'images/nature-milky-way-stars-galaxy.jpg';
+import BkgImg4 from 'images/rocksWithNightSky.jpg';
+import BkgImg5 from 'images/blue_milky_way.jpg';
+import BkgImg6 from 'images/small_bluePur_sky.jpg';
+
+import ParallaxBanner from 'components/Banners/ParallaxBanner';
+// import Header from 'components/Banners/Header';
 import Portfolio from 'components/AboutMeSections/Portfolio';
 import Hobbies from 'components/AboutMeSections/Hobbies';
 import ProfessionalExperience from 'components/AboutMeSections/ProfessionalExperience';
@@ -23,33 +30,41 @@ export default class AboutMePage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Banner className="row col-lg-12">
-          <div id="Portfolio">
-            <Header>Self Project Portfolio</Header>
-          </div>
-        </Banner>
-        <Portfolio />
+        <ParallaxBanner
+          image={BkgImg5}
+          id="Portfolio"
+          header="Self Project Portfolio"
+          strength={2000}
+        >
+          <Portfolio />
+        </ParallaxBanner>
 
-        <Banner className="row col-lg-12">
-          <div id="Hobbies">
-            <Header>Hobbies</Header>
-          </div>
-        </Banner>
-        <Hobbies />
+        <ParallaxBanner
+          image={BkgImg4}
+          id="TechnicalSkills"
+          header="TechnicalSkills"
+          strength={1000}
+        >
+          <TechnicalSkills />
+        </ParallaxBanner>
 
-        <Banner className="row col-lg-12">
-          <div id="TechnicalSkills">
-            <Header>Technical Skills</Header>
-          </div>
-        </Banner>
-        <TechnicalSkills />
+        <ParallaxBanner
+          image={BkgImg6}
+          id="Hobbies"
+          header="Hobbies"
+          strength={1000}
+        >
+          <Hobbies />
+        </ParallaxBanner>
 
-        <Banner className="row col-lg-12">
-          <div id="ProfessionalExperience">
-            <Header>Professional Experience</Header>
-          </div>
-        </Banner>
-        <ProfessionalExperience />
+        <ParallaxBanner
+          image={BkgImg3}
+          id="ProfessionalExperience"
+          header="ProfessionalExperience"
+          strength={2000}
+        >
+          <ProfessionalExperience />
+        </ParallaxBanner>
       </React.Fragment>
     );
   }
