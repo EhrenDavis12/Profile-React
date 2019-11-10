@@ -49,7 +49,7 @@ function DesertCodeCamp() {
             </div>
           </Div>
         </div>
-        <div className="col-md-5">
+        <div className="col-md-5 text-center">
           <Img src={DesertCodeCampIcon} alt="desertCodeCampIcon" />
         </div>
       </div>

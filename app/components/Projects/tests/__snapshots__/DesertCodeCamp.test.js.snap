@@ -63,7 +63,7 @@ exports[`<DesertCodeCamp /> should render the page 1`] = `
       </styles__Div>
     </div>
     <div
-      className="col-md-5"
+      className="col-md-5 text-center"
     >
       <styles__Img
         alt="desertCodeCampIcon"

@@ -11,12 +11,12 @@
 
 import React from 'react';
 
-// import BkgImg from 'images/background-calm-clouds.jpg';
-import BkgImg2 from 'images/nature-milky-way-galaxy-space.jpg';
-import BkgImg3 from 'images/nature-milky-way-stars-galaxy.jpg';
-import BkgImg4 from 'images/rocksWithNightSky.jpg';
-import BkgImg5 from 'images/blue_milky_way.jpg';
-import BkgImg6 from 'images/small_bluePur_sky.jpg';
+import BkgImg from 'images/BkgBanners/cloudyWater.jpg';
+import BkgImg2 from 'images/BkgBanners/nature-milky-way-galaxy-space.jpg';
+import BkgImg3 from 'images/BkgBanners/nature-milky-way-stars-galaxy.jpg';
+import BkgImg4 from 'images/BkgBanners/rocksWithNightSky.jpg';
+import BkgImg5 from 'images/BkgBanners/blue_milky_way.jpg';
+import BkgImg6 from 'images/BkgBanners/small_bluePur_sky.jpg';
 
 import ParallaxBanner from 'components/Banners/ParallaxBanner';
 // import Header from 'components/Banners/Header';
@@ -25,6 +25,7 @@ import Hobbies from 'components/AboutMeSections/Hobbies';
 import ProfessionalExperience from 'components/AboutMeSections/ProfessionalExperience';
 import TechnicalSkills from 'components/AboutMeSections/TechnicalSkills';
 import Education from 'components/AboutMeSections/Education';
+import Books from 'components/AboutMeSections/Books';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class AboutMePage extends React.PureComponent {
@@ -43,7 +44,7 @@ export default class AboutMePage extends React.PureComponent {
         <ParallaxBanner
           image={BkgImg4}
           id="TechnicalSkills"
-          header="TechnicalSkills"
+          header="Technical Skills"
           strength={1000}
         >
           <TechnicalSkills />
@@ -61,7 +62,7 @@ export default class AboutMePage extends React.PureComponent {
         <ParallaxBanner
           image={BkgImg3}
           id="ProfessionalExperience"
-          header="ProfessionalExperience"
+          header="Professional Experience"
           strength={800}
         >
           <ProfessionalExperience />
@@ -74,6 +75,15 @@ export default class AboutMePage extends React.PureComponent {
           strength={1000}
         >
           <Education />
+        </ParallaxBanner>
+
+        <ParallaxBanner
+          image={BkgImg}
+          id="Books"
+          header="Books Inspiring for Leadership"
+          strength={1000}
+        >
+          <Books />
         </ParallaxBanner>
       </React.Fragment>
     );

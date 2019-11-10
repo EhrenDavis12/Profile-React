@@ -56,7 +56,7 @@ function BootCampTeamFinal() {
             </ul>
           </Div>
         </div>
-        <div className="col-md-5">
+        <div className="col-md-5 text-center">
           <Img src={BGIcon} alt="BrokenGlassIcon" />
         </div>
       </div>
