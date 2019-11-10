@@ -45,6 +45,16 @@ export const initialState = fromJS({
       LinkTo: 'ProfessionalExperience',
       DisplayName: 'Professional Experience',
     },
+    {
+      key: 'Education',
+      LinkTo: 'Education',
+      DisplayName: 'Education',
+    },
+    {
+      key: 'Books',
+      LinkTo: 'Books',
+      DisplayName: 'Books',
+    },
   ],
   isDrawerOpen: false,
 });

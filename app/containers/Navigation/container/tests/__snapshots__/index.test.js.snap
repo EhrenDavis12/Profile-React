@@ -131,6 +131,16 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 "LinkTo": "ProfessionalExperience",
                 "key": "ProfessionalExperience",
               },
+              Object {
+                "DisplayName": "Education",
+                "LinkTo": "Education",
+                "key": "Education",
+              },
+              Object {
+                "DisplayName": "Books",
+                "LinkTo": "Books",
+                "key": "Books",
+              },
             ]
           }
           selectItem={[Function]}
@@ -161,6 +171,16 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     "LinkTo": "ProfessionalExperience",
                     "key": "ProfessionalExperience",
                   },
+                  Object {
+                    "DisplayName": "Education",
+                    "LinkTo": "Education",
+                    "key": "Education",
+                  },
+                  Object {
+                    "DisplayName": "Books",
+                    "LinkTo": "Books",
+                    "key": "Books",
+                  },
                 ]
               }
               selectItem={[Function]}
@@ -190,6 +210,16 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                       "DisplayName": "Professional Experience",
                       "LinkTo": "ProfessionalExperience",
                       "key": "ProfessionalExperience",
+                    },
+                    Object {
+                      "DisplayName": "Education",
+                      "LinkTo": "Education",
+                      "key": "Education",
+                    },
+                    Object {
+                      "DisplayName": "Books",
+                      "LinkTo": "Books",
+                      "key": "Books",
                     },
                   ]
                 }
@@ -300,7 +330,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         id="navbarNav"
                       >
                         <ul
-                          className="nav justify-content-end"
+                          className="nav"
                         >
                           <li
                             className="nav-item"
@@ -562,6 +592,136 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               </StyledComponent>
                             </styles__LinkStyled>
                           </li>
+                          <li
+                            className="nav-item"
+                            key="Education\\"_nav\\""
+                          >
+                            <styles__LinkStyled
+                              activeClass="active"
+                              duration={600}
+                              offset={-70}
+                              smooth={true}
+                              to="Education"
+                            >
+                              <StyledComponent
+                                activeClass="active"
+                                duration={600}
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c1",
+                                      "rules": Array [
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
+                                        "#f6f6f6",
+                                        ";}",
+                                      ],
+                                    },
+                                    "displayName": "styles__LinkStyled",
+                                    "render": [Function],
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "target": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                    Symbol(Symbol.hasInstance): [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                offset={-70}
+                                smooth={true}
+                                to="Education"
+                              >
+                                <Link
+                                  activeClass="active"
+                                  className="c1"
+                                  duration={600}
+                                  offset={-70}
+                                  smooth={true}
+                                  to="Education"
+                                >
+                                  <LinkElement
+                                    className="c1"
+                                    onClick={[Function]}
+                                  >
+                                    <a
+                                      className="c1"
+                                      onClick={[Function]}
+                                    >
+                                      Education
+                                    </a>
+                                  </LinkElement>
+                                </Link>
+                              </StyledComponent>
+                            </styles__LinkStyled>
+                          </li>
+                          <li
+                            className="nav-item"
+                            key="Books\\"_nav\\""
+                          >
+                            <styles__LinkStyled
+                              activeClass="active"
+                              duration={600}
+                              offset={-70}
+                              smooth={true}
+                              to="Books"
+                            >
+                              <StyledComponent
+                                activeClass="active"
+                                duration={600}
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "isStatic": true,
+                                      "lastClassName": "c1",
+                                      "rules": Array [
+                                        "padding:15px 25px 15px 25px;text-transform:uppercase;cursor:pointer;hight:100px;&:hover{background-color:",
+                                        "#f6f6f6",
+                                        ";}",
+                                      ],
+                                    },
+                                    "displayName": "styles__LinkStyled",
+                                    "render": [Function],
+                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "target": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                    Symbol(Symbol.hasInstance): [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                offset={-70}
+                                smooth={true}
+                                to="Books"
+                              >
+                                <Link
+                                  activeClass="active"
+                                  className="c1"
+                                  duration={600}
+                                  offset={-70}
+                                  smooth={true}
+                                  to="Books"
+                                >
+                                  <LinkElement
+                                    className="c1"
+                                    onClick={[Function]}
+                                  >
+                                    <a
+                                      className="c1"
+                                      onClick={[Function]}
+                                    >
+                                      Books
+                                    </a>
+                                  </LinkElement>
+                                </Link>
+                              </StyledComponent>
+                            </styles__LinkStyled>
+                          </li>
                         </ul>
                       </div>
                     </nav>
@@ -593,6 +753,16 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                       "DisplayName": "Professional Experience",
                       "LinkTo": "ProfessionalExperience",
                       "key": "ProfessionalExperience",
+                    },
+                    Object {
+                      "DisplayName": "Education",
+                      "LinkTo": "Education",
+                      "key": "Education",
+                    },
+                    Object {
+                      "DisplayName": "Books",
+                      "LinkTo": "Books",
+                      "key": "Books",
                     },
                   ]
                 }
@@ -942,6 +1112,138 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                 onClick={[Function]}
                               >
                                 Professional Experience
+                              </a>
+                            </LinkElement>
+                          </Link>
+                        </StyledComponent>
+                      </styles__LinkStyled>
+                      <styles__LinkStyled
+                        activeClass="active"
+                        duration={600}
+                        key="Education"
+                        offset={-70}
+                        onClick={[Function]}
+                        smooth={true}
+                        to="Education"
+                      >
+                        <StyledComponent
+                          activeClass="active"
+                          duration={600}
+                          forwardedClass={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": undefined,
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styles__LinkStyled-bwrim4-2",
+                                "isStatic": true,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";display:block;&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
+                                ],
+                              },
+                              "displayName": "styles__LinkStyled",
+                              "render": [Function],
+                              "styledComponentId": "styles__LinkStyled-bwrim4-2",
+                              "target": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                              Symbol(Symbol.hasInstance): [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          offset={-70}
+                          onClick={[Function]}
+                          smooth={true}
+                          to="Education"
+                        >
+                          <Link
+                            activeClass="active"
+                            className="c4"
+                            duration={600}
+                            offset={-70}
+                            onClick={[Function]}
+                            smooth={true}
+                            to="Education"
+                          >
+                            <LinkElement
+                              className="c4"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="c4"
+                                onClick={[Function]}
+                              >
+                                Education
+                              </a>
+                            </LinkElement>
+                          </Link>
+                        </StyledComponent>
+                      </styles__LinkStyled>
+                      <styles__LinkStyled
+                        activeClass="active"
+                        duration={600}
+                        key="Books"
+                        offset={-70}
+                        onClick={[Function]}
+                        smooth={true}
+                        to="Books"
+                      >
+                        <StyledComponent
+                          activeClass="active"
+                          duration={600}
+                          forwardedClass={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": undefined,
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styles__LinkStyled-bwrim4-2",
+                                "isStatic": true,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "padding:25px;text-transform:uppercase;cursor:pointer;border-bottom:solid 1px ",
+                                  "#f6f6f6",
+                                  ";display:block;&:hover{background-color:",
+                                  "#f6f6f6",
+                                  ";}",
+                                ],
+                              },
+                              "displayName": "styles__LinkStyled",
+                              "render": [Function],
+                              "styledComponentId": "styles__LinkStyled-bwrim4-2",
+                              "target": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                              Symbol(Symbol.hasInstance): [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          offset={-70}
+                          onClick={[Function]}
+                          smooth={true}
+                          to="Books"
+                        >
+                          <Link
+                            activeClass="active"
+                            className="c4"
+                            duration={600}
+                            offset={-70}
+                            onClick={[Function]}
+                            smooth={true}
+                            to="Books"
+                          >
+                            <LinkElement
+                              className="c4"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="c4"
+                                onClick={[Function]}
+                              >
+                                Books
                               </a>
                             </LinkElement>
                           </Link>

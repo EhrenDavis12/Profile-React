@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
-import BkgImg6 from 'images/small_bluePur_sky.jpg';
+import BkgImg6 from 'images/BkgBanners/small_bluePur_sky.jpg';
 import ParallaxBanner from '../ParallaxBanner';
 
 describe('<ParallaxBanner />', () => {

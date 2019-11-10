@@ -8,9 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import { animateScroll as scroll } from 'react-scroll';
 // import FontAwesome from 'react-fontawesome';
-// import BasicButton from 'components/Buttons/BasicButton';
 import { Nav, HamburgerButtonStyled, LinkStyled } from './styles';
-// import { Nav } from './styles';
 
 function NavTopButtons({ toggleDrawer, items, itemLabelAttr, itemKeyAttr }) {
   /* scrollToTop = () => {
@@ -48,7 +46,7 @@ function NavTopButtons({ toggleDrawer, items, itemLabelAttr, itemKeyAttr }) {
         <span className="navbar-toggler-icon" />
       </HamburgerButtonStyled>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="nav justify-content-end">{itemNodes}</ul>
+        <ul className="nav">{itemNodes}</ul>
       </div>
     </Nav>
   );

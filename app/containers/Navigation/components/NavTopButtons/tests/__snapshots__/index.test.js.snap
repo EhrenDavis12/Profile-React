@@ -147,7 +147,7 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
           id="navbarNav"
         >
           <ul
-            className="nav justify-content-end"
+            className="nav"
           >
             <li
               className="nav-item"

@@ -11,7 +11,7 @@ exports[`<AboutMePage /> should render the page 1`] = `
     <ProfessionalIntro />
   </SectionBanner>
   <SectionBanner
-    header="TechnicalSkills"
+    header="Technical Skills"
     id="TechnicalSkills"
     image="IMAGE_MOCK"
     strength={1000}
@@ -27,7 +27,7 @@ exports[`<AboutMePage /> should render the page 1`] = `
     <Hobbies />
   </SectionBanner>
   <SectionBanner
-    header="ProfessionalExperience"
+    header="Professional Experience"
     id="ProfessionalExperience"
     image="IMAGE_MOCK"
     strength={800}
@@ -41,6 +41,14 @@ exports[`<AboutMePage /> should render the page 1`] = `
     strength={1000}
   >
     <Education />
+  </SectionBanner>
+  <SectionBanner
+    header="Books Inspiring for Leadership"
+    id="Books"
+    image="IMAGE_MOCK"
+    strength={1000}
+  >
+    <Books />
   </SectionBanner>
 </Fragment>
 `;
