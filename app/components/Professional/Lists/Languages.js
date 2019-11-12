@@ -3,7 +3,7 @@ export default [
   'React-Native',
   'Redux',
   'Redux-Saga',
-  '4D',
+  '4D: 6 years',
   'T-SQL',
   'Regex',
   'Bash',

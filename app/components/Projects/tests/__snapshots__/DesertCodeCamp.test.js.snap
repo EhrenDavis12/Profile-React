@@ -4,7 +4,7 @@ exports[`<DesertCodeCamp /> should render the page 1`] = `
 <div>
   <styles__SectionBreak>
     <h4>
-      Desert Code Camp Scheduler
+      Desert Code Camp Scheduler (Shipped)
     </h4>
     <styles__P>
       React Native project Created for the purpose of favoring and scheduling sessions at the code camp.

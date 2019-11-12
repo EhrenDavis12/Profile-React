@@ -26,6 +26,12 @@ export const Ul = styled.ul`
   column-width: 150px;
 `;
 
+// export const UL = styled.ul`
+//   -webkit-column-width: ${props => props.width || '150px'};
+//   -moz-column-width: ${props => props.width || '150px'};
+//   column-width: ${props => props.width || '150px'};
+// `;
+
 export const Div = styled.div`
   margin-left: 20px;
   padding-right: 20px;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BannerSection /> should render the page 1`] = `
+<BannerSection>
+  <styles__SectionBreak>
+    <h4>
+      List Of Names
+      :
+    </h4>
+  </styles__SectionBreak>
+  <styles__SectionBreak>
+    <styles__Ul>
+      <li
+        key="name1 "
+      >
+        name1 
+      </li>
+      <li
+        key="name2"
+      >
+        name2
+      </li>
+    </styles__Ul>
+  </styles__SectionBreak>
+</BannerSection>
+`;

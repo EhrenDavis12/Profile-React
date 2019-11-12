@@ -4,8 +4,110 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
 <div
   className="container"
 >
-  <BannerSection>
-    <TechnicalSkills />
-  </BannerSection>
+  <ListBanner
+    list={
+      Array [
+        "React",
+        "React-Native",
+        "Redux",
+        "Redux-Saga",
+        "4D: 6 years",
+        "T-SQL",
+        "Regex",
+        "Bash",
+        "JavaScript",
+        "RESTful APIs",
+        "SOAP APIs",
+        "VIM",
+        "CronJobs",
+        "XML",
+        "JSON",
+        "JQuery",
+        "AJAX",
+        "Jest",
+        "Bootstrap",
+        "HTML5",
+        "Sequelize",
+        "VBA",
+        "Python",
+        ".NET",
+        "C#",
+        "CSS",
+        "C++",
+      ]
+    }
+    title="Languages"
+  />
+  <ListBanner
+    list={
+      Array [
+        "NPM",
+        "Visual Studio (& Code)",
+        "MVC",
+        "Git / GitHub / GitBash",
+        "Node.js",
+        "React Boiler Plate",
+        "ReactNative-Create-App",
+        "AutoCAD",
+      ]
+    }
+    title="Frameworks"
+  />
+  <ListBanner
+    list={
+      Array [
+        "PostgreSQL",
+        "MySQL",
+        "Firebase",
+        "Mongo",
+        "psql",
+      ]
+    }
+    title="Databases"
+  />
+  <ListBanner
+    list={
+      Array [
+        "Scrum",
+        "Kanban",
+        "Object-Oriented Programming",
+        "Jira/Confluence",
+        "Waterfall",
+      ]
+    }
+    title="Processes"
+  />
+  <ListBanner
+    list={
+      Array [
+        "Heroku",
+        "Postman",
+        "Zoom",
+        "Slack",
+        "BBEdit",
+        "MV Ware",
+        "VNC",
+        "Putty",
+        "boomerang",
+      ]
+    }
+    title="Tools"
+  />
+  <ListBanner
+    list={
+      Array [
+        "SaaS",
+        "Process Automations",
+        "Mass Data Manipulation and Processing",
+        "Parallel Processing",
+        "Micro Services",
+        "N-Tier",
+        "Domain Driven Design",
+        "Monolithic",
+        "Micro Processes",
+      ]
+    }
+    title="System Architecture"
+  />
 </div>
 `;
