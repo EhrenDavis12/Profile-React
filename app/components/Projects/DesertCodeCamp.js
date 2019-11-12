@@ -7,7 +7,7 @@ function DesertCodeCamp() {
   return (
     <div>
       <SectionBreak>
-        <h4>Desert Code Camp Scheduler</h4>
+        <h4>Desert Code Camp Scheduler (Shipped)</h4>
         <P>
           React Native project Created for the purpose of favoring and
           scheduling sessions at the code camp.
