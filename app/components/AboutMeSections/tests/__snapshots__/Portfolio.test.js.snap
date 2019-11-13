@@ -10,5 +10,11 @@ exports[`<Portfolio /> should render the page 1`] = `
   <BannerSection>
     <BootCampTeamFinal />
   </BannerSection>
+  <BannerSection>
+    <PortfolioWebSite />
+  </BannerSection>
+  <BannerSection>
+    <PortfolioWebSite />
+  </BannerSection>
 </div>
 `;

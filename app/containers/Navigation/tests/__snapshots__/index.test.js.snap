@@ -236,7 +236,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": undefined,
                         "componentStyle": ComponentStyle {
-                          "componentId": "styles__Nav-sc-1t8u81o-2",
+                          "componentId": "styles__Nav-x8iu7g-2",
                           "isStatic": true,
                           "lastClassName": "c0",
                           "rules": Array [
@@ -249,7 +249,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                         },
                         "displayName": "styles__Nav",
                         "render": [Function],
-                        "styledComponentId": "styles__Nav-sc-1t8u81o-2",
+                        "styledComponentId": "styles__Nav-x8iu7g-2",
                         "target": "nav",
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
@@ -282,14 +282,14 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": undefined,
                               "componentStyle": ComponentStyle {
-                                "componentId": "styles__HamburgerButtonStyled-sc-1t8u81o-1",
+                                "componentId": "styles__HamburgerButtonStyled-x8iu7g-1",
                                 "isStatic": true,
-                                "lastClassName": "jBYtkn",
+                                "lastClassName": "hXwtfX",
                                 "rules": Array [],
                               },
                               "displayName": "styles__HamburgerButtonStyled",
                               "render": [Function],
-                              "styledComponentId": "styles__HamburgerButtonStyled-sc-1t8u81o-1",
+                              "styledComponentId": "styles__HamburgerButtonStyled-x8iu7g-1",
                               "target": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -351,7 +351,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -362,7 +362,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -416,7 +416,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -427,7 +427,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -481,7 +481,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -492,7 +492,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -546,7 +546,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -557,7 +557,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -611,7 +611,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -622,7 +622,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -676,7 +676,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": undefined,
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                      "componentId": "styles__LinkStyled-x8iu7g-0",
                                       "isStatic": true,
                                       "lastClassName": "c1",
                                       "rules": Array [
@@ -687,7 +687,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                                     },
                                     "displayName": "styles__LinkStyled",
                                     "render": [Function],
-                                    "styledComponentId": "styles__LinkStyled-sc-1t8u81o-0",
+                                    "styledComponentId": "styles__LinkStyled-x8iu7g-0",
                                     "target": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
