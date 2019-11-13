@@ -8,7 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
-import NavTopButtons from 'containers/Navigation/components/NavTopButtons';
+import NavTopButtons from 'components/Navigation/NavTopButtons';
 import Drawer from 'components/Drawer';
 
 function NavigationBody({

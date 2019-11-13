@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 // import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import NavigationBody from 'containers/Navigation/components/NavigationBody';
+import NavigationBody from 'components/Navigation/NavigationBody';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
