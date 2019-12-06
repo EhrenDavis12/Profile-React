@@ -3,6 +3,8 @@ import React from 'react';
 import Banner from 'components/Banners/Banner';
 import DesertCodeCamp from 'components/Projects/DesertCodeCamp';
 import BootCampTeamFinal from 'components/Projects/BootCampTeamFinal';
+import PortfolioWebSite from 'components/Projects/PortfolioWebSite';
+import MicroServiceSample from 'components/Projects/MicroServiceSample';
 
 function ProfessionalIntro() {
   return (
@@ -13,6 +15,14 @@ function ProfessionalIntro() {
 
       <Banner>
         <BootCampTeamFinal />
+      </Banner>
+
+      <Banner>
+        <PortfolioWebSite />
+      </Banner>
+
+      <Banner>
+        <MicroServiceSample />
       </Banner>
 
       {/* <Banner>

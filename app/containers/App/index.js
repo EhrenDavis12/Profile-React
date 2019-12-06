@@ -15,7 +15,7 @@ import AboutMePage from 'containers/AboutMeContent/Loadable';
 /* import PortfolioPage from 'containers/Portfolio/PortfolioPage/Loadable';
 import ContactMePage from 'containers/ContactMe/container/Loadable';
 import ViewMessagesPage from 'containers/ViewMessages/container/Loadable'; */
-import Navigation from 'containers/Navigation/container/Loadable';
+import Navigation from 'containers/Navigation/Loadable';
 
 import BackGround from 'components/BackGrounds/BackGround';
 

@@ -16,7 +16,7 @@ export const SectionBreak = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 200px;
+  // height: 200px;
   width: 200px;
 `;
 
