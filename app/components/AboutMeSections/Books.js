@@ -8,6 +8,9 @@ const Habits = require('images/Books/7Habits.jpg');
 const CrucialConversations = require('images/Books/CrucialConversations.jpg');
 const ReWork = require('images/Books/ReWork.jpg');
 const TurnTheShiAround = require('images/Books/TurnTheShiAround.jpg');
+const TheOneThing = require('images/Books/TheOneThing.jpg');
+const StartWithWhy = require('images/Books/StartWithWhy.jpg');
+const WhoMovedMyCheese = require('images/Books/WhoMovedMyCheese.jpg');
 // const NeverSplitTheDifference = require('images/Books/NeverSplitTheDifference.jpg');
 
 const books = [
@@ -30,8 +33,8 @@ const books = [
           This book has given me a new out look on how to talk and work with
           other people, and the type of conversations to aspire to.
         </p>
-        <p>
-          My 2 favorite quotes from this book are:
+        <div>
+          <p>My 2 favorite quotes from this book are:</p>
           <ul>
             <li>“Be hearty in your approbation and lavish in your praise.”</li>
             <li>
@@ -41,7 +44,7 @@ const books = [
               way again.”
             </li>
           </ul>
-        </p>
+        </div>
       </React.Fragment>
     ),
   },
@@ -108,8 +111,8 @@ const books = [
           Some ideas are fighting against the norms. Some you cant help but to
           say Yes Yes!
         </p>
-        <p>
-          Some of my favorite quotes this book provides are:
+        <div>
+          <p>Some of my favorite quotes this book provides are:</p>
           <ul>
             <li>
               “Find a judo solution, one that delivers maximum efficiency with
@@ -120,7 +123,7 @@ const books = [
               two weeks, what would you cut out?”
             </li>
           </ul>
-        </p>
+        </div>
         <p>
           These 2 quotes alone helped me get the Desert Code Camp Scheduler
           deployed and on time for the conference.
@@ -152,6 +155,55 @@ const books = [
       </React.Fragment>
     ),
   },
+  {
+    title: 'The One Thing',
+    subTitle: 'The Surprisingly Simple Truth Behind Extraordinary Results',
+    author: 'Gary Keller, Jay Papasan',
+    image: TheOneThing,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          This book conveys an idea that defies modern logic. Reduce all you do
+          down to one idea and the one thing you can do to make the most
+          difference in completing that idea. I find this concept hard to
+          implement but I believe it will be worth the effort.
+        </p>
+      </React.Fragment>
+    ),
+  },
+  {
+    title: 'Who Moved My Cheese?',
+    subTitle:
+      'An A-Mazing Way to Deal with Change in Your Work and in Your Life',
+    author: 'Spencer Johnson, Kenneth Blanchard',
+    image: WhoMovedMyCheese,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          A way of thinking that shows life is filled with opportunities. This
+          helps to explain the different ways a person can process change
+          through out there life. As a Software developer change is imbedded in
+          our curer.
+        </p>
+      </React.Fragment>
+    ),
+  },
+  {
+    title: 'Start with Why',
+    subTitle: 'How Great Leaders Inspire Everyone to Take Action',
+    author: 'Simon Sinek',
+    image: StartWithWhy,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          Simon is simply and amazing person. I have watch some of his seminars
+          and cant help but to be in aww over every word. Start with Why is one
+          of my favorite books and i cant wait to read more of his books. I
+          Highly recommend this book.
+        </p>
+      </React.Fragment>
+    ),
+  },
   // {
   //   title: 'Never Split the Difference',
   //   subTitle: 'Negotiating as if Your Life Depended on It',
@@ -169,7 +221,7 @@ function Books() {
       <p>By: {book.author}</p>
       <div className="row">
         <div className="col-md-8">
-          <p>{book.selfDescriptionJSX}</p>
+          <div>{book.selfDescriptionJSX}</div>
         </div>
         <div className="col-md-4 text-center">
           <Img src={book.image} alt={book.title} />
