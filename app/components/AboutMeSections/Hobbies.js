@@ -15,7 +15,7 @@ function Hobbies() {
             Billiards - Was in a league and casually shooting with friends
           </li>
           <li>Ultimate Frisbee - Saturday pick up games</li>
-          <li>ATV Riding - Off road here I!</li>
+          <li>ATV Riding - Off road here I come!</li>
         </ul>
       </Banner>
     </div>

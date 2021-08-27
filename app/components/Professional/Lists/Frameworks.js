@@ -1,8 +1,10 @@
 export default [
+  'Vue',
+  'Vuetify',
+  'Django Rest Api',
   'NPM',
-  'Visual Studio (& Code)',
   'MVC',
-  'Git / GitHub / GitBash',
+  'GitHub / GitLab',
   'Node.js',
   'React Boiler Plate',
   'ReactNative-Create-App',

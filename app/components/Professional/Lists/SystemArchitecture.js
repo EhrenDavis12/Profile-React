@@ -1,6 +1,6 @@
 export default [
   'SaaS',
-  'Process Automations',
+  "Process Automation's",
   'Mass Data Manipulation and Processing',
   'Parallel Processing',
   'Micro Services',
