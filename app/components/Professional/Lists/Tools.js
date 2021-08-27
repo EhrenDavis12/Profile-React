@@ -1,4 +1,6 @@
 export default [
+  'Pycharm',
+  'Visual Studio (& Code)',
   'Heroku',
   'Postman',
   'Zoom',
@@ -8,4 +10,6 @@ export default [
   'VNC',
   'Putty',
   'boomerang',
+  'Source Tree',
+  'Git / Get Bash',
 ];

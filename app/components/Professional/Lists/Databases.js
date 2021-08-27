@@ -1,1 +1,1 @@
-export default ['PostgreSQL', 'MySQL', 'Firebase', 'Mongo', 'psql'];
+export default ['PostgreSQL', 'MySQL', 'Firebase', 'Mongo', 'psql', 'S3'];
