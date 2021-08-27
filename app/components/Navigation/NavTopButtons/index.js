@@ -32,7 +32,8 @@ function NavTopButtons({ toggleDrawer, items, itemLabelAttr, itemKeyAttr }) {
   ));
 
   return (
-    <Nav className="navbar sticky-top navbar-expand-md navbar-light">
+    // <Nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <Nav className="navbar fixed-top navbar-expand-lg navbar-light">
       <HamburgerButtonStyled
         onClick={toggleDrawer}
         className="navbar-toggler"

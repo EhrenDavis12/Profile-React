@@ -37,9 +37,11 @@ function PortfolioWebSite() {
             </a>
             .
           </P>
-          <P>
-            Why repurpose? This decision was made thanks to knowledge gained
-            from the book ReWork. Here are a few points just to name a few.
+          <Div>
+            <P>
+              Why repurpose? This decision was made thanks to knowledge gained
+              from the book ReWork. Here are a few points just to name a few.
+            </P>
             <ul>
               <li>
                 Start making something - In the interview process I noticed some
@@ -59,7 +61,7 @@ function PortfolioWebSite() {
                 message out and do it fast. That is my win.
               </li>
             </ul>
-          </P>
+          </Div>
           <Div>
             <div>
               Check out the code here:{' '}

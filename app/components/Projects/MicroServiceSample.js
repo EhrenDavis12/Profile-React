@@ -47,7 +47,7 @@ function PortfolioWebSite() {
             Any where in the service just throw and error! The rest will be
             handled and the API user will be notified of the error.
           </P>
-          <P>
+          <Div>
             <strong>Technology:</strong>
             <Ul>
               <li>Node.js</li>
@@ -56,7 +56,7 @@ function PortfolioWebSite() {
               <li>Twilio API</li>
               <li>Gmail API</li>
             </Ul>
-          </P>
+          </Div>
 
           <Div>
             <div>
