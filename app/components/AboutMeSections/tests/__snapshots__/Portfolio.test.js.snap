@@ -8,6 +8,9 @@ exports[`<Portfolio /> should render the page 1`] = `
     <DesertCodeCamp />
   </BannerSection>
   <BannerSection>
+    <CodeChallenges />
+  </BannerSection>
+  <BannerSection>
     <BootCampTeamFinal />
   </BannerSection>
   <BannerSection>

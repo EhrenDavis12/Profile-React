@@ -227,10 +227,10 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                 toggleDrawer={[Function]}
               >
                 <styles__Nav
-                  className="navbar sticky-top navbar-expand-md navbar-light"
+                  className="navbar fixed-top navbar-expand-lg navbar-light"
                 >
                   <StyledComponent
-                    className="navbar sticky-top navbar-expand-md navbar-light"
+                    className="navbar fixed-top navbar-expand-lg navbar-light"
                     forwardedClass={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -258,7 +258,7 @@ exports[`<Navigation /> <Navigation /> snap Shots renders as expected with popul
                     forwardedRef={null}
                   >
                     <nav
-                      className="navbar sticky-top navbar-expand-md navbar-light c0"
+                      className="navbar fixed-top navbar-expand-lg navbar-light c0"
                     >
                       <styles__HamburgerButtonStyled
                         aria-controls="navbarNav"

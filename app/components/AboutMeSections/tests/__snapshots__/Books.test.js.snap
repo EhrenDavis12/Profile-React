@@ -21,7 +21,7 @@ exports[`<Books /> should render the page 1`] = `
       <div
         className="col-md-8"
       >
-        <p>
+        <div>
           <p>
             For me this is the book that started it all!
           </p>
@@ -31,8 +31,10 @@ exports[`<Books /> should render the page 1`] = `
           <p>
             This book has given me a new out look on how to talk and work with other people, and the type of conversations to aspire to.
           </p>
-          <p>
-            My 2 favorite quotes from this book are:
+          <div>
+            <p>
+              My 2 favorite quotes from this book are:
+            </p>
             <ul>
               <li>
                 “Be hearty in your approbation and lavish in your praise.”
@@ -41,8 +43,8 @@ exports[`<Books /> should render the page 1`] = `
                 “I shall pass this way but once; any good, therefore, that I can do or any kindness that I can show to any human being, let me do it now. Let me not defer nor neglect it, for I shall not pass this way again.”
               </li>
             </ul>
-          </p>
-        </p>
+          </div>
+        </div>
       </div>
       <div
         className="col-md-4 text-center"
@@ -73,11 +75,11 @@ exports[`<Books /> should render the page 1`] = `
       <div
         className="col-md-8"
       >
-        <p>
+        <div>
           <p>
             To me this book was essential in learning how to implement or adopt an idea. I love how it creates a cycle that must be repeated not only to learn a new idea but to reenforce and evolve others. Personally I have had some small success with it. “Put first things first” gave me an understanding that changed my workplace for the better. I started prioritizing training over doing the work fast by myself. “Think Win-Win” has given me an idea of what to expect when working with new ideas and people. I could go over each of the 7 Habits but I will leave it to the book to explain.
           </p>
-        </p>
+        </div>
       </div>
       <div
         className="col-md-4 text-center"
@@ -108,7 +110,7 @@ exports[`<Books /> should render the page 1`] = `
       <div
         className="col-md-8"
       >
-        <p>
+        <div>
           <p>
             Getting it right when it matters.
           </p>
@@ -118,7 +120,7 @@ exports[`<Books /> should render the page 1`] = `
           <p>
             Crucial Conversations are so common and destructive if handled wrong. When I read this book, lights came on in my mind. This is what I need to watch for and learn to handle, even in my every day life.
           </p>
-        </p>
+        </div>
       </div>
       <div
         className="col-md-4 text-center"
@@ -147,12 +149,14 @@ exports[`<Books /> should render the page 1`] = `
       <div
         className="col-md-8"
       >
-        <p>
+        <div>
           <p>
             Short and to the point. Here this book gives us many ideas to follow. Some ideas are fighting against the norms. Some you cant help but to say Yes Yes!
           </p>
-          <p>
-            Some of my favorite quotes this book provides are:
+          <div>
+            <p>
+              Some of my favorite quotes this book provides are:
+            </p>
             <ul>
               <li>
                 “Find a judo solution, one that delivers maximum efficiency with minimum effort. When good enough gets the job done, go for it.”
@@ -161,11 +165,11 @@ exports[`<Books /> should render the page 1`] = `
                 “Think about it this way: If you had to launch your business in two weeks, what would you cut out?”
               </li>
             </ul>
-          </p>
+          </div>
           <p>
             These 2 quotes alone helped me get the Desert Code Camp Scheduler deployed and on time for the conference.
           </p>
-        </p>
+        </div>
       </div>
       <div
         className="col-md-4 text-center"
@@ -196,20 +200,125 @@ exports[`<Books /> should render the page 1`] = `
       <div
         className="col-md-8"
       >
-        <p>
+        <div>
           <p>
             As I read this book im captivated in the story. Marveling in the decisions made and how huge the risk taken is. We have all heard about taking initiative and empowering your fellow employees. Yes yes of course it is obvious we want to do that. We talk about it but how do we actually accomplish this? Here is the book to read. It shows the difference between talk and making it happen.
           </p>
           <p>
             The idea I will pull out of this book if only just one, is the concept of the mechanism. If we want a change find the hart of the problem and create an ACTION! Create an action that is capable of changing the behavior.
           </p>
-        </p>
+        </div>
       </div>
       <div
         className="col-md-4 text-center"
       >
         <styles__Img
           alt="Turn the Ship Around!"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+  </BannerSection>
+  <BannerSection
+    key="The One Thing"
+  >
+    <h4>
+      The One Thing
+    </h4>
+    <h6>
+      The Surprisingly Simple Truth Behind Extraordinary Results
+    </h6>
+    <p>
+      By: 
+      Gary Keller, Jay Papasan
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-8"
+      >
+        <div>
+          <p>
+            This book conveys an idea that defies modern logic. Reduce all you do down to one idea and the one thing you can do to make the most difference in completing that idea. I find this concept hard to implement but I believe it will be worth the effort.
+          </p>
+        </div>
+      </div>
+      <div
+        className="col-md-4 text-center"
+      >
+        <styles__Img
+          alt="The One Thing"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+  </BannerSection>
+  <BannerSection
+    key="Who Moved My Cheese?"
+  >
+    <h4>
+      Who Moved My Cheese?
+    </h4>
+    <h6>
+      An A-Mazing Way to Deal with Change in Your Work and in Your Life
+    </h6>
+    <p>
+      By: 
+      Spencer Johnson, Kenneth Blanchard
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-8"
+      >
+        <div>
+          <p>
+            A way of thinking that shows life is filled with opportunities. This helps to explain the different ways a person can process change through out there life. As a Software developer change is imbedded in our curer.
+          </p>
+        </div>
+      </div>
+      <div
+        className="col-md-4 text-center"
+      >
+        <styles__Img
+          alt="Who Moved My Cheese?"
+          src="IMAGE_MOCK"
+        />
+      </div>
+    </div>
+  </BannerSection>
+  <BannerSection
+    key="Start with Why"
+  >
+    <h4>
+      Start with Why
+    </h4>
+    <h6>
+      How Great Leaders Inspire Everyone to Take Action
+    </h6>
+    <p>
+      By: 
+      Simon Sinek
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-8"
+      >
+        <div>
+          <p>
+            Simon is simply and amazing person. I have watch some of his seminars and cant help but to be in aww over every word. Start with Why is one of my favorite books and i cant wait to read more of his books. I Highly recommend this book.
+          </p>
+        </div>
+      </div>
+      <div
+        className="col-md-4 text-center"
+      >
+        <styles__Img
+          alt="Start with Why"
           src="IMAGE_MOCK"
         />
       </div>

@@ -63,7 +63,7 @@ exports[`<MicroServiceSample /> should render the page 1`] = `
         </a>
         . Im using awaits to control the work flow. To create a new end point just copy one change the route and change the service called. Any where in the service just throw and error! The rest will be handled and the API user will be notified of the error.
       </styles__P>
-      <styles__P>
+      <styles__Div>
         <strong>
           Technology:
         </strong>
@@ -84,7 +84,7 @@ exports[`<MicroServiceSample /> should render the page 1`] = `
             Gmail API
           </li>
         </styles__Ul>
-      </styles__P>
+      </styles__Div>
       <styles__Div>
         <div>
           Check out the code here:

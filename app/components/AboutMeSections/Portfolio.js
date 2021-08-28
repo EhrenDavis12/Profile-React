@@ -2,6 +2,7 @@
 import React from 'react';
 import Banner from 'components/Banners/Banner';
 import DesertCodeCamp from 'components/Projects/DesertCodeCamp';
+import CodeChallenges from 'components/Projects/CodeChallenges';
 import BootCampTeamFinal from 'components/Projects/BootCampTeamFinal';
 import PortfolioWebSite from 'components/Projects/PortfolioWebSite';
 import MicroServiceSample from 'components/Projects/MicroServiceSample';
@@ -11,6 +12,10 @@ function ProfessionalIntro() {
     <div className="container">
       <Banner>
         <DesertCodeCamp />
+      </Banner>
+
+      <Banner>
+        <CodeChallenges />
       </Banner>
 
       <Banner>

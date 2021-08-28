@@ -5,6 +5,9 @@ exports[`<ProfessionalExperience /> should render the page 1`] = `
   className="container"
 >
   <BannerSection>
+    <AttainiaExperience />
+  </BannerSection>
+  <BannerSection>
     <HylandExperience />
   </BannerSection>
   <BannerSection>

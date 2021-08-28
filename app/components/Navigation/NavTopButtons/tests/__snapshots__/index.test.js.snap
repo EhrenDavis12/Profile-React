@@ -44,10 +44,10 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
   toggleDrawer={[Function]}
 >
   <styles__Nav
-    className="navbar sticky-top navbar-expand-md navbar-light"
+    className="navbar fixed-top navbar-expand-lg navbar-light"
   >
     <StyledComponent
-      className="navbar sticky-top navbar-expand-md navbar-light"
+      className="navbar fixed-top navbar-expand-lg navbar-light"
       forwardedClass={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -75,7 +75,7 @@ exports[`<NavTopButtons /> renders as expected 1`] = `
       forwardedRef={null}
     >
       <nav
-        className="navbar sticky-top navbar-expand-md navbar-light c0"
+        className="navbar fixed-top navbar-expand-lg navbar-light c0"
       >
         <styles__HamburgerButtonStyled
           aria-controls="navbarNav"

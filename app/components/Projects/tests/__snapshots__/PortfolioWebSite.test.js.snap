@@ -34,8 +34,10 @@ exports[`<PortfolioWebSite /> should render the page 1`] = `
         </a>
         .
       </styles__P>
-      <styles__P>
-        Why repurpose? This decision was made thanks to knowledge gained from the book ReWork. Here are a few points just to name a few.
+      <styles__Div>
+        <styles__P>
+          Why repurpose? This decision was made thanks to knowledge gained from the book ReWork. Here are a few points just to name a few.
+        </styles__P>
         <ul>
           <li>
             Start making something - In the interview process I noticed some questions repeating, so why not answer them here.
@@ -50,7 +52,7 @@ exports[`<PortfolioWebSite /> should render the page 1`] = `
             Quick wins - In the end using this project I was able to get my message out and do it fast. That is my win.
           </li>
         </ul>
-      </styles__P>
+      </styles__Div>
       <styles__Div>
         <div>
           Check out the code here:
