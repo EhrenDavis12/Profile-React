@@ -22,7 +22,7 @@ exports[`<Hobbies /> should render the page 1`] = `
         Ultimate Frisbee - Saturday pick up games
       </li>
       <li>
-        ATV Riding - Off road here I!
+        ATV Riding - Off road here I come!
       </li>
     </ul>
   </BannerSection>

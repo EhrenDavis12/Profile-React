@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from 'components/Banners/Banner';
-// import { PLeft } from 'components/SharedStyles/styles';
+import AttainiaExperience from 'components/Professional/AttainiaExperience';
 import HylandExperience from 'components/Professional/HylandExperience';
 import CadtelExperience from 'components/Professional/CadtelExperience';
 
@@ -9,6 +9,10 @@ import CadtelExperience from 'components/Professional/CadtelExperience';
 function ProfessionalExperience() {
   return (
     <div className="container">
+      <Banner>
+        <AttainiaExperience />
+      </Banner>
+
       <Banner>
         <HylandExperience />
       </Banner>

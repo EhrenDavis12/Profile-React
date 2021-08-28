@@ -7,15 +7,16 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
   <ListBanner
     list={
       Array [
+        "Python",
+        "JavaScript",
         "React",
+        "Regex",
         "React-Native",
         "Redux",
         "Redux-Saga",
-        "4D: 6 years",
+        "4D",
         "T-SQL",
-        "Regex",
         "Bash",
-        "JavaScript",
         "RESTful APIs",
         "SOAP APIs",
         "VIM",
@@ -29,7 +30,6 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
         "HTML5",
         "Sequelize",
         "VBA",
-        "Python",
         ".NET",
         "C#",
         "CSS",
@@ -41,10 +41,12 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
   <ListBanner
     list={
       Array [
+        "Vue",
+        "Vuetify",
+        "Django Rest Api",
         "NPM",
-        "Visual Studio (& Code)",
         "MVC",
-        "Git / GitHub / GitBash",
+        "GitHub / GitLab",
         "Node.js",
         "React Boiler Plate",
         "ReactNative-Create-App",
@@ -61,6 +63,7 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
         "Firebase",
         "Mongo",
         "psql",
+        "S3",
       ]
     }
     title="Databases"
@@ -80,6 +83,8 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
   <ListBanner
     list={
       Array [
+        "Pycharm",
+        "Visual Studio (& Code)",
         "Heroku",
         "Postman",
         "Zoom",
@@ -89,6 +94,8 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
         "VNC",
         "Putty",
         "boomerang",
+        "Source Tree",
+        "Git / Get Bash",
       ]
     }
     title="Tools"
@@ -97,7 +104,7 @@ exports[`<TechnicalSkills /> should render the page 1`] = `
     list={
       Array [
         "SaaS",
-        "Process Automations",
+        "Process Automation's",
         "Mass Data Manipulation and Processing",
         "Parallel Processing",
         "Micro Services",
