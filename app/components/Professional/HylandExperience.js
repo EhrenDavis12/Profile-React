@@ -8,7 +8,9 @@ function HylandExperience() {
     <div>
       <SectionBreak>
         <h4>Senior Developer</h4>
-        <P>APRIL 2013 – FEBRUARY 2019</P>
+        <P>JANUARY 2019 – FEBRUARY 2020</P>
+        <h4>Developer</h4>
+        <P>APRIL 2013 – JANUARY 2019</P> <br />
         <P>Law Logix; Subdivision of Hyland, Inc.</P>
         <P>
           Industry-leading I-9 and E-Verify Integration Solutions for government

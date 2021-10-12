@@ -6,7 +6,7 @@ function AttainiaExperience() {
     <div>
       <SectionBreak>
         <h4>Senior Full Stack Developer</h4>
-        <P>FEBRUARY 2019 – CURRENT</P>
+        <P>FEBRUARY 2020 – CURRENT</P>
         <P>Attainia</P>
         <P>The industry leader in medical equipment planning software.</P>
       </SectionBreak>

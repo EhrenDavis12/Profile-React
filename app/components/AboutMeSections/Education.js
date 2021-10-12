@@ -24,7 +24,7 @@ function Education() {
 
       <Banner>
         <h4>Bachelor of Science in Game & Simulation Development</h4>
-        <P>JUNE ,2009</P>
+        <P>JUNE 2008 - JUNE 2011</P>
         <P>Devry University</P>
       </Banner>
     </div>
