@@ -7,8 +7,16 @@ exports[`<HylandExperience /> should render the page 1`] = `
       Senior Developer
     </h4>
     <styles__P>
-      APRIL 2013 – FEBRUARY 2019
+      JANUARY 2019 – FEBRUARY 2020
     </styles__P>
+    <h4>
+      Developer
+    </h4>
+    <styles__P>
+      APRIL 2013 – JANUARY 2019
+    </styles__P>
+     
+    <br />
     <styles__P>
       Law Logix; Subdivision of Hyland, Inc.
     </styles__P>
