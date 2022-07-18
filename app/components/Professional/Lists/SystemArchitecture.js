@@ -1,11 +1,11 @@
 export default [
   'SaaS',
-  "Process Automation's",
+  'Process Automations',
+  'Docker Driven Development',
   'Mass Data Manipulation and Processing',
   'Parallel Processing',
   'Micro Services',
   'N-Tier',
   'Domain Driven Design',
-  'Monolithic',
-  'Micro Processes',
+  'Monolithic and Micro Processes',
 ];
