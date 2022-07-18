@@ -11,6 +11,10 @@ const TurnTheShiAround = require('images/Books/TurnTheShiAround.jpg');
 const TheOneThing = require('images/Books/TheOneThing.jpg');
 const StartWithWhy = require('images/Books/StartWithWhy.jpg');
 const WhoMovedMyCheese = require('images/Books/WhoMovedMyCheese.jpg');
+const ThinkingInSystems = require('images/Books/ThinkingInSystems.jpg');
+const YouDontHaveToBeRuthlessToWin = require('images/Books/YouDontHaveToBeRuthlessToWin.jpg');
+const LeadersEatLast = require('images/Books/LeadersEatLast.jpg');
+const LincolnOnLeardership = require('images/Books/LincolnOnLeardership.jpg');
 // const NeverSplitTheDifference = require('images/Books/NeverSplitTheDifference.jpg');
 
 const books = [
@@ -204,13 +208,77 @@ const books = [
       </React.Fragment>
     ),
   },
-  // {
-  //   title: 'Never Split the Difference',
-  //   subTitle: 'Negotiating as if Your Life Depended on It',
-  //   author: 'L. Chris Voss',
-  //   image: NeverSplitTheDifference,
-  //   selfDescription: <React.Fragment>In my list to read</React.Fragment>,
-  // },
+  {
+    title: 'Thinking in Systems',
+    subTitle: 'A Primer',
+    author: 'Donella H. Meadows',
+    image: ThinkingInSystems,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          Prepare to read this book more then once. As the title suggests it is
+          a way of thinking, a way of problem solving. Mastering the skills in
+          this book would probably make you look like a wise old wizard.
+        </p>
+        <p>
+          This book makes almost everything into a system. So the skills learned
+          here will apply to the job, the business, and your life. Using tools
+          like different types of feedback loops, to answer questions and how to
+          act on this information.
+        </p>
+      </React.Fragment>
+    ),
+  },
+  {
+    title: "You Don't Have to Be Ruthless to Win",
+    subTitle: 'The Art of Badass Selfless Service',
+    author: 'Jonathan Keyser',
+    image: YouDontHaveToBeRuthlessToWin,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          Dont let the book cover through you off. The strategy in this book
+          promotes a unique outlook on life. A strategy that goes beyond the 9
+          to 5 business planning. Selfless Service said simple sums up in this
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          question "What can I do for you?" and expect nothing in return.
+        </p>
+        <p>
+          What I have learned from this book is to always be open to helping
+          people. Make sure I ask and understand how I can help others. In the
+          short time I have been implementing this idea I have found this is
+          where the most effective work gets done. The 20/80 rule almost lives
+          here.
+        </p>
+      </React.Fragment>
+    ),
+  },
+  {
+    title: 'Leaders Eat Last',
+    subTitle: "Why Some Teams Pull Together and Others Don't",
+    author: 'Simon Sinek',
+    image: LeadersEatLast,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>
+          Im on a mission to improve my leadership skills and create a team that
+          out performs. This book is the blue print I will use to make this
+          mission happen. To be boots on the ground along side the team.
+        </p>
+      </React.Fragment>
+    ),
+  },
+  {
+    title: 'Lincoln on Leadership',
+    subTitle: ' Executive Strategies for Tough Times',
+    author: 'Donald T. Phillips',
+    image: LincolnOnLeardership,
+    selfDescriptionJSX: (
+      <React.Fragment>
+        <p>Currently reading..</p>
+      </React.Fragment>
+    ),
+  },
 ];
 
 function Books() {

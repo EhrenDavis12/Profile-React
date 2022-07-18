@@ -1,12 +1,12 @@
 export default [
-  'Vue',
-  'Vuetify',
   'Django Rest Api',
-  'NPM',
+  'Celery',
+  'NPM/Yarn',
   'MVC',
-  'GitHub / GitLab',
+  'Git / GitHub / GitBash / GitLab',
   'Node.js',
   'React Boiler Plate',
-  'ReactNative-Create-App',
-  'AutoCAD',
+  'React-Native-Create-App',
+  'Django Migrations',
+  'Jest',
 ];
