@@ -275,7 +275,14 @@ const books = [
     image: LincolnOnLeardership,
     selfDescriptionJSX: (
       <React.Fragment>
-        <p>Currently reading..</p>
+        <p>How did Lincoln approach leadership?</p>
+        <p>
+          So many points to pull from this book a full list in fact. But the one
+          point I love the most is the boots on the ground the looking to talk
+          with others. This is something as a remote working leader could be the
+          most difficult. This might be the most critical aspect I must pull
+          from this book.
+        </p>
       </React.Fragment>
     ),
   },
